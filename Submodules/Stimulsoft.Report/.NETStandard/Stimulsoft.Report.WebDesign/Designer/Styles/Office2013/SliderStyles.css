@@ -1,0 +1,39 @@
+
+.stiDesignerSliderControl {
+    height: 25px;
+    position: relative;
+}
+
+.stiDesignerSliderControlLine {
+    position: absolute;
+    background: @MobileDesignerControlsBorderColor;
+    height: 1px;
+    width: 100%;
+    top: 12px;
+}
+
+.stiDesignerSliderControlButton {
+    position: absolute;
+    top: 2px;
+    height: 21px;
+}
+
+.stiDesignerSliderControlButtonDefault {
+    background: @MobileDesignerControlsBorderColor;
+}
+
+.stiDesignerSliderControlButtonOver {
+    background: @MobileDesignerControlsOverBorderColor;
+}
+
+.stiDesignerSliderValueBox {
+    position: absolute;
+    width: 40px;
+    height: 25px;
+    white-space: normal;
+    border: 0px;
+    font-family: Arial;
+    font-size: 12px;
+    text-align: center;
+    color: @MobileDesignerFontColor;
+}

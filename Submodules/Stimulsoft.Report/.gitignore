@@ -1,0 +1,6 @@
+_ReSharper.Caches
+.vs
+bin
+obj
+*DotSettings.user
+*csproj.user

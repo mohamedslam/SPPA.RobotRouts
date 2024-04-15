@@ -1,0 +1,39 @@
+
+.stiJsViewerToolBar {
+	overflow-x: auto;
+	overflow-y: hidden;
+	width: 100%;
+	position: relative;
+	z-index: 2;	
+	color: #202020;
+}
+
+.stiJsViewerToolBarSeparated {
+	border-bottom: 1px solid @JsViewerMainPanelsBorderColor;
+	background: @JsViewerToolbarBackgroundColor;
+}
+
+.stiJsViewerToolBarTable {
+    cursor: default;
+    font-size: 12px;
+    border: 1px solid @JsViewerMainPanelsBorderColor;
+    background: @JsViewerMainPanelsBackgroundColor;
+    background: -moz-linear-gradient(top, @JsViewerMainPanelsBackgroundDownColor, @JsViewerMainPanelsBackgroundUpColor 15%, @JsViewerMainPanelsBackgroundUpColor 50%, @JsViewerMainPanelsBackgroundDownColor); /* Firefox 3.6+ */
+    background: -webkit-gradient(linear, top, bottom, color-stop(0%,@JsViewerMainPanelsBackgroundDownColor), color-stop(15%,@JsViewerMainPanelsBackgroundUpColor), color-stop(50%,@JsViewerMainPanelsBackgroundUpColor), color-stop(100%,@JsViewerMainPanelsBackgroundDownColor)); /* Chrome 10+, Safari 5.1+ */
+    background: -webkit-linear-gradient(top, @JsViewerMainPanelsBackgroundDownColor, @JsViewerMainPanelsBackgroundUpColor 15%, @JsViewerMainPanelsBackgroundUpColor 50%, @JsViewerMainPanelsBackgroundDownColor);
+    background: -o-linear-gradient(top, @JsViewerMainPanelsBackgroundDownColor, @JsViewerMainPanelsBackgroundUpColor 15%, @JsViewerMainPanelsBackgroundUpColor 50%, @JsViewerMainPanelsBackgroundDownColor); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, @JsViewerMainPanelsBackgroundDownColor, @JsViewerMainPanelsBackgroundUpColor 15%, @JsViewerMainPanelsBackgroundUpColor 50%, @JsViewerMainPanelsBackgroundDownColor); /* IE10 */
+    background: linear-gradient(top, @JsViewerMainPanelsBackgroundDownColor, @JsViewerMainPanelsBackgroundUpColor 15%, @JsViewerMainPanelsBackgroundUpColor 50%, @JsViewerMainPanelsBackgroundDownColor); /* CSS3 */
+    width: 100%;
+    border-collapse: separate;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    color: #202020;
+}
+
+.stiJsViewerToolBarSeparator {
+	border: 0;
+	border-right: 1px solid @JsViewerToolbarSeparatorRightColor;
+	background: @JsViewerToolbarSeparatorLeftColor;
+}

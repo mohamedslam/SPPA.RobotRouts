@@ -1,0 +1,93 @@
+
+.stiDesignerTextBoxEnumerator {
+    border-radius: 3px;
+    border: 1px solid @MobileDesignerControlsBorderColor;
+    color: @MobileDesignerFontColor;
+    background: @MobileDesignerControlsBackgroundColor;
+}
+
+.stiDesignerTextBoxEnumeratorOver {
+    border-radius: 3px;
+    border: 1px solid @MobileDesignerControlsOverBorderColor;
+    color: @MobileDesignerFontColor;
+    background: @MobileDesignerControlsBackgroundColor;
+}
+
+.stiDesignerTextBoxEnumeratorDisabled {
+    border-radius: 3px;
+    border: 1px solid @MobileDesignerControlsDisabledBorderColor;
+    color: @MobileDesignerFontDisabledColor;
+    background: @MobileDesignerControlsBackgroundColor;
+}
+
+.stiDesignerTextBoxEnumerator_TextBox {
+    font-size: 12px;
+    height: 21px;
+    border: 0px;
+    border-radius: 3px;
+    margin: 0px;
+    padding: 0px 0px 0px 4px;
+    font-family: Arial;
+    outline: none;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(hsla(0,0%,100%,0)), to(hsla(0,0%,100%,0)));
+    background-image: -webkit-linear-gradient(hsla(0,0%,100%,0), hsla(0,0%,100%,0));
+    background: @MobileDesignerControlsBackgroundColor;
+}
+
+.stiDesignerTextBoxEnumerator_TextBox {
+    font-size: 12px;
+    border: 0px;
+    border-radius: 3px;
+    margin: 0px;
+    padding: 0px 0px 0px 4px;
+    font-family: Arial;
+    outline: none;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(hsla(0,0%,100%,0)), to(hsla(0,0%,100%,0)));
+    background-image: -webkit-linear-gradient(hsla(0,0%,100%,0), hsla(0,0%,100%,0));
+    background: @MobileDesignerControlsBackgroundColor;
+}
+
+.stiDesignerTextBoxEnumerator_TextBoxDefault {    
+    color: @MobileDesignerFontColor;
+}
+
+.stiDesignerTextBoxEnumerator_TextBoxDisabled {    
+    color: @MobileDesignerFontDisabledColor;
+}
+
+/* Enumerator Button */
+
+.stiDesignerTextBoxEnumeratorButton {
+    cursor: default;
+    font-family: Arial;
+    font-size: 12px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+.stiDesignerTextBoxEnumeratorButton_Mouse {
+    height: 10px;
+}
+
+.stiDesignerTextBoxEnumeratorButton_Touch {
+    height: 12px;
+}
+
+.stiDesignerTextBoxEnumeratorButtonDefault {
+    color: @MobileDesignerFontColor;
+}
+
+.stiDesignerTextBoxEnumeratorButtonOver {
+    color: @MobileDesignerFontColor;
+    background: @MobileDesignerButtonOverBackgroundColor;
+}
+
+.stiDesignerTextBoxEnumeratorButtonSelected {
+    color: @MobileDesignerFontColor;
+    background: @MobileDesignerButtonSelectedBackgroundColor;
+}
+
+.stiDesignerTextBoxEnumeratorButtonDisabled {
+    color: @MobileDesignerFontDisabledColor;
+}

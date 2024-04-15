@@ -1,0 +1,47 @@
+
+.stiDesignerPropertiesGroup {
+    background: @MobileDesignerPropertiesContainerBackgroundColor;
+}
+
+.stiDesignerPropertiesGroupContainer {
+    padding: 5px 0 5px 0;
+    background: @MobileDesignerPropertiesContainerBackgroundColor;
+}
+
+.stiDesignerPropertiesGroupHeaderButton {
+    font-weight: bold;
+    cursor: default;
+    font-family: Arial;
+    font-size: 12px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+.stiDesignerPropertiesGroupHeaderButton_Mouse {
+    height: 23px;
+}
+
+.stiDesignerPropertiesGroupHeaderButton_Touch {
+    height: 28px;
+}
+
+.stiDesignerPropertiesGroupHeaderButtonDefault {
+    color: @MobileDesignerFontColor;
+    background: @MobileDesignerButtonOverBackgroundColor;
+}
+
+.stiDesignerPropertiesGroupHeaderButtonOver {
+    color: @MobileDesignerFontColor;
+    background: @MobileDesignerButtonSelectedBackgroundColor;
+}
+
+.stiDesignerPropertiesGroupHeaderButtonSelected {
+    color: @MobileDesignerFontColor;
+    background: @MobileDesignerButtonSelectedBackgroundColor;
+}
+
+.stiDesignerPropertiesGroupHeaderButtonDisabled {
+    color: @MobileDesignerFontDisabledColor;
+    background: @MobileDesignerContainersBackgroundColor;
+}

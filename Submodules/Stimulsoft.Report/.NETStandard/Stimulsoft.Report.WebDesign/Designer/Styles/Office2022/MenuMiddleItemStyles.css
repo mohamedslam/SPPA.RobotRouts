@@ -1,0 +1,36 @@
+
+.stiDesignerMenuMiddleItem {
+    margin: 1px;
+    border-radius: 3px;
+    height: 42px;
+    cursor: default;
+    font-family: Arial;
+    font-size: 12px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+.stiDesignerMenuMiddleItem_Mouse {
+}
+
+.stiDesignerMenuMiddleItem_Touch {
+}
+
+.stiDesignerMenuMiddleItemDefault {
+    color: @MobileDesignerFontColor;
+}
+
+.stiDesignerMenuMiddleItemOver {
+    background: @MobileDesignerButtonOverBackgroundColor;
+    color: @MobileDesignerFontColor;
+}
+
+.stiDesignerMenuMiddleItemSelected {
+    background: @MobileDesignerButtonSelectedBorderColor;
+    color: @MobileDesignerFontColor;
+}
+
+.stiDesignerMenuMiddleItemDisabled {
+    color: @MobileDesignerFontDisabledColor;
+}

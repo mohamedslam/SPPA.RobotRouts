@@ -1,0 +1,44 @@
+
+.stiJsViewerFormButton,
+.stiJsViewerFormButtonTheme,
+.stiJsViewerSmallButtonWithBorder {
+    height: 23px;
+    cursor: default;
+    font-size: 12px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.stiJsViewerFormButtonDefault,
+.stiJsViewerFormButtonThemeDefault,
+.stiJsViewerSmallButtonWithBorderDefault {
+    background: @JsViewerControlsBackgroundColor;
+    border: 1px solid @JsViewerControlsBorderColor;
+    color: @JsViewerControlsFontColor !important;
+}
+
+.stiJsViewerFormButtonOver,
+.stiJsViewerFormButtonThemeOver,
+.stiJsViewerSmallButtonWithBorderOver {
+    background: @JsViewerButtonOverBackgroundColor;
+    border: 1px solid @JsViewerControlsOverBorderColor;
+    color: @JsViewerControlsFontColor !important;
+}
+
+.stiJsViewerFormButtonSelected,
+.stiJsViewerFormButtonThemeSelected,
+.stiJsViewerSmallButtonWithBorderSelected {
+    background: @JsViewerButtonSelectedBackgroundColor;
+    border: 1px solid @JsViewerControlsSelectedBorderColor;
+    color: @JsViewerControlsFontColor !important;
+}
+
+.stiJsViewerFormButtonDisabled,
+.stiJsViewerFormButtonThemeDisabled,
+.stiJsViewerSmallButtonWithBorderDisabled {
+    background: @JsViewerButtonDisabledBackgroundColor;
+    border: 1px solid @JsViewerControlsDisabledBorderColor;
+    color: @JsViewerControlsFontDisabledColor !important;
+}

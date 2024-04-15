@@ -1,0 +1,69 @@
+
+.stiJsViewerNavigatePanel {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 1;
+    background: @JsViewerNavigatePanelBackgroundColor;
+    background: -moz-linear-gradient(top, @JsViewerMainPanelsBackgroundDownColor, @JsViewerMainPanelsBackgroundUpColor 15%, @JsViewerMainPanelsBackgroundUpColor 50%, @JsViewerMainPanelsBackgroundDownColor); /* Firefox 3.6+ */
+    background: -webkit-gradient(linear, top, bottom, color-stop(0%,@JsViewerMainPanelsBackgroundDownColor), color-stop(15%,@JsViewerMainPanelsBackgroundUpColor), color-stop(50%,@JsViewerMainPanelsBackgroundUpColor), color-stop(100%,@JsViewerMainPanelsBackgroundDownColor)); /* Chrome 10+, Safari 5.1+ */
+    background: -webkit-linear-gradient(top, @JsViewerMainPanelsBackgroundDownColor, @JsViewerMainPanelsBackgroundUpColor 15%, @JsViewerMainPanelsBackgroundUpColor 50%, @JsViewerMainPanelsBackgroundDownColor);
+    background: -o-linear-gradient(top, @JsViewerMainPanelsBackgroundDownColor, @JsViewerMainPanelsBackgroundUpColor 15%, @JsViewerMainPanelsBackgroundUpColor 50%, @JsViewerMainPanelsBackgroundDownColor); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, @JsViewerMainPanelsBackgroundDownColor, @JsViewerMainPanelsBackgroundUpColor 15%, @JsViewerMainPanelsBackgroundUpColor 50%, @JsViewerMainPanelsBackgroundDownColor); /* IE10 */
+    background: linear-gradient(top, @JsViewerMainPanelsBackgroundDownColor, @JsViewerMainPanelsBackgroundUpColor 15%, @JsViewerMainPanelsBackgroundUpColor 50%, @JsViewerMainPanelsBackgroundDownColor); /* CSS3 */
+    font-family: Arial;
+    font-size: 12px;
+    color: #444444;
+}
+
+.stiJsViewerNavigatePanelSeparator {
+	border-right: 1px dashed @JsViewerNavigatePanelSeparatorColor;
+	width: 1px;
+	margin: 0 2px 0 1px; 
+}
+
+.stiJsViewerNavigatePanelDisabledPanel {
+	z-index: 101;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	position: absolute;
+	background: white;
+	filter: alpha(Opacity=10);
+    opacity: 0;
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+}
+
+.stiJsViewerNavigateButton {
+    cursor: default;
+    font-size: 12px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+.stiJsViewerNavigateButtonOver {
+    border: 1px solid @JsViewerButtonOverBorderColor;
+    background: @JsViewerNavigateButtonOverBackgroundColor;
+    background: -moz-linear-gradient(top, @JsViewerButtonOverBackgroundUpColor, @JsViewerButtonOverBackgroundMiddleColor 30%, @JsViewerButtonOverBackgroundDownColor 30%, @JsViewerButtonOverBackgroundUpColor); /* Firefox 3.6+ */
+    background: -webkit-gradient(linear, top, bottom, color-stop(0%,@JsViewerButtonOverBackgroundUpColor), color-stop(30%,@JsViewerButtonOverBackgroundMiddleColor), color-stop(30%,@JsViewerButtonOverBackgroundDownColor), color-stop(100%,@JsViewerButtonOverBackgroundUpColor)); /* Chrome 10+, Safari 5.1+ */
+    background: -webkit-linear-gradient(top, @JsViewerButtonOverBackgroundUpColor, @JsViewerButtonOverBackgroundMiddleColor 30%, @JsViewerButtonOverBackgroundDownColor 30%, @JsViewerButtonOverBackgroundUpColor);
+    background: -o-linear-gradient(top, @JsViewerButtonOverBackgroundUpColor, @JsViewerButtonOverBackgroundMiddleColor 30%, @JsViewerButtonOverBackgroundDownColor 30%, @JsViewerButtonOverBackgroundUpColor); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, @JsViewerButtonOverBackgroundUpColor, @JsViewerButtonOverBackgroundMiddleColor 30%, @JsViewerButtonOverBackgroundDownColor 30%, @JsViewerButtonOverBackgroundUpColor); /* IE10 */
+    background: linear-gradient(top, @JsViewerButtonOverBackgroundUpColor, @JsViewerButtonOverBackgroundMiddleColor 30%, @JsViewerButtonOverBackgroundDownColor 30%, @JsViewerButtonOverBackgroundUpColor); /* CSS3 */
+}
+
+.stiJsViewerNavigateButtonSelected {
+    border: 1px solid @JsViewerButtonSelectedBorderColor;
+    background: @JsViewerNavigateButtonSelectedBackgroundColor;
+}
+
+.stiJsViewerNavigateButtonDisabled {
+    border: 1px solid @JsViewerButtonDisabledBorderColor;
+    color: @JsViewerControlsFontDisabledColor;
+}

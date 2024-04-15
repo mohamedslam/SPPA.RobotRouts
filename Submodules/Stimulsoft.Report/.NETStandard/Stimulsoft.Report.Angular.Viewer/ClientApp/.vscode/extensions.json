@@ -1,0 +1,9 @@
+{
+    "recommendations": [
+        "johnpapa.angular-essentials",
+	"angular.ng-template",
+	"johnpapa.angular2",
+	"philfontaine.autolaunch",
+	"msjsdiag.debugger-for-chrome"
+    ]
+}

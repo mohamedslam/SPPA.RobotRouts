@@ -1,0 +1,64 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>10fc9757-9593-41b5-bb88-566a96514878</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.15" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.15" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.18.1" />
+    <PackageReference Include="NLog.Web.AspNetCore" Version="5.2.2" />
+    <PackageReference Include="Stimulsoft.Reports.Web.NetCore" Version="2023.2.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Filters" Version="7.0.6" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Newtonsoft" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SPPA.Database\SPPA.Database.csproj" />
+    <ProjectReference Include="..\SPPA.Domain\SPPA.Domain.csproj" />
+    <ProjectReference Include="..\SPPA.Logic\SPPA.Logic.csproj" />
+    <ProjectReference Include="..\SPPA.Repository\SPPA.Repository.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="FileStorage\**" />
+    <Content Remove="FileStorage\**" />
+    <EmbeddedResource Remove="FileStorage\**" />
+    <None Remove="FileStorage\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="licenselimit.json" />
+    <None Include="licenselimit.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Templates\Reports\*.mrt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Areas\Reports\Localization\*.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Areas\Reports\Fonts\*.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Reports\Controllers\" />
+  </ItemGroup>
+
+</Project>

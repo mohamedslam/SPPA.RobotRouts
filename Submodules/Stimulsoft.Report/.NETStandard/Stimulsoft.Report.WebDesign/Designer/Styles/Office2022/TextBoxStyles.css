@@ -1,0 +1,93 @@
+
+.stiDesignerTextBox {
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px 0px 0px 4px;
+    border-radius: 3px;
+    font-family: Arial;
+    outline: none;
+    max-width: inherit;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(hsla(0,0%,100%,0)), to(hsla(0,0%,100%,0)));
+    background-image: -webkit-linear-gradient(hsla(0,0%,100%,0), hsla(0,0%,100%,0));
+}
+
+.stiDesignerTextBoxDefault {
+    border: 1px solid @MobileDesignerControlsBorderColor;
+    background: @MobileDesignerControlsBackgroundColor;
+    color: @MobileDesignerFontColor;
+}
+
+.stiDesignerTextBoxOver {
+    border: 1px solid @MobileDesignerControlsOverBorderColor;
+    background: @MobileDesignerControlsBackgroundColor;
+    color: @MobileDesignerFontColor;
+}
+
+.stiDesignerTextBoxDisabled {
+    border: 1px solid @MobileDesignerControlsDisabledBorderColor;
+    background: @MobileDesignerControlsDisabledBackgroundColor;
+    color: @MobileDesignerFontDisabledColor;
+}
+
+.stiDesignerTextBoxEditButton {
+    background: @MobileDesignerControlsBackgroundColor;
+    padding: 0px;
+    margin: 0px;
+    font-size: 0px;
+}
+
+.stiDesignerTextBoxEditButtonDefault {
+    border: 1px solid @MobileDesignerControlsBorderColor;
+    border-left: 0px;
+}
+
+.stiDesignerTextBoxEditButtonOver {
+    border: 1px solid @MobileDesignerControlsOverBorderColor;
+    border-left: 0px;
+}
+
+.stiDesignerTextBoxEditButtonSelected {
+    border: 1px solid @MobileDesignerControlsSelectedBorderColor;
+    border-left: 0px;
+}
+
+.stiDesignerTextBoxEditButtonDisabled {
+    border: 1px solid @MobileDesignerControlsDisabledBorderColor;
+    border-left: 0px;
+}
+
+/*Margins Control*/
+.stiDesignerMarginsControl {
+    font-size: 12px;
+    background: @MobileDesignerControlsBackgroundColor;
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+    border-radius: 3px;
+    outline: none;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(hsla(0,0%,100%,0)), to(hsla(0,0%,100%,0)));
+    background-image: -webkit-linear-gradient(hsla(0,0%,100%,0), hsla(0,0%,100%,0));
+    color: @MobileDesignerFontColor;
+}
+
+.stiDesignerMarginsControlInnerCell {
+    background: @MobileDesignerControlsBackgroundColor;
+    border-right: 1px solid @MobileDesignerControlsBorderColor;
+}
+
+.stiDesignerMarginsControlInnerCellOver {
+    background: @MobileDesignerControlsBackgroundColor;
+    border-right: 1px solid @MobileDesignerControlsOverBorderColor;
+}
+
+.stiDesignerMarginsControlDefault {
+    border: 1px solid @MobileDesignerControlsBorderColor;
+}
+
+.stiDesignerMarginsControlOver {
+    border: 1px solid @MobileDesignerControlsOverBorderColor;
+}
+
+.stiDesignerMarginsControlDisabled {
+    border: 1px solid @MobileDesignerControlsDisabledBorderColor;
+}

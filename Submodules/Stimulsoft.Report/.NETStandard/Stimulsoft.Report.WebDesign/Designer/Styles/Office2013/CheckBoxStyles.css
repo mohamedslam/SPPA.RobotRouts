@@ -1,0 +1,58 @@
+
+.stiDesignerCheckBox {    
+    font-size: 12px;
+    font-family: Arial;    
+    color: @MobileDesignerFontColor;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+
+.stiDesignerCheckBoxDisabled {    
+    font-size: 12px;
+    font-family: Arial;    
+    color: @MobileDesignerFontDisabledColor;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+.stiDesignerCheckBoxImageBlock {
+    border: 1px solid @MobileDesignerControlsBorderColor;
+    background: @MobileDesignerControlsBackgroundColor;
+}
+
+.stiDesignerCheckBoxImageBlockOver {
+    border: 1px solid @MobileDesignerControlsOverBorderColor;
+    background: @MobileDesignerControlsOverBackgroundColor;
+}
+
+.stiDesignerCheckBoxImageBlockDisabled {
+    border: 1px solid @MobileDesignerControlsDisabledBorderColor;
+    background: @MobileDesignerControlsDisabledBackgroundColor;
+}
+
+/*Check Box Menu Item*/
+.stiDesignerCheckBoxMenuItemImageBlock {
+    border: 1px solid @MobileDesignerControlsBackgroundColor;
+    background: transparent;
+}
+
+.stiDesignerCheckBoxMenuItemImageBlockChecked {
+    border: 1px solid @MobileDesignerControlsBackgroundColor;
+    background: @MobileDesignerButtonOverBackgroundColor;
+}
+
+.stiDesignerCheckBoxMenuItem {
+    color: @MobileDesignerFontColor;
+    font-size: 12px;
+    font-family: Arial;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+.stiDesignerCheckBoxMenuItemOver {
+    background: @MobileDesignerButtonOverBackgroundColor;
+}

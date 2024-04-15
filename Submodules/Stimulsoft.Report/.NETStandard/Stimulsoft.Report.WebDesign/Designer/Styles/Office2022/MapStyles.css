@@ -1,0 +1,31 @@
+
+.stiDataColumnContainer {
+    font-family: Arial;
+    font-size: 12px;
+    color: @MobileDesignerFontDisabledColor;
+    border: 1px dashed @MobileDesignerFormSeparatorColor;
+    border-radius: 3px;
+    text-align: center;
+    white-space: nowrap;    
+    padding: 1px;
+    position: relative;
+}
+
+.stiDataColumnContainerOver {
+    border: 1px dashed @MobileDesignerControlsOverBorderColor;
+}
+
+.stiMapScrollContainer {
+    overflow: auto;
+}
+
+.stiMapDataGridHeader td {
+    background: @MobileDesignerContainersHeaderColor;
+    color: @MobileDesignerFontColor;
+    font-family: Arial;
+    font-size: 12px;
+    white-space: nowrap;
+    padding: 4px 0 4px 0;
+    text-align: center;
+    border: 1px solid @MobileDesignerControlsBorderColor;
+}

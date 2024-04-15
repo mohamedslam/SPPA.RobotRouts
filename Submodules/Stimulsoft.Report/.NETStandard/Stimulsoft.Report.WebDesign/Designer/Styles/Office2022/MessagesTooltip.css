@@ -1,0 +1,107 @@
+
+/* Error */
+.stiErrorMessagesTooltip, .stiErrorMessagesTooltipArrow:after {
+  background: #ff0000;
+  border: 1px solid #ff0000;
+  color: #ffffff;
+  text-align: left;
+  font-family: Arial;
+  font-size: 13px;
+}
+
+/* Info */
+.stiInfoMessagesTooltip, .stiInfoMessagesTooltipArrow:after {
+  background: #ffffff;
+  border: 1px solid #0070b8;
+  color: #444444;
+  text-align: left;
+  font-family: Arial;
+  font-size: 13px;
+}
+
+/* Tooltip */
+.stiMessagesTooltip {
+  opacity: 0;
+  display: inline-block;
+  position: absolute;  
+  /*font-stretch: condensed;*/
+  text-decoration: none;
+  z-index: 1000000;
+  -moz-box-shadow: 0px 0px 7px rgba(0,0,0,0.6); 
+  -webkit-box-shadow: 0px 0px 7px rgba(0,0,0,0.6);
+  box-shadow: 0 0 7px rgba(0,0,0,0.3);
+}
+
+.stiMessagesTooltipArrow {
+  overflow: hidden;
+  position: absolute;  
+}
+
+.stiMessagesTooltipArrow:after {
+  content: "";
+  position: absolute;  
+  -webkit-transform: rotate(45deg);
+  -moz-transform:    rotate(45deg);
+  -ms-transform:     rotate(45deg);
+  -o-transform:      rotate(45deg);
+}
+
+/* Arrow Left */
+.stiMessagesTooltipArrowLeft {
+  left: -14px;  
+  bottom: 38%;
+  width: 17px;
+  height: 17px;
+}
+
+.stiMessagesTooltipArrowLeft:after {
+	left: 8px;
+	top: 0px;
+	width: 15px;
+	height: 15px;
+}
+
+/* Arrow Top */
+.stiMessagesTooltipArrowTop {
+  left: 45%;  
+  top: -14px;
+  width: 17px;
+  height: 17px;
+}
+
+.stiMessagesTooltipArrowTop:after {
+	left: 0px;
+	top: 8px;
+	width: 15px;
+	height: 15px;
+}
+
+/* Arrow Right */
+.stiMessagesTooltipArrowRight {
+  left: 100%;  
+  bottom: 38%;
+  width: 17px;
+  height: 17px;
+}
+
+.stiMessagesTooltipArrowRight:after {
+	left: -11px;
+	top: 0px;
+	width: 15px;
+	height: 15px;
+}
+
+/* Arrow Bottom */
+.stiMessagesTooltipArrowBottom {
+  left: 45%;  
+  top: 100%;
+  width: 17px;
+  height: 17px;
+}
+
+.stiMessagesTooltipArrowBottom:after {
+	left: 0px;
+	top: -11px;
+	width: 15px;
+	height: 15px;
+}

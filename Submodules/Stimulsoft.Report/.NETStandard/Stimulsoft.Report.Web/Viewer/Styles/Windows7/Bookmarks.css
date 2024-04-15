@@ -1,0 +1,82 @@
+
+.stiJsViewerBookmarksPanel {
+	z-index: 2;
+	left: 0;
+	float: left;
+	position: absolute;
+	overflow: visible;
+	white-space: nowrap;
+	color: #202020;
+}
+
+.stiJsViewerBookmarksPanelSeparated {
+	border-right: 1px solid @JsViewerMainPanelsBorderColor;
+}
+
+.stiJsViewerBookmarksContainer {
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	z-index: 1;
+	position: absolute;
+	overflow: auto;
+    font-family: Arial;
+    font-size: 12px;
+    white-space: nowrap;
+    background: @JsViewerMainPanelsBackgroundColor;
+    padding: 3px 0px 0px 3px;
+}
+
+.stiJsViewerBookmarksContainerSimple {
+	border: 1px solid @JsViewerMainPanelsBorderColor;
+    margin-top: 2px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;   
+}
+
+.stiJsViewerBookmarksContainer img {	
+    border: 0px;
+    vertical-align: middle;
+}
+
+.stiJsViewerBookmarksContainer a {
+	color: @JsViewerControlsFontColor;
+	text-decoration: none;
+	cursor: pointer;
+}
+ 
+.stiJsViewerBookmarksContainer a.node,
+.stiJsViewerBookmarksContainer a.nodeSel 
+{
+	 white-space: nowrap;
+	 padding: 1px 2px 1px 2px;
+}
+
+.stiJsViewerBookmarksContainer a.node:hover,
+.stiJsViewerBookmarksContainer a.nodeSel:hover {
+	color: @JsViewerControlsFontColor;
+	text-decoration: underline;
+	background-color: @JsViewerButtonOverBackgroundColor;
+}
+
+.stiJsViewerBookmarksContainer a.nodeSel {
+	background-color: @JsViewerButtonSelectedBackgroundColor;
+}
+
+.stiJsViewerBookmarksContainer a.clip {
+	overflow: hidden;
+}
+
+.stiJsViewerBookmarksLabel {
+    position: absolute;
+    z-index: 150;
+    border: 2px solid #8a8a8a;
+    opacity: 0.7;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}

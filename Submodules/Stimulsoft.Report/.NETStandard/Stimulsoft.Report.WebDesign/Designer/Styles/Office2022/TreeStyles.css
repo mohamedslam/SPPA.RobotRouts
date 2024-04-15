@@ -1,0 +1,99 @@
+
+/* Name In Source Tree */
+.stiDesignerConnectionsTree {    
+	width : 400px;
+	height: 400px;
+	overflow: auto;
+}
+
+/* Opening Icon */
+.stiDesignerTreeItemIconOpening_Mouse {    
+    margin: 0 3px 0 0;
+}
+
+.stiDesignerTreeItemIconOpening_Touch {
+	margin: 3px;
+}
+
+/* Button */
+.stiDesignerTreeItemButton {
+	border-radius: 3px;
+	color: @MobileDesignerFontColor;
+	padding: 0px;
+	cursor: default;
+	font-family: Arial;
+	font-size: 11px;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+}
+
+.stiDesignerTreeItemButtonDefault {    
+	border: 1px solid transparent;
+}
+
+.stiDesignerTreeItemButtonSelected {    
+	border: 1px solid @MobileDesignerControlsSelectedBorderColor;
+	background: @MobileDesignerButtonOverBackgroundColor;
+}
+
+/* Button Image */
+.stiDesignerTreeItemButtonImage_Mouse {    
+	border: 0px;
+	padding: 0px;
+	margin: 1px 2px 1px 2px;
+}
+
+.stiDesignerTreeItemButtonImage_Touch {
+	border: 0px;
+	padding: 0px;
+	margin: 4px 2px 4px 4px;
+}
+
+/* Button Caption */
+.stiDesignerTreeItemButtonCaption_Mouse {    
+	margin: 0px;
+	border: 0px;
+	padding: 0px 2px 0px 0px;
+}
+
+.stiDesignerTreeItemButtonCaption_Touch {
+	margin: 0px;
+	border: 0px;
+	padding: 3px 5px 3px 2px;
+}
+
+.stiDesignerTreeItemButtonSelectedNotActive {
+	border: 1px solid @MobileDesignerContainersHeaderColor;
+	background: @MobileDesignerContainersHeaderColor;
+}
+
+/* TreeItem Icon For DragDrop */
+.stiDesignerTreeItemForDragDrop {
+    border: 1px solid @MobileDesignerControlsSelectedBorderColor;
+    padding: 0px;
+    background: @MobileDesignerButtonOverBackgroundColor;
+    color: @MobileDesignerFontColor;
+    cursor: default;
+    font-family: Arial;
+    font-size: 12px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    opacity: 0.6;
+    -moz-box-shadow: 0px 0px 7px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0px 0px 7px rgba(0,0,0,0.6);
+    box-shadow: 0 0 7px rgba(0,0,0,0.3);
+}
+
+.stiDesignerTreeItemForDragDrop_Mouse {
+    border-radius: 3px;
+}
+
+.stiDesignerTreeItemForDragDrop_Touch {
+    border-radius: 5px;
+}
+
+.stiDesignerCloudTreeItemBorder {
+	border-bottom: 1px solid @MobileDesignerButtonOverBackgroundColor;
+}

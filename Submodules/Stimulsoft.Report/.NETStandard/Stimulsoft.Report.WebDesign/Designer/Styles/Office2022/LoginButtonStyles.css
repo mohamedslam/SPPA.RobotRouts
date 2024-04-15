@@ -1,0 +1,42 @@
+
+.stiDesignerLoginButton {
+    cursor: default;
+    font-family: Arial;
+    font-size: 12px;
+    border-radius: 3px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+.stiDesignerLoginButton_Mouse {
+    height: 24px;
+}
+
+.stiDesignerLoginButton_Touch {
+    height: 28px;
+}
+
+.stiDesignerLoginButtonDefault {
+    background: @MobileDesignerFileMenuBackgroundColor;
+    border: 1px solid @MobileDesignerFileMenuBackgroundColor;
+    color: @MobileDesignerFileMenuFontColor;
+}
+
+.stiDesignerLoginButtonOver {
+    background: @MobileDesignerFileMenuItemOverBackgroundColor;
+    border: 1px solid @MobileDesignerFileMenuItemOverBackgroundColor;
+    color: @MobileDesignerFileMenuFontColor;
+}
+
+.stiDesignerLoginButtonSelected {
+    background: @MobileDesignerFileMenuItemSelectedBackgroundColor;
+    border: 1px solid @MobileDesignerFileMenuItemSelectedBackgroundColor;
+    color: @MobileDesignerFileMenuFontColor;
+}
+
+.stiDesignerLoginButtonDisabled {
+    background: @MobileDesignerFileMenuItemOverBackgroundColor;
+    border: 1px solid @MobileDesignerFileMenuItemOverBackgroundColor;
+    color: @MobileDesignerFileMenuFontDisabledColor;
+}

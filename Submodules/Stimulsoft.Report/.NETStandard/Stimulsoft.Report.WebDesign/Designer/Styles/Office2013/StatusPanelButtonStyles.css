@@ -1,0 +1,34 @@
+
+.stiDesignerStatusPanelButton {
+    height: 35px;
+    cursor: default;
+    font-family: Arial;
+    font-size: 12px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+.stiDesignerStatusPanelButton_Mouse {
+}
+
+.stiDesignerStatusPanelButton_Touch {
+}
+
+.stiDesignerStatusPanelButtonDefault {
+    color: @MobileDesignerFileMenuFontColor;
+}
+
+.stiDesignerStatusPanelButtonOver {
+    background: @MobileDesignerFileMenuItemOverBackgroundColor;
+    color: @MobileDesignerFileMenuFontColor;
+}
+
+.stiDesignerStatusPanelButtonSelected {
+    background: @MobileDesignerFileMenuItemSelectedBackgroundColor;
+    color: @MobileDesignerFileMenuFontColor;
+}
+
+.stiDesignerStatusPanelButtonDisabled {
+    color: @MobileDesignerFileMenuFontDisabledColor;
+}

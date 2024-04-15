@@ -1,0 +1,60 @@
+#region Copyright (C) 2003-2022 Stimulsoft
+/*
+{*******************************************************************}
+{																	}
+{	Stimulsoft Reports												}
+{	                         										}
+{																	}
+{	Copyright (C) 2003-2022 Stimulsoft     							}
+{	ALL RIGHTS RESERVED												}
+{																	}
+{	The entire contents of this file is protected by U.S. and		}
+{	International Copyright Laws. Unauthorized reproduction,		}
+{	reverse-engineering, and distribution of all or any portion of	}
+{	the code contained in this file is strictly prohibited and may	}
+{	result in severe civil and criminal penalties and will be		}
+{	prosecuted to the maximum extent possible under the law.		}
+{																	}
+{	RESTRICTIONS													}
+{																	}
+{	THIS SOURCE CODE AND ALL RESULTING INTERMEDIATE FILES			}
+{	ARE CONFIDENTIAL AND PROPRIETARY								}
+{	TRADE SECRETS OF Stimulsoft										}
+{																	}
+{	CONSULT THE END USER LICENSE AGREEMENT FOR INFORMATION ON		}
+{	ADDITIONAL RESTRICTIONS.										}
+{																	}
+{*******************************************************************}
+*/
+#endregion Copyright (C) 2003-2022 Stimulsoft
+
+using System.IO;
+
+namespace Stimulsoft.Report.Export
+{
+    internal class StiExportInfo
+    {
+        public StiReport Report { get; set; }
+
+        public StiExportSettings Settings { get; set; }
+
+        public Stream Stream { get; set; }
+
+        public bool SendEMail { get; set; }
+
+        public bool OpenAfterExport { get; set; }
+
+        public string FileName { get; set; }
+
+        public StiExportInfo(StiReport report, StiExportSettings settings, Stream stream,
+            bool sendEMail, bool openAfterExport, string fileName)
+        {
+            this.Report = report;
+            this.Settings = settings;
+            this.Stream = stream;
+            this.SendEMail = sendEMail;
+            this.OpenAfterExport = openAfterExport;
+            this.FileName = fileName;
+        }
+    }
+}

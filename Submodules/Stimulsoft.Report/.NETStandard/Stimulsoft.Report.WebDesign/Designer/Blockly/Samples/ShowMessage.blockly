@@ -1,0 +1,9 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <block type="sti_show_message" id="xoeUSr9y9^=b=JxpFK6`" x="324" y="270">
+    <value name="TEXT">
+      <shadow type="text" id="F*hf$dgHq5|VRQB0[cI{">
+        <field name="TEXT">Text</field>
+      </shadow>
+    </value>
+  </block>
+</xml>

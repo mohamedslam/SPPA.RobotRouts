@@ -1,0 +1,34 @@
+
+.stiDesignerTextArea {
+    border-radius: 3px;
+    font-size: 12px;
+    border: 1px solid @MobileDesignerControlsBorderColor;
+    border-radius: 3px;
+    margin: 0px;
+    padding: 0px 0px 0px 4px;
+    font-family: Arial;
+    outline: none;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(hsla(0,0%,100%,0)), to(hsla(0,0%,100%,0)));
+    background-image: -webkit-linear-gradient(hsla(0,0%,100%,0), hsla(0,0%,100%,0));
+    background: @MobileDesignerControlsBackgroundColor;
+    color: @MobileDesignerFontColor;
+    resize: none;
+}
+
+.stiDesignerTextAreaDefault {
+    border: 1px solid @MobileDesignerControlsBorderColor;
+    background: @MobileDesignerControlsBackgroundColor;
+    color: @MobileDesignerFontColor;
+}
+
+.stiDesignerTextAreaOver {
+    border: 1px solid @MobileDesignerControlsOverBorderColor;
+    background: @MobileDesignerControlsBackgroundColor;
+    color: @MobileDesignerFontColor;
+}
+
+.stiDesignerTextAreaDisabled {
+    border: 1px solid @MobileDesignerControlsDisabledBorderColor;
+    background: @MobileDesignerControlsDisabledBackgroundColor;
+    color: @MobileDesignerFontDisabledColor;
+}

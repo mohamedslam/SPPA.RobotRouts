@@ -1,0 +1,275 @@
+
+.wizardFormMainTable {
+	border: 0px;
+	padding: 0px;
+}
+
+.wizardFormInfoCell {
+	background: @MobileDesignerContainersBackgroundColor;
+	border: 0px;
+	border-bottom: 1px dotted @MobileDesignerContainersBorderColor;
+	padding: 0px;
+	height: 55px;
+	color: @MobileDesignerFontColor;
+    cursor: default;
+    font-family: Arial;
+    font-size: 12px;
+    padding-left: 20px;
+    line-height: 1.7 
+}
+
+.wizardFormStepsPanel {
+	background: @MobileDesignerContainersBackgroundColor;
+	border: 0px;
+	border-right: 1px dotted @MobileDesignerContainersBorderColor;
+	padding: 0px;
+	vertical-align: top;
+}
+
+.wizardFormWorkPanel {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 380px;
+    width: 550px;
+}
+
+.wizardFormColumnsOrderItemsContent {
+	overflow: auto;
+	height: 380px;
+	width: 510px;
+}
+
+.wizardFormColumnsOrderButtonsContent {
+    width: 29px;
+    text-align: center;
+    margin: 30px 0 0 5px;
+}
+
+.wizardFormColumnsItemsContent {
+	overflow: auto;
+	height: 340px;
+}
+
+.wizardFormColumnsItemsContentWithoutButtons {
+	overflow: auto;
+	height: 380px;
+}
+
+.wizardFormDataSourcesContent {
+    overflow: auto;
+	height: 290px;
+}
+
+.wizardFormDataSourcesContentWithoutButtons {
+    overflow: auto;
+	height: 325px;
+}
+
+.wizardFormColumnsButtonsContent {	
+	height: 39px;
+}
+
+.wizardFormColumnsButtonsTable {
+	border: 0px;
+	padding:0px;
+	width: 100%;
+	height: 100%;
+}
+
+/* Totals */
+.wizardFormTotalsTable {
+	border : 1px solid @MobileDesignerContainersBorderColor;
+	border-collapse: collapse;
+	margin: 5px;
+}
+
+/* Relations */
+.wizardRelationsFormItemsContainer {
+	overflow: auto;
+	width: 500px;
+	height: 350px;
+	border: 1px dotted @MobileDesignerContainersBorderColor;
+}
+
+.wizardFormTotalsHeaderColumn {
+	color: @MobileDesignerContainersHeaderFontColor;
+    cursor: default;
+    font-family: Arial;
+    font-size: 12px;
+    background: @MobileDesignerContainersHeaderColor;
+    width: 380px;
+    text-align: center;
+    padding: 3px 0 3px 0;
+    border: 0px;
+    border-right : 1px dotted @MobileDesignerContainersBorderColor;
+    white-space: nowrap;
+}
+
+.wizardFormTotalsHeaderFunction {
+	color: @MobileDesignerContainersHeaderFontColor;
+    cursor: default;
+    font-family: Arial;
+    font-size: 12px;
+    background: @MobileDesignerContainersHeaderColor;    
+    text-align: center;
+    border: 0px;
+    padding: 3px 0 3px 0;
+    white-space: nowrap;
+}
+
+.wizardFormTotalsCellColumn {
+	color: @MobileDesignerFontColor;
+    cursor: default;
+    font-family: Arial;
+    font-size: 12px;
+    border: 0px;    
+    margin: 0px;
+    border-bottom : 1px solid @MobileDesignerContainersBorderColor;
+    padding: 0px;
+    white-space: nowrap;
+}
+
+.wizardFormTotalsDivColumn {	
+    width: 380px;
+    overflow: hidden;
+    padding: 6px;
+    white-space: nowrap;
+}
+
+.wizardFormTotalsCellFunction {
+	color: @MobileDesignerFontColor;
+    cursor: default;
+    font-family: Arial;
+    font-size: 12px;    
+    border: 0px;
+    margin: 0px;	
+    border-left : 1px solid @MobileDesignerContainersBorderColor;
+    padding: 0 6px 0 6px;
+    border-bottom : 1px solid @MobileDesignerContainersBorderColor;
+}
+
+/* Themes */
+.wizardFormThemesTableSeparator {
+	border-bottom: 1px dotted @MobileDesignerFormSeparatorColor;
+	height: 1px;	
+}
+
+/* Step Items */
+
+.wizardFormStepItem {
+	color: @MobileDesignerFontColor;
+    cursor: default;
+    font-family: Arial;
+    font-size: 12px;
+    padding: 7px 40px 7px 10px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.wizardFormStepItemSelected {
+	background: @MobileDesignerFileMenuBackgroundColor;
+	color: @MobileDesignerFileMenuFontColor;
+    cursor: default;
+    font-family: Arial;
+    font-size: 12px;
+    padding: 7px 40px 7px 10px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.wizardFormSeparator {
+	border-bottom: 1px dotted @MobileDesignerFormSeparatorColor;
+	margin: 2px 3px 2px 3px;
+	padding: 6px;
+	color: @MobileDesignerFormHeaderFontColor;
+    cursor: default;
+    font-family: Arial;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.wizardFormHintText{
+	white-space: normal;
+    line-height: 1.5;
+	border: 0px;
+	font-family: Arial;
+    font-size: 12px;
+    color: @MobileDesignerDragAndDropContainerHintText;
+    opacity: 0.6;
+    position: absolute;
+}
+
+.wizardStepPanel {
+    width: 100%;
+    height: 410px;
+    overflow-y: auto;
+}
+
+.wizardStepCaption {
+    background: @MobileDesignerFileMenuItemOverBackgroundColor;
+    font: bold 12px Arial;
+    color: white;
+    padding-left: 30px;
+    height: 2.5em;
+    line-height: 2.5em;
+}
+
+.wizardMappingText {
+    font: bold 12px Arial;
+    text-align: right;
+    padding: 8px;
+}
+
+.wizardLablesText {
+    font: 12px Arial;
+    text-align: left;
+    padding: 8px;
+}
+
+/** SVG **/
+.wizardStepEllipse {
+    fill: @MobileDesignerFileMenuItemOverBackgroundColor;
+}
+
+.wizardStepEllipseChecked {
+    fill: @MobileDesignerFileMenuItemSelectedBackgroundColor;
+}
+
+.wizardStepEllipseInactive {
+    fill: #ebebeb;
+}
+
+.wizardStepNumber {
+    text-anchor: middle;
+    font: bold 14px Arial;
+}
+
+.wizardStepText {
+    fill: @MobileDesignerFileMenuItemOverBackgroundColor;
+    text-anchor: middle;
+    font: bold 12px Arial;
+}
+
+.wizardStepTextChecked {
+    fill: @MobileDesignerFileMenuItemSelectedBackgroundColor;
+    text-anchor: middle;
+    font: bold 12px Arial;
+}
+
+.wizardStepTextInactive {
+    fill: #898989;
+    text-anchor: middle;
+    font: bold 12px Arial;
+}
+
+.wizardStepLine {
+    stroke: @MobileDesignerFileMenuItemOverBackgroundColor;
+}
+
+.wizardStepLineCheked {
+    stroke: @MobileDesignerFileMenuItemSelectedBackgroundColor;
+}
+
+.wizardStepLineInactive {
+    stroke: #ebebeb;
+}

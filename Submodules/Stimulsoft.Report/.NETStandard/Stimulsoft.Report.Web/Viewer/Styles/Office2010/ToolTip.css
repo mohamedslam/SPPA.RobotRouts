@@ -1,0 +1,29 @@
+
+.stiJsViewerToolTip {    
+    position: absolute;
+	border: 1px solid @JsViewerMainPanelsBorderColor;
+	background: @JsViewerTooltipBackgroundColor;
+	-moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;	
+    cursor: default;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;    
+    -ms-user-select: none;
+    z-index: 50;
+    max-width: 250px;
+    -moz-box-shadow: 0px 0px 7px rgba(0,0,0,0.6); 
+    -webkit-box-shadow: 0px 0px 7px rgba(0,0,0,0.6);
+    box-shadow: 0 0 7px rgba(0,0,0,0.3);
+}
+
+.stiJsViewerToolTipTextCell {    
+    font-size: 12px;
+    font-family: Arial;
+	color: #444444;
+	padding: 10px;
+	border: 0;
+	border-bottom:1px solid @JsViewerMainPanelsBorderColor;
+	white-space: normal;
+}

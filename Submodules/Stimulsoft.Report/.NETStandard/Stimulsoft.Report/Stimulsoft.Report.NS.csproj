@@ -1,0 +1,93 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <AssemblyName>Stimulsoft.Report</AssemblyName>
+    <RootNamespace>Stimulsoft.Report</RootNamespace>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Stimulsoft.snk</AssemblyOriginatorKeyFile>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <DebugSymbols>true</DebugSymbols>
+    <GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
+    <Configurations>Release;Debug</Configurations>
+  </PropertyGroup>
+  
+  <PropertyGroup>
+    <DefineConstants>TRACE;NETSTANDARD;STIDRAWING</DefineConstants>
+    <DefineConstants Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">$(DefineConstants);DEBUG</DefineConstants>
+    <DefineConstants Condition="$(SolutionName.Contains('.STIDRAWING'))">$(DefineConstants);STIDRAWING</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Help\StiHelpViewerForm.cs" />
+    <Compile Remove="Help\StiHelpViewerForm.Designer.cs" />
+    <EmbeddedResource Remove="Help\StiHelpViewerForm.resx" />
+    <Compile Remove="StiLoadPasswordForm.cs" />
+    <Compile Remove="StiLoadPasswordForm.Designer.cs" />
+    <EmbeddedResource Remove="StiLoadPasswordForm.resx" />
+    <Compile Remove="StiSavePasswordForm.cs" />
+    <Compile Remove="StiSavePasswordForm.Designer.cs" />
+    <EmbeddedResource Remove="StiSavePasswordForm.resx" />
+    <Compile Remove="PropertyGrid\StiPropertyGridPropertyCollection.cs" />
+    <Compile Remove="PropertyGrid\StiPropertiesTab.cs" />
+    <Compile Remove="PropertyGrid\StiDataBindingPropertyDescriptor.cs" />
+    <Compile Remove="PropertyGrid\StiCategoryIndexHelper.cs" />
+    <Compile Remove="PropertyGrid\StiServicesTab.cs" />
+    <Compile Remove="Dialogs\StiWinDialogsProvider.cs" />
+    <Compile Remove="Controls\StiLookUpBox.cs" />
+    <Compile Remove="PropertyGrid\StiPropertyGrid.cs" />
+    <Compile Remove="Options\Designer\Properties.cs" />
+    <Compile Remove="Options\Wpf.cs" />
+    <Compile Remove="Dashboard\Helpers\StiTablePartDrawer.cs" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <None Remove="System.Threading" />
+    <None Remove="System.Threading.Thread" />
+    <None Remove="System.Globalization" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Bmp\**" />
+    <EmbeddedResource Include="Components\Indicators\Images\*.png" />
+    <EmbeddedResource Include="Cursors\*.cur" />
+    <EmbeddedResource Include="Dialogs\Bmp\*.gif" />
+    <EmbeddedResource Include="Dictionary\Functions\*.xml" />
+    <EmbeddedResource Include="Dictionary\Toolbox\*.bmp" />
+    <EmbeddedResource Include="Export\Dtree\**" />
+    <EmbeddedResource Include="Export\Services\Htmls\ChartScripts\stianimation.js" />
+    <EmbeddedResource Include="Images\**\*.png" />
+    <EmbeddedResource Include="Images\**\*.bmp" />
+    <EmbeddedResource Include="Images\**\*.jpg" />
+    <EmbeddedResource Include="Labels\Labels.data" />
+    <EmbeddedResource Include="Resources\**\*.png" />
+    <EmbeddedResource Include="Toolbox\*.bmp" />
+    <EmbeddedResource Include="app.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.0.1" />
+    <PackageReference Include="Microsoft.CodeAnalysis.Common" Version="4.4.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.4.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.VisualBasic" Version="4.4.0" />
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageReference Include="System.CodeDom" Version="6.0.0" />
+    <PackageReference Include="System.Data.Odbc" Version="6.0.1" />
+    <PackageReference Include="System.Data.OleDb" Version="6.0.0" />
+    <PackageReference Include="System.Resources.Extensions" Version="6.0.0" />
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="6.0.0" />
+    <PackageReference Include="System.Threading" Version="4.3.0" />
+    <PackageReference Include="System.Threading.Thread" Version="4.3.0" />
+    <PackageReference Include="System.Globalization" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Stimulsoft.Drawing\Stimulsoft.Drawing.NS.csproj" />
+    <ProjectReference Include="..\Stimulsoft.Base\Stimulsoft.Base.NS.csproj" />
+    <ProjectReference Include="..\Stimulsoft.Data\Stimulsoft.Data.NS.csproj" />
+  </ItemGroup>
+</Project>

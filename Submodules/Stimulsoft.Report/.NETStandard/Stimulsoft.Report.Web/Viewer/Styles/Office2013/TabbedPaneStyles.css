@@ -1,0 +1,56 @@
+
+.stiJsViewerTabbedPane {
+}
+
+.stiJsViewerTabsPanel {
+}
+
+.stiJsViewerTabbedPaneContainer {
+}
+
+.stiJsViewerTabbedPanePanel {
+}
+
+.stiJsViewerStandartTabFooter {
+    background: @JsViewerButtonThemeBackgroundColor;
+}
+
+.stiJsViewerStandartTab {
+    white-space: nowrap;
+    cursor: default;
+    font-family: Arial;
+    font-size: 12px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+.stiJsViewerStandartTab_Mouse {
+}
+
+.stiJsViewerStandartTab_Touch {
+}
+
+.stiJsViewerStandartTabDefault {
+    background: transparent;
+    border: 1px solid transparent;
+    color: @JsViewerControlsFontColor;
+}
+
+.stiJsViewerStandartTabOver {
+    color: @JsViewerControlsFontColor;
+    background: @JsViewerButtonOverBackgroundColor;
+    border: 1px solid @JsViewerButtonOverBackgroundColor;
+}
+
+.stiJsViewerStandartTabSelected {
+    color: @JsViewerControlsFontColor;
+    background: @JsViewerButtonSelectedBackgroundColor;
+    border: 1px solid @JsViewerButtonSelectedBackgroundColor;
+}
+
+.stiJsViewerStandartTabDisabled {
+    background: transparent;
+    border: 1px solid transparent;
+    color: @JsViewerControlsFontDisabledColor;
+}

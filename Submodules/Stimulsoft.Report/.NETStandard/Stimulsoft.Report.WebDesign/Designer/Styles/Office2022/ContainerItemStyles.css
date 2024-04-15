@@ -1,0 +1,40 @@
+
+.stiDesignerContainerItem {
+    border-radius: 3px;
+    display: inline-block;
+    height: 38px;
+    cursor: default;
+    font-family: Arial;
+    font-size: 12px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+.stiDesignerContainerItem_Mouse {    
+}
+
+.stiDesignerContainerItem_Touch {
+}
+
+.stiDesignerContainerItemDefault {
+    color: @MobileDesignerFontColor;
+    border: 1px solid @MobileDesignerControlsBorderColor;
+}
+
+.stiDesignerContainerItemOver {
+	color: @MobileDesignerFontColor;
+    border: 1px solid @MobileDesignerControlsOverBorderColor;
+	background: @MobileDesignerControlsOverBackgroundColor;
+}
+
+.stiDesignerContainerItemSelected {
+	color: @MobileDesignerFontColor;
+    border: 1px solid @MobileDesignerControlsSelectedBorderColor;
+	background: @MobileDesignerControlsSelectedBackgroundColor;
+}
+
+.stiDesignerContainerItemDisabled {
+	border: 1px solid @MobileDesignerControlsDisabledBorderColor;
+    color: @MobileDesignerFontDisabledColor;
+}

@@ -1,0 +1,46 @@
+
+.stiJsViewerDatePickerSeparator {    
+	border-top: 1px solid @JsViewerMainPanelsBorderColor;   
+}
+
+.stiJsViewerDatePickerDayOfWeekCell {    
+	white-space: nowrap;
+    cursor: default;
+    font-size: 12px;
+	padding: 3px;
+	text-align: center;
+	font-weight: bold;
+	border: 0 none;
+	border-bottom: 1px solid @JsViewerMainPanelsBorderColor;
+}
+
+/* Mouse */
+.stiJsViewerDatePickerDayButton {
+    cursor: default;
+    font-size: 12px;
+    border: 1px solid @JsViewerButtonBorderColor;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.stiJsViewerDatePickerDayButtonDefault {
+    background: @JsViewerButtonBackgroundColor;
+}
+
+.stiJsViewerDatePickerDayButtonOver {
+    background:  @JsViewerMenuItemOverBackgroundDownColor;
+    border: 1px solid @JsViewerMenuItemOverBackgroundDownColor;
+    color: #ffffff;
+}
+
+.stiJsViewerDatePickerDayButtonSelected {
+    background:  @JsViewerMenuItemSelectedBackgroundDownColor;
+    border: 1px solid @JsViewerMenuItemSelectedBackgroundDownColor;
+    color: #ffffff;
+}
+
+.stiJsViewerDatePickerDayButtonDisabled {
+    color: @JsViewerControlsFontDisabledColor;
+}

@@ -1,0 +1,39 @@
+
+.stiDesignerStandartSmallButton {
+    cursor: default;
+    font-family: Arial;
+    font-size: 12px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+.stiDesignerStandartSmallButton_Mouse {
+    height: 24px;
+}
+
+.stiDesignerStandartSmallButton_Touch {
+    height: 28px;
+}
+
+.stiDesignerStandartSmallButtonDefault {
+    color: @MobileDesignerFontColor;
+    border: 1px solid transparent;
+}
+
+.stiDesignerStandartSmallButtonOver {
+    color: @MobileDesignerFontColor;
+    background: @MobileDesignerButtonOverBackgroundColor;
+    border: 1px solid @MobileDesignerButtonOverBackgroundColor;
+}
+
+.stiDesignerStandartSmallButtonSelected {
+    color: @MobileDesignerFontColor;
+    background: @MobileDesignerButtonSelectedBackgroundColor;
+    border: 1px solid @MobileDesignerButtonSelectedBackgroundColor;
+}
+
+.stiDesignerStandartSmallButtonDisabled {
+    color: @MobileDesignerFontDisabledColor;
+    border: 1px solid transparent;
+}

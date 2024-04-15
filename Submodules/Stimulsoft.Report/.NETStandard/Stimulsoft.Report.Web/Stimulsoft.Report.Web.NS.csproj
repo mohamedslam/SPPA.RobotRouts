@@ -1,0 +1,54 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <AssemblyName>Stimulsoft.Report.Web</AssemblyName>
+    <RootNamespace>Stimulsoft.Report.Web</RootNamespace>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Stimulsoft.snk</AssemblyOriginatorKeyFile>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <DebugSymbols>true</DebugSymbols>
+    <Configurations>Release;Debug</Configurations>
+  </PropertyGroup>
+  
+  <PropertyGroup>
+    <DefineConstants>TRACE;NETSTANDARD;STIDRAWING</DefineConstants>
+    <DefineConstants Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">$(DefineConstants);DEBUG</DefineConstants>
+    <DefineConstants Condition="$(SolutionName.Contains('.STIDRAWING'))">$(DefineConstants);STIDRAWING</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Viewer\Images\**" />
+    <None Remove="Viewer\Scripts\**" />
+    <None Remove="Viewer\Styles\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Viewer\*.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Viewer\Images\**" />
+    <EmbeddedResource Include="Viewer\Scripts\**" />
+    <EmbeddedResource Include="Viewer\Styles\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Condition="$(SolutionName.Contains('.STIDRAWING'))" Include="..\Stimulsoft.Drawing\Stimulsoft.Drawing.NS.csproj" />
+    <ProjectReference Include="..\Stimulsoft.Base\Stimulsoft.Base.NS.csproj" />
+    <ProjectReference Include="..\Stimulsoft.Data\Stimulsoft.Data.NS.csproj" />
+    <ProjectReference Include="..\Stimulsoft.Map\Stimulsoft.Map.NS.csproj" />
+    <ProjectReference Include="..\Stimulsoft.Report\Stimulsoft.Report.NS.csproj" />
+    <ProjectReference Include="..\Stimulsoft.System.Web\Stimulsoft.System.Web.csproj" />
+    <ProjectReference Include="..\Stimulsoft.System\Stimulsoft.System.NS.csproj" />
+  </ItemGroup>
+
+</Project>

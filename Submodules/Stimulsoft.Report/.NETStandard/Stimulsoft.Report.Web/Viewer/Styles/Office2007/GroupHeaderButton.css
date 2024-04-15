@@ -1,0 +1,40 @@
+
+
+.stiJsViewerGroupHeaderButton {
+    height: 23px;
+    cursor: default;
+    font-size: 12px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.stiJsViewerGroupHeaderButtonDefault {
+    background: @JsViewerControlsBackgroundColor;
+    border: 1px solid @JsViewerControlsBorderColor;
+}
+
+.stiJsViewerGroupHeaderButtonOver {
+    border: 1px solid @JsViewerButtonOverBorderColor;
+    background: @JsViewerButtonOverBackgroundDownColor;
+    background: -moz-linear-gradient(top, @JsViewerButtonOverBackgroundUpColor, @JsViewerButtonOverBackgroundMiddleColor 30%, @JsViewerButtonOverBackgroundDownColor 30%, @JsViewerButtonOverBackgroundUpColor); /* Firefox 3.6+ */
+    background: -webkit-gradient(linear, top, bottom, color-stop(0%,@JsViewerButtonOverBackgroundUpColor), color-stop(30%,@JsViewerButtonOverBackgroundMiddleColor), color-stop(30%,@JsViewerButtonOverBackgroundDownColor), color-stop(100%,@JsViewerButtonOverBackgroundUpColor)); /* Chrome 10+, Safari 5.1+ */
+    background: -webkit-linear-gradient(top, @JsViewerButtonOverBackgroundUpColor, @JsViewerButtonOverBackgroundMiddleColor 30%, @JsViewerButtonOverBackgroundDownColor 30%, @JsViewerButtonOverBackgroundUpColor);
+    background: -o-linear-gradient(top, @JsViewerButtonOverBackgroundUpColor, @JsViewerButtonOverBackgroundMiddleColor 30%, @JsViewerButtonOverBackgroundDownColor 30%, @JsViewerButtonOverBackgroundUpColor); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, @JsViewerButtonOverBackgroundUpColor, @JsViewerButtonOverBackgroundMiddleColor 30%, @JsViewerButtonOverBackgroundDownColor 30%, @JsViewerButtonOverBackgroundUpColor); /* IE10 */
+    background: linear-gradient(top, @JsViewerButtonOverBackgroundUpColor, @JsViewerButtonOverBackgroundMiddleColor 30%, @JsViewerButtonOverBackgroundDownColor 30%, @JsViewerButtonOverBackgroundUpColor); /* CSS3 */
+}
+
+.stiJsViewerGroupHeaderButtonSelected {
+    border: 1px solid @JsViewerButtonSelectedBorderColor;
+    background: @JsViewerButtonSelectedBackgroundColor;
+}
+
+.stiJsViewerGroupHeaderButtonDisabled {
+    background: @JsViewerButtonDisabledBackgroundColor;
+    border: 1px solid @JsViewerControlsDisabledBorderColor;
+}

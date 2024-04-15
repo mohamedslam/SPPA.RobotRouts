@@ -1,0 +1,836 @@
+﻿{
+    "Statistics": [
+        {
+            "ID": "2",
+            "Continent": "Asia",
+            "Country": "Afghanistan",
+            "Population": 29000000,
+            "Users": 1160000,
+            "Percent": 0.04
+        },
+        {
+            "ID": "5",
+            "Continent": "Europe",
+            "Country": "Albania",
+            "Population": 2980000,
+            "Users": 1340000,
+            "Percent": 0.46
+        },
+        {
+            "ID": "4",
+            "Continent": "Africa",
+            "Country": "Algeria",
+            "Population": 34560000,
+            "Users": 4320000,
+            "Percent": 0.14
+        },
+        {
+            "ID": "4",
+            "Continent": "Africa",
+            "Country": "Angola",
+            "Population": 17000000,
+            "Users": 1700000,
+            "Percent": 0.11
+        },
+        {
+            "ID": "3",
+            "Continent": "America",
+            "Country": "Argentina",
+            "Population": 41360000,
+            "Users": 14890000,
+            "Percent": 0.37
+        },
+        {
+            "ID": "2",
+            "Continent": "Asia",
+            "Country": "Armenia",
+            "Population": 2950000,
+            "Users": 1090000,
+            "Percent": 0.38
+        },
+        {
+            "ID": "1",
+            "Continent": "Australia",
+            "Country": "Australia",
+            "Population": 21510000,
+            "Users": 16350000,
+            "Percent": 0.77
+        },
+        {
+            "ID": "5",
+            "Continent": "Europe",
+            "Country": "Austria",
+            "Population": 8210000,
+            "Users": 5970000,
+            "Percent": 0.74
+        },
+        {
+            "ID": "2",
+            "Continent": "Asia",
+            "Country": "Azerbaijan",
+            "Population": 9310000,
+            "Users": 3350000,
+            "Percent": 0.37
+        },
+        {
+            "ID": "2",
+            "Continent": "Asia",
+            "Country": "Bangladesh",
+            "Population": 156320000,
+            "Users": 5780000,
+            "Percent": 0.05
+        },
+        {
+            "ID": "5",
+            "Continent": "Europe",
+            "Country": "Belarus",
+            "Population": 8250000,
+            "Users": 3300000,
+            "Percent": 0.41
+        },
+        {
+            "ID": "5",
+            "Continent": "Europe",
+            "Country": "Belgium",
+            "Population": 10420000,
+            "Users": 8360000,
+            "Percent": 0.81
+        },
+        {
+            "ID": "3",
+            "Continent": "America",
+            "Country": "Bolivia",
+            "Population": 9950000,
+            "Users": 1990000,
+            "Percent": 0.21
+        },
+        {
+            "ID": "5",
+            "Continent": "Europe",
+            "Country": "Bosnia And Herzegovina",
+            "Population": 4620000,
+            "Users": 2400000,
+            "Percent": 0.53
+        },
+        {
+            "ID": "3",
+            "Continent": "America",
+            "Country": "Brazil",
+            "Population": 194000000,
+            "Users": 87300000,
+            "Percent": 0.46
+        },
+        {
+            "ID": "5",
+            "Continent": "Europe",
+            "Country": "Bulgaria",
+            "Population": 7160000,
+            "Users": 3310000,
+            "Percent": 0.47
+        },
+        {
+            "ID": "3",
+            "Continent": "America",
+            "Country": "Canada",
+            "Population": 33160000,
+            "Users": 27550000,
+            "Percent": 0.84
+        },
+        {
+            "ID": "3",
+            "Continent": "America",
+            "Country": "Chile",
+            "Population": 16760000,
+            "Users": 7540000,
+            "Percent": 0.46
+        },
+        {
+            "ID": "2",
+            "Continent": "Asia",
+            "Country": "China",
+            "Population": 1341560000,
+            "Users": 538000000,
+            "Percent": 0.41
+        },
+        {
+            "ID": "3",
+            "Continent": "America",
+            "Country": "Colombia",
+            "Population": 44220000,
+            "Users": 16140000,
+            "Percent": 0.37
+        },
+        {
+            "ID": "3",
+            "Continent": "America",
+            "Country": "Costa Rica",
+            "Population": 4520000,
+            "Users": 1650000,
+            "Percent": 0.38
+        },
+        {
+            "ID": "5",
+            "Continent": "Europe",
+            "Country": "Croatia",
+            "Population": 4490000,
+            "Users": 2700000,
+            "Percent": 0.61
+        },
+        {
+            "ID": "3",
+            "Continent": "America",
+            "Country": "Cuba",
+            "Population": 11110000,
+            "Users": 1680000,
+            "Percent": 0.16
+        },
+        {
+            "ID": "5",
+            "Continent": "Europe",
+            "Country": "Czech Republic",
+            "Population": 10200000,
+            "Users": 7020000,
+            "Percent": 0.70
+        },
+        {
+            "ID": "5",
+            "Continent": "Europe",
+            "Country": "Denmark",
+            "Population": 5510000,
+            "Users": 4890000,
+            "Percent": 0.90
+        },
+        {
+            "ID": "3",
+            "Continent": "America",
+            "Country": "Dominican Republic",
+            "Population": 9820000,
+            "Users": 3880000,
+            "Percent": 0.41
+        },
+        {
+            "ID": "3",
+            "Continent": "America",
+            "Country": "Ecuador",
+            "Population": 14750000,
+            "Users": 3540000,
+            "Percent": 0.25
+        },
+        {
+            "ID": "4",
+            "Continent": "Africa",
+            "Country": "Egypt",
+            "Population": 80460000,
+            "Users": 21520000,
+            "Percent": 0.28
+        },
+        {
+            "ID": "5",
+            "Continent": "Europe",
+            "Country": "Estonia",
+            "Population": 1320000,
+            "Users": 1200000,
+            "Percent": 0.92
+        },
+        {
+            "ID": "5",
+            "Continent": "Europe",
+            "Country": "Finland",
+            "Population": 5260000,
+            "Users": 4570000,
+            "Percent": 0.88
+        },
+        {
+            "ID": "5",
+            "Continent": "Europe",
+            "Country": "France",
+            "Population": 65260000,
+            "Users": 52230000,
+            "Percent": 0.81
+        },
+        {
+            "ID": "2",
+            "Continent": "Asia",
+            "Country": "Georgia",
+            "Population": 4590000,
+            "Users": 1240000,
+            "Percent": 0.28
+        },
+        {
+            "ID": "5",
+            "Continent": "Europe",
+            "Country": "Germany",
+            "Population": 81330000,
+            "Users": 67500000,
+            "Percent": 0.84
+        },
+        {
+            "ID": "4",
+            "Continent": "Africa",
+            "Country": "Ghana",
+            "Population": 24560000,
+            "Users": 2100000,
+            "Percent": 0.10
+        },
+        {
+            "ID": "5",
+            "Continent": "Europe",
+            "Country": "Greece",
+            "Population": 10740000,
+            "Users": 4770000,
+            "Percent": 0.45
+        },
+        {
+            "ID": "3",
+            "Continent": "America",
+            "Country": "Guatemala",
+            "Population": 13520000,
+            "Users": 1420000,
+            "Percent": 0.12
+        },
+        {
+            "ID": "2",
+            "Continent": "Asia",
+            "Country": "Hong Kong",
+            "Population": 7090000,
+            "Users": 4920000,
+            "Percent": 0.70
+        },
+        {
+            "ID": "5",
+            "Continent": "Europe",
+            "Country": "Hungary",
+            "Population": 9980000,
+            "Users": 6520000,
+            "Percent": 0.66
+        },
+        {
+            "ID": "2",
+            "Continent": "Asia",
+            "Country": "India",
+            "Population": 1201760000,
+            "Users": 137000000,
+            "Percent": 0.12
+        },
+        {
+            "ID": "2",
+            "Continent": "Asia",
+            "Country": "Indonesia",
+            "Population": 248870000,
+            "Users": 55000000,
+            "Percent": 0.23
+        },
+        {
+            "ID": "2",
+            "Continent": "Asia",
+            "Country": "Iran",
+            "Population": 76920000,
+            "Users": 10000000,
+            "Percent": 0.14
+        },
+        {
+            "ID": "2",
+            "Continent": "Asia",
+            "Country": "Iraq",
+            "Population": 29940000,
+            "Users": 1660000,
+            "Percent": 0.08
+        },
+        {
+            "ID": "5",
+            "Continent": "Europe",
+            "Country": "Ireland",
+            "Population": 4620000,
+            "Users": 3230000,
+            "Percent": 0.71
+        },
+        {
+            "ID": "2",
+            "Continent": "Asia",
+            "Country": "Israel",
+            "Population": 7350000,
+            "Users": 4940000,
+            "Percent": 0.68
+        },
+        {
+            "ID": "5",
+            "Continent": "Europe",
+            "Country": "Italy",
+            "Population": 60750000,
+            "Users": 32610000,
+            "Percent": 0.55
+        },
+        {
+            "ID": "2",
+            "Continent": "Asia",
+            "Country": "Japan",
+            "Population": 127360000,
+            "Users": 101230000,
+            "Percent": 0.80
+        },
+        {
+            "ID": "2",
+            "Continent": "Asia",
+            "Country": "Jordan",
+            "Population": 6390000,
+            "Users": 2430000,
+            "Percent": 0.39
+        },
+        {
+            "ID": "2",
+            "Continent": "Asia",
+            "Country": "Kazakhstan",
+            "Population": 17020000,
+            "Users": 10010000,
+            "Percent": 0.60
+        },
+        {
+            "ID": "4",
+            "Continent": "Africa",
+            "Country": "Kenya",
+            "Population": 40860000,
+            "Users": 8570000,
+            "Percent": 0.22
+        },
+        {
+            "ID": "2",
+            "Continent": "Asia",
+            "Country": "Korea",
+            "Population": 48640000,
+            "Users": 40710000,
+            "Percent": 0.85
+        },
+        {
+            "ID": "2",
+            "Continent": "Asia",
+            "Country": "Kyrgyzstan",
+            "Population": 5500000,
+            "Users": 1100000,
+            "Percent": 0.21
+        },
+        {
+            "ID": "5",
+            "Continent": "Europe",
+            "Country": "Latvia",
+            "Population": 2220000,
+            "Users": 1520000,
+            "Percent": 0.69
+        },
+        {
+            "ID": "2",
+            "Continent": "Asia",
+            "Country": "Lebanon",
+            "Population": 4130000,
+            "Users": 1280000,
+            "Percent": 0.32
+        },
+        {
+            "ID": "5",
+            "Continent": "Europe",
+            "Country": "Lithuania",
+            "Population": 3540000,
+            "Users": 2200000,
+            "Percent": 0.63
+        },
+        {
+            "ID": "5",
+            "Continent": "Europe",
+            "Country": "Macedonia",
+            "Population": 2060000,
+            "Users": 1070000,
+            "Percent": 0.53
+        },
+        {
+            "ID": "2",
+            "Continent": "Asia",
+            "Country": "Malaysia",
+            "Population": 28280000,
+            "Users": 15640000,
+            "Percent": 0.56
+        },
+        {
+            "ID": "3",
+            "Continent": "America",
+            "Country": "Mexico",
+            "Population": 112480000,
+            "Users": 34480000,
+            "Percent": 0.32
+        },
+        {
+            "ID": "5",
+            "Continent": "Europe",
+            "Country": "Moldavia",
+            "Population": 3740000,
+            "Users": 1490000,
+            "Percent": 0.41
+        },
+        {
+            "ID": "4",
+            "Continent": "Africa",
+            "Country": "Morocco",
+            "Population": 31630000,
+            "Users": 15500000,
+            "Percent": 0.50
+        },
+        {
+            "ID": "2",
+            "Continent": "Asia",
+            "Country": "Nepal",
+            "Population": 28910000,
+            "Users": 1960000,
+            "Percent": 0.09
+        },
+        {
+            "ID": "5",
+            "Continent": "Europe",
+            "Country": "Netherlands",
+            "Population": 16580000,
+            "Users": 15040000,
+            "Percent": 0.92
+        },
+        {
+            "ID": "5",
+            "Continent": "Europe",
+            "Country": "New Zealand",
+            "Population": 4250000,
+            "Users": 3530000,
+            "Percent": 0.84
+        },
+        {
+            "ID": "4",
+            "Continent": "Africa",
+            "Country": "Nigeria",
+            "Population": 170320000,
+            "Users": 48370000,
+            "Percent": 0.29
+        },
+        {
+            "ID": "5",
+            "Continent": "Europe",
+            "Country": "Norway",
+            "Population": 4680000,
+            "Users": 4370000,
+            "Percent": 0.94
+        },
+        {
+            "ID": "2",
+            "Continent": "Asia",
+            "Country": "Oman",
+            "Population": 2980000,
+            "Users": 1860000,
+            "Percent": 0.63
+        },
+        {
+            "ID": "2",
+            "Continent": "Asia",
+            "Country": "Pakistan",
+            "Population": 184390000,
+            "Users": 30940000,
+            "Percent": 0.18
+        },
+        {
+            "ID": "3",
+            "Continent": "America",
+            "Country": "Panama",
+            "Population": 3420000,
+            "Users": 1460000,
+            "Percent": 0.44
+        },
+        {
+            "ID": "3",
+            "Continent": "America",
+            "Country": "Paraguay",
+            "Population": 6400000,
+            "Users": 1510000,
+            "Percent": 0.25
+        },
+        {
+            "ID": "3",
+            "Continent": "America",
+            "Country": "Peru",
+            "Population": 28950000,
+            "Users": 9930000,
+            "Percent": 0.35
+        },
+        {
+            "ID": "2",
+            "Continent": "Asia",
+            "Country": "Philippines",
+            "Population": 99920000,
+            "Users": 24960000,
+            "Percent": 0.26
+        },
+        {
+            "ID": "5",
+            "Continent": "Europe",
+            "Country": "Poland",
+            "Population": 38450000,
+            "Users": 23970000,
+            "Percent": 0.63
+        },
+        {
+            "ID": "5",
+            "Continent": "Europe",
+            "Country": "Portugal",
+            "Population": 10740000,
+            "Users": 5490000,
+            "Percent": 0.52
+        },
+        {
+            "ID": "3",
+            "Continent": "America",
+            "Country": "Puerto-Rico",
+            "Population": 3980000,
+            "Users": 1800000,
+            "Percent": 0.46
+        },
+        {
+            "ID": "2",
+            "Continent": "Asia",
+            "Country": "Qatar",
+            "Population": 1720000,
+            "Users": 1190000,
+            "Percent": 0.70
+        },
+        {
+            "ID": "5",
+            "Continent": "Europe",
+            "Country": "Romania",
+            "Population": 21960000,
+            "Users": 8770000,
+            "Percent": 0.41
+        },
+        {
+            "ID": "5",
+            "Continent": "Europe",
+            "Country": "Russia",
+            "Population": 146390000,
+            "Users": 121500000,
+            "Percent": 0.84
+        },
+        {
+            "ID": "2",
+            "Continent": "Asia",
+            "Country": "Saudi Arabia",
+            "Population": 25730000,
+            "Users": 10550000,
+            "Percent": 0.42
+        },
+        {
+            "ID": "4",
+            "Continent": "Africa",
+            "Country": "Senegal",
+            "Population": 12310000,
+            "Users": 1970000,
+            "Percent": 0.17
+        },
+        {
+            "ID": "5",
+            "Continent": "Europe",
+            "Country": "Serbia",
+            "Population": 7360000,
+            "Users": 3010000,
+            "Percent": 0.42
+        },
+        {
+            "ID": "2",
+            "Continent": "Asia",
+            "Country": "Singapore",
+            "Population": 5130000,
+            "Users": 3590000,
+            "Percent": 0.71
+        },
+        {
+            "ID": "5",
+            "Continent": "Europe",
+            "Country": "Slovakia",
+            "Population": 5480000,
+            "Users": 4350000,
+            "Percent": 0.80
+        },
+        {
+            "ID": "5",
+            "Continent": "Europe",
+            "Country": "Slovenia",
+            "Population": 2000000,
+            "Users": 1400000,
+            "Percent": 0.71
+        },
+        {
+            "ID": "4",
+            "Continent": "Africa",
+            "Country": "South Africa",
+            "Population": 49190000,
+            "Users": 6050000,
+            "Percent": 0.13
+        },
+        {
+            "ID": "5",
+            "Continent": "Europe",
+            "Country": "Spain",
+            "Population": 46510000,
+            "Users": 30940000,
+            "Percent": 0.68
+        },
+        {
+            "ID": "2",
+            "Continent": "Asia",
+            "Country": "Sri Lanka",
+            "Population": 21080000,
+            "Users": 2530000,
+            "Percent": 0.13
+        },
+        {
+            "ID": "5",
+            "Continent": "Europe",
+            "Country": "Sweden",
+            "Population": 9080000,
+            "Users": 8170000,
+            "Percent": 0.91
+        },
+        {
+            "ID": "5",
+            "Continent": "Europe",
+            "Country": "Switzerland",
+            "Population": 7630000,
+            "Users": 6400000,
+            "Percent": 0.85
+        },
+        {
+            "ID": "2",
+            "Continent": "Asia",
+            "Country": "Syria",
+            "Population": 22170000,
+            "Users": 4590000,
+            "Percent": 0.22
+        },
+        {
+            "ID": "2",
+            "Continent": "Asia",
+            "Country": "Taiwan",
+            "Population": 23020000,
+            "Users": 16460000,
+            "Percent": 0.73
+        },
+        {
+            "ID": "4",
+            "Continent": "Africa",
+            "Country": "Tanzania",
+            "Population": 41820000,
+            "Users": 4600000,
+            "Percent": 0.12
+        },
+        {
+            "ID": "2",
+            "Continent": "Asia",
+            "Country": "Thailand",
+            "Population": 66320000,
+            "Users": 14060000,
+            "Percent": 0.22
+        },
+        {
+            "ID": "4",
+            "Continent": "Africa",
+            "Country": "Tunisia",
+            "Population": 10530000,
+            "Users": 3870000,
+            "Percent": 0.38
+        },
+        {
+            "ID": "2",
+            "Continent": "Asia",
+            "Country": "Turkey",
+            "Population": 77800000,
+            "Users": 30980000,
+            "Percent": 0.41
+        },
+        {
+            "ID": "2",
+            "Continent": "Asia",
+            "Country": "UAE",
+            "Population": 4970000,
+            "Users": 3880000,
+            "Percent": 0.79
+        },
+        {
+            "ID": "4",
+            "Continent": "Africa",
+            "Country": "Uganda",
+            "Population": 33440000,
+            "Users": 4180000,
+            "Percent": 0.14
+        },
+        {
+            "ID": "5",
+            "Continent": "Europe",
+            "Country": "Ukraine",
+            "Population": 45030000,
+            "Users": 15010000,
+            "Percent": 0.34
+        },
+        {
+            "ID": "3",
+            "Continent": "America",
+            "Country": "United States",
+            "Population": 313960000,
+            "Users": 245200000,
+            "Percent": 0.79
+        },
+        {
+            "ID": "5",
+            "Continent": "Europe",
+            "Country": "United Kingdom",
+            "Population": 62340000,
+            "Users": 52590000,
+            "Percent": 0.85
+        },
+        {
+            "ID": "3",
+            "Continent": "America",
+            "Country": "Uruguay",
+            "Population": 3300000,
+            "Users": 1430000,
+            "Percent": 0.44
+        },
+        {
+            "ID": "2",
+            "Continent": "Asia",
+            "Country": "Uzbekistan",
+            "Population": 27850000,
+            "Users": 5570000,
+            "Percent": 0.21
+        },
+        {
+            "ID": "3",
+            "Continent": "America",
+            "Country": "Venezuela",
+            "Population": 27220000,
+            "Users": 9700000,
+            "Percent": 0.37
+        },
+        {
+            "ID": "2",
+            "Continent": "Asia",
+            "Country": "Vietnam",
+            "Population": 89590000,
+            "Users": 24980000,
+            "Percent": 0.29
+        },
+        {
+            "ID": "2",
+            "Continent": "Asia",
+            "Country": "Yemen",
+            "Population": 23500000,
+            "Users": 2500000,
+            "Percent": 0.12
+        },
+        {
+            "ID": "4",
+            "Continent": "Africa",
+            "Country": "Zimbabwe",
+            "Population": 11570000,
+            "Users": 1330000,
+            "Percent": 0.12
+        }
+    ]
+}

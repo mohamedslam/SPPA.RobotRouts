@@ -1,0 +1,43 @@
+
+.stiFormTabPanelButton {
+    border-radius: 3px;
+    cursor: default;
+    font-family: Arial;
+    font-size: 12px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+.stiFormTabPanelButton_Mouse {
+    height: 28px;
+}
+
+.stiFormTabPanelButton_Touch {
+    height: 30px;
+}
+
+.stiFormTabPanelButtonDefault {
+    color: @MobileDesignerFontColor;
+}
+
+.stiFormTabPanelButtonOver {
+    color: @MobileDesignerFontColor;
+    background: @MobileDesignerButtonOverBackgroundColor;
+}
+
+.stiFormTabPanelButtonSelected {
+    color: @MobileDesignerFontColor;
+    background: @MobileDesignerButtonSelectedBackgroundColor;
+}
+
+.stiFormTabPanelButtonDisabled {
+    color: @MobileDesignerFontDisabledColor;
+}
+
+.stiFormTabPanelButtonBar {
+    width: 3px;
+    height: 18px;
+    background: @MobileDesignerFileMenuBackgroundColor;
+    margin: 0 3px 0 6px;
+}

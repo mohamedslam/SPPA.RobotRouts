@@ -1,0 +1,67 @@
+
+/* DateControl */
+
+.stiDesignerDateControl {
+    border: 1px solid @MobileDesignerControlsBorderColor;    
+    color: @MobileDesignerFontColor;
+	background: @MobileDesignerControlsBackgroundColor;
+}
+
+.stiDesignerDateControlOver {
+    border: 1px solid @MobileDesignerControlsOverBorderColor;
+    color: @MobileDesignerFontColor;
+    background: @MobileDesignerControlsBackgroundColor;
+}
+
+.stiDesignerDateControlDisabled {
+    border: 1px solid @MobileDesignerControlsDisabledBorderColor;
+    background: @MobileDesignerControlsBackgroundColor;
+}
+
+.stiDesignerDateControl_TextBox {
+    font-size: 12px;
+    border: 0px;
+    margin: 0px;
+    padding: 0px 0px 0px 4px;
+    font-family: Arial;
+    outline: none;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(hsla(0,0%,100%,0)), to(hsla(0,0%,100%,0)));
+    background-image: -webkit-linear-gradient(hsla(0,0%,100%,0), hsla(0,0%,100%,0));
+    background: @MobileDesignerControlsBackgroundColor;
+    color: @MobileDesignerFontColor;
+}
+
+.stiDesignerDateControlDropDownListButton {
+    cursor: default;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+.stiDesignerDateControlDropDownListButton_Mouse {
+    height: 21px;
+}
+
+.stiDesignerDateControlDropDownListButton_Touch {
+    height: 26px;
+}
+
+.stiDesignerDateControlDropDownListButtonDefault {
+    color: @MobileDesignerFontColor;
+    background: @MobileDesignerControlsBackgroundColor;
+}
+
+.stiDesignerDateControlDropDownListButtonOver {
+    color: @MobileDesignerFontColor;
+    background: @MobileDesignerButtonOverBackgroundColor;
+}
+
+.stiDesignerDateControlDropDownListButtonSelected {
+    color: @MobileDesignerFontColor;
+    background: @MobileDesignerButtonSelectedBackgroundColor;
+}
+
+.stiDesignerDateControlDropDownListButtonDisabled {
+    color: @MobileDesignerFontDisabledColor;
+    background: @MobileDesignerControlsBackgroundColor;
+}

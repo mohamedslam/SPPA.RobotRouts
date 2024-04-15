@@ -1,0 +1,123 @@
+
+.stiDesignerWizardButton {
+    height: 30px;
+    color: white;
+    cursor: pointer;
+    font-family: Arial;
+    font-size: 12px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    margin: 3px;
+}
+
+.stiDesignerWizardButton_Mouse {
+}
+
+.stiDesignerWizardButton_Touch {
+}
+
+.stiDesignerWizardButtonDefault {
+    background: #a0a0a0;
+}
+
+.stiDesignerWizardButtonOver {
+    background: @MobileDesignerFileMenuItemOverBackgroundColor;
+}
+
+.stiDesignerWizardButtonSelected {
+    background: @MobileDesignerFileMenuItemOverBackgroundColor;
+}
+
+.stiDesignerWizardButtonDisabled {
+    background: @MobileDesignerControlsBackgroundColor;
+}
+
+/* Touch */
+.stiDesignerWizardButton_Touch {
+    background: #a0a0a0;
+    height: 30px;
+    color: white;
+    cursor: pointer;
+    font-family: Arial;
+    font-size: 12px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    margin: 3px;
+}
+
+.stiDesignerWizardButtonOver_Touch {
+    background: @MobileDesignerFileMenuItemOverBackgroundColor;
+    height: 30px;
+    color: white;
+    cursor: pointer;
+    font-family: Arial;
+    font-size: 12px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    margin: 3px;
+}
+
+.stiDesignerWizardButtonSelected_Touch {
+    background: @MobileDesignerFileMenuItemOverBackgroundColor;
+    height: 30px;
+    color: white;
+    cursor: pointer;
+    font-family: Arial;
+    font-size: 12px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    margin: 3px;
+}
+
+.stiDesignerWizardButtonDisabled_Touch {
+    background: @MobileDesignerControlsBackgroundColor;
+    height: 30px;
+    color: white;
+    cursor: pointer;
+    font-family: Arial;
+    font-size: 12px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    margin: 3px;
+}
+
+/* Theme buttons*/
+.stiDesignerWizardThemeButton {
+    color: white;
+    cursor: pointer;
+    font-family: Arial;
+    font-size: 12px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    margin: 3px;
+}
+
+.stiDesignerWizardThemeButton_Mouse {
+    height: 210px;
+}
+
+.stiDesignerWizardThemeButton_Touch {
+    height: 210px;
+}
+
+.stiDesignerWizardThemeButtonDefault {
+    border: 1px solid white;
+}
+
+.stiDesignerWizardThemeButtonOver {
+    border: 1px solid #ef9341;
+}
+
+.stiDesignerWizardThemeButtonSelected {
+    border: 1px solid #ef9341;
+}
+
+.stiDesignerWizardThemeButtonDisabled {
+    border: 1px solid white;
+}

@@ -1,0 +1,35 @@
+
+.stiJsViewerFormButtonTheme {
+    cursor: default;
+    font-family: Arial;
+    font-size: 12px;
+    border-radius: 3px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+.stiJsViewerFormButtonThemeDefault {
+    background: @JsViewerButtonThemeBackgroundColor;
+    border: 1px solid @JsViewerButtonThemeBackgroundColor;
+    color: #ffffff !important;
+}
+
+.stiJsViewerFormButtonThemeOver {
+    background: @JsViewerButtonThemeOverBackgroundColor;
+    border: 1px solid @JsViewerButtonThemeOverBackgroundColor;
+    color: #ffffff !important;
+}
+
+.stiJsViewerFormButtonThemeSelected {
+    background: @JsViewerButtonThemeSelectedBackgroundColor;
+    border: 1px solid @JsViewerButtonThemeSelectedBackgroundColor;
+    color: #ffffff !important;
+}
+
+.stiJsViewerFormButtonThemeDisabled {
+    background: @JsViewerButtonThemeDisabledBorderColor;
+    border: 1px solid @JsViewerButtonThemeDisabledBorderColor;
+    color: @JsViewerControlsFontDisabledColor !important;
+}
+

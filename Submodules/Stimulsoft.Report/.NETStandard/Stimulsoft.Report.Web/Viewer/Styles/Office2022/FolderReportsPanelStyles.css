@@ -1,0 +1,97 @@
+
+.stiJsViewerFolderReportsPanel {
+    font-family: Arial;
+    font-size: 12px;
+    float: left;
+    width: 170px;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    position: absolute;
+    background: @JsViewerNavigatePanelBackgroundColor;
+    color: @JsViewerMainPanelsBackgroundColor;
+}
+
+.stiJsViewerFolderReportsPanelLogo {
+    font-size: 18px;
+    white-space: nowrap;
+    background: @JsViewerNavigateButtonSelectedBackgroundColor;
+    height: 40px;
+    font-family: Arial;
+    cursor: pointer;
+    width: 170px;
+    overflow: hidden;
+}
+
+.stiJsViewerFolderReportsPanelContainer {
+    overflow: auto;
+    float: left;
+    width: 170px;
+    height: calc(100% - 40px);
+}
+
+.stiJsViewerFolderReportsPanelItem { 
+    height: 40px;
+    width: 44px;
+    cursor: pointer;
+    position: relative;
+}
+
+.stiJsViewerFolderReportsPanelSeparator {
+    background: @JsViewerNavigateButtonOverBackgroundColor;
+    height: 1px;
+}
+
+.stiJsViewerFolderReportsPanelItem:hover {
+    background: @JsViewerNavigateButtonOverBackgroundColor;
+}
+
+.stiJsViewerReportButton {
+    width: 100%;
+    cursor: pointer;
+}
+
+.stiJsViewerReportButton: hover {
+    background: @JsViewerNavigateButtonOverBackgroundColor;
+}
+
+.stiJsViewerReportButtonSelected {
+    background: @JsViewerNavigateButtonSelectedBackgroundColor;
+}
+
+.stiJsViewerReportButtonImage {
+	margin : 15px 5px 0px 5px;
+    max-width: 110px;
+    max-height: 115px;
+    background: #ffffff;	
+}
+
+.stiJsViewerReportButtonCaption {
+    width: 140px;
+    margin: 0 5px 13px 5px;
+    font-family: 'Open Sans', Arial;
+    font-size: 13px;
+    color: @JsViewerMainPanelsBackgroundColor;
+    display: inline-block;
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.stiJsViewerFolderReportsPanelSeparator {
+    background: @JsViewerNavigateButtonOverBackgroundColor;
+    height: 1px;
+}
+
+.stiJsViewerFolderReportsPanelItemImageRotate {
+    position: absolute;   
+    width: 16px;
+    height: 16px;
+    -webkit-animation:spin 0.2s linear 1;
+    -moz-animation:spin 0.2s linear 1;
+    animation:spin 0.2s linear 1;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(180deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(180deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(180deg); transform:rotate(180deg); } }

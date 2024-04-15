@@ -1,0 +1,34 @@
+{
+  "name": "stimulsoft-designer-angular",
+  "version": "2022.4.5",
+  "description": "Stimulsoft Designer Angular",
+  "homepage": "https://www.stimulsoft.com/en/products/reports-angular",
+  "author": "Stimulsoft (http://www.stimulsoft.com)",
+  "license": "Closed Source",
+  "arch": "any",
+  "maintainers": [
+    {
+      "name": "Stimulsoft",
+      "email": "info@stimulsoft.com",
+      "url": "http://www.stimulsoft.com"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Stimulsoft",
+      "email": "info@stimulsoft.com",
+      "url": "http://www.stimulsoft.com"
+    }
+  ],
+  "keywords": [
+    "Stimulsoft",
+    "Reports",
+    "Reporting tool",
+    "Angular"
+  ],
+  "peerDependencies": {
+    "@angular/common": "^9.0.7",
+    "@angular/core": "^9.0.7",
+    "tslib": "^1.10.0"
+  }
+}

@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <AssemblyName>Stimulsoft.Report.Check</AssemblyName>
+    <RootNamespace>Stimulsoft.Report.Check</RootNamespace>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Stimulsoft.snk</AssemblyOriginatorKeyFile>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <DebugSymbols>true</DebugSymbols>
+    <Configurations>Release;Debug</Configurations>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <DefineConstants>TRACE;NETSTANDARD;STIDRAWING</DefineConstants>
+    <DefineConstants Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">$(DefineConstants);DEBUG</DefineConstants>
+    <DefineConstants Condition="$(SolutionName.Contains('.STIDRAWING'))">$(DefineConstants);STIDRAWING</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Stimulsoft.Drawing\Stimulsoft.Drawing.NS.csproj" />
+    <ProjectReference Include="..\Stimulsoft.Base\Stimulsoft.Base.NS.csproj" />
+    <ProjectReference Include="..\Stimulsoft.Report.Helper\Stimulsoft.Report.Helper.NS.csproj" />
+    <ProjectReference Include="..\Stimulsoft.Report\Stimulsoft.Report.NS.csproj" />
+  </ItemGroup>
+
+</Project>

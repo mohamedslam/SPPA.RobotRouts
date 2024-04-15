@@ -1,0 +1,112 @@
+
+.stiDesignerGroupBlock {    
+    padding: 1px;
+	font-family: Arial;
+    font-size: 11px;
+    color: @MobileDesignerFontColor;
+    cursor: default;    
+}
+
+.stiDesignerGroupBlockCaption {
+    width: 100%;
+    text-align: center;
+    padding: 0 8px 0 8px;
+    border: 0px;
+    white-space: nowrap;
+     -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+.stiDesignerGroupBlockTableCell {	
+	vertical-align: top;
+	padding: 2px;
+	border: 0px;
+}
+
+/* Group Block Button */
+
+.stiDesignerGroupBlockButton {
+}
+
+.stiDesignerGroupBlockButton_Mouse {
+    height: 15px;
+    width: 15px;
+}
+
+.stiDesignerGroupBlockButton_Touch {
+    height: 20px;
+    width: 20px;
+}
+
+.stiDesignerGroupBlockButtonDefault {
+}
+
+.stiDesignerGroupBlockButtonOver {
+    background: @MobileDesignerButtonOverBackgroundColor;
+}
+
+.stiDesignerGroupBlockButtonSelected {
+    background: @MobileDesignerButtonSelectedBackgroundColor;
+}
+
+.stiDesignerGroupBlockButtonDisabled {
+}
+
+.stiDesignerGroupBlockContainer {
+    overflow: hidden;
+    height: 75px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+.stiDesignerGroupBlockContainerWithOutCaption {
+    overflow: hidden;
+    height: 90px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+.stiDesignerGroupBlockDownRow {
+    overflow: hidden;
+}
+
+.stiDesignerGroupBlockSeparator {	
+	width: 1px;
+	height: 84px;
+    background: @MobileDesignerToolbarSeparatorColor;
+}
+
+.stiDesignerGroupPanel {    
+    border: 1px solid @MobileDesignerContainersBorderColor;
+	-webkit-padding-before: 0px;
+	-webkit-padding-start:0px;
+	-webkit-padding-end: 0px;
+	-webkit-padding-after: 0px;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+
+.stiDesignerGroupPanelCaption {    
+	padding: 2px;
+	font-family: Arial;
+    font-size: 12px;
+    color: @MobileDesignerFontColor;
+    cursor: default;
+	margin-left: 10px;
+}
+
+.stiDesignerGroupPanelHeader {
+    color: @MobileDesignerContainersHeaderFontColor;
+    background: @MobileDesignerContainersHeaderColor;
+    cursor: default;
+    font-family: Arial;
+    font-size: 12px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}

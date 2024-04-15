@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ACE64C95-F4C5-451E-B1E0-98623D8CF6B5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Stimulsoft.Report.Angular</RootNamespace>
+    <AssemblyName>Stimulsoft.Report.Angular</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Stimulsoft.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Mvc, Version=3.0.0.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="StiAngularActionResult.cs" />
+    <Compile Include="StiAngularDesigner.cs" />
+    <Compile Include="StiAngularDesignerOptions.cs" />
+    <Compile Include="StiAngularHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StiAngularReportResponse.cs" />
+    <Compile Include="StiAngularViewer.cs" />
+    <Compile Include="StiAngularViewerOptions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Stimulsoft.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Stimulsoft.Base\Stimulsoft.Base.csproj">
+      <Project>{376cc7ad-21a9-4b6a-b471-0e7186222ca7}</Project>
+      <Name>Stimulsoft.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Stimulsoft.Report.Mvc\Stimulsoft.Report.Mvc.csproj">
+      <Project>{34f59e66-5c22-4e89-82b4-e822d245a978}</Project>
+      <Name>Stimulsoft.Report.Mvc</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Stimulsoft.Report.Web\Stimulsoft.Report.Web.csproj">
+      <Project>{40a6ab7f-aa0f-4f3c-b9c0-92539cb74da7}</Project>
+      <Name>Stimulsoft.Report.Web</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Stimulsoft.Report\Stimulsoft.Report.csproj">
+      <Project>{490a2f2e-98ff-40da-a7d4-98d5e3910d6c}</Project>
+      <Name>Stimulsoft.Report</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

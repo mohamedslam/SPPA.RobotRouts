@@ -1,0 +1,35 @@
+
+.stiDesignerMenuBigItem {
+    margin: 1px;
+    height: 66px;
+    cursor: default;
+    font-family: Arial;
+    font-size: 14px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+.stiDesignerMenuBigItem_Mouse {
+}
+
+.stiDesignerMenuBigItem_Touch {
+}
+
+.stiDesignerMenuBigItemDefault {
+    color: @MobileDesignerFontColor;
+}
+
+.stiDesignerMenuBigItemOver {
+    background: @MobileDesignerButtonOverBackgroundColor;
+    color: @MobileDesignerFontColor;
+}
+
+.stiDesignerMenuBigItemSelected {
+    background: @MobileDesignerButtonSelectedBackgroundColor;
+    color: @MobileDesignerFontColor;
+}
+
+.stiDesignerMenuBigItemDisabled {
+    color: @MobileDesignerFontDisabledColor;
+}

@@ -1,0 +1,29 @@
+
+/* Sort Container */
+.stiDesignerSortContainer {
+	background: @MobileDesignerContainersBackgroundColor;
+	overflow: auto;
+}
+
+/* Sort Panel */
+.stiDesignerSortPanel {
+	border-top: 1px solid transparent;
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+	border-bottom: 1px solid @MobileDesignerContainersBorderColor;
+	background: @MobileDesignerContainersBackgroundColor;
+	color: @MobileDesignerFontColor;
+	font-family: Arial;
+	font-size: 12px;
+	margin: 4px;
+}
+
+.stiDesignerSortPanelSelected {
+	border-radius: 3px;
+	border: 1px solid @MobileDesignerControlsSelectedBorderColor;
+	background: @MobileDesignerContainersBackgroundColor;
+	color: @MobileDesignerFontColor;
+	font-family: Arial;
+	font-size: 12px;
+	margin: 4px;
+}

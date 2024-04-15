@@ -1,0 +1,44 @@
+
+.stiDesignerVerticalButton {
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    width: 80px;
+    text-overflow: ellipsis;
+    text-align: center;
+    margin: 35px 0 0 -30px;
+    padding: 1px 2px 2px 2px;
+    cursor: default;
+    font-family: Arial;
+    font-size: 12px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+.stiDesignerVerticalButton_Mouse {
+}
+
+.stiDesignerVerticalButton_Touch {
+}
+
+.stiDesignerVerticalButtonDefault {
+    border-bottom: 7px solid @MobileDesignerFileMenuBackgroundColor;
+    color: @MobileDesignerFontColor;
+}
+
+.stiDesignerVerticalButtonOver {
+    border-bottom: 7px solid @MobileDesignerFileMenuItemOverBackgroundColor;
+	color: @MobileDesignerFontColor;
+}
+
+.stiDesignerVerticalButtonSelected {
+    border-bottom: 7px solid @MobileDesignerFileMenuItemSelectedBackgroundColor;
+	color: @MobileDesignerFontColor;
+}
+
+.stiDesignerVerticalButtonDisabled {
+    border-bottom: 7px solid @MobileDesignerFileMenuFontDisabledColor;
+	color: @MobileDesignerFontDisabledColor;
+}

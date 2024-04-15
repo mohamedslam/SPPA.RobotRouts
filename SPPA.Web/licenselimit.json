@@ -1,0 +1,21 @@
+{
+  "LicenseLimit": {
+    "EnableInviteWhitelist": true,
+    "EnableRegistrationWhitelist": true,
+    "EmailWhitelist": [ 
+      "@yahoo.com",
+      "@susu.ru", 
+      "mohamedslam2000@yahoo.com",
+      "asp23sm397@susu.ru"
+    ],
+    "DefaultEditorsLimit": 3,
+    "DefaultStorageLimit": 5.0,
+    "PersonalLimit": [
+      {
+        "WorkspaceId": "7E16E3A6-4275-4955-9A6D-AA7C0339BC90",
+        "EditorsLimit": 5,
+        "StorageLimit": 10.0
+      }
+    ]
+  }
+}

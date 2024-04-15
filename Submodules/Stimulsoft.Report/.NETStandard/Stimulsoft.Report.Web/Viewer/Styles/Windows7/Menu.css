@@ -1,0 +1,73 @@
+
+.stiJsViewerParentMenu {
+	z-index: 35;
+	position: absolute;
+}
+
+.stiJsViewerMenu {
+    position: absolute;
+    padding: 1px;
+    font-size: 12px;
+    border: 1px solid @JsViewerMenuBorderColor;
+    background: @JsViewerMenuBackgroundColor;
+    background: -moz-linear-gradient(to right, @JsViewerMenuIconsBackgroundColor 25px, @JsViewerMenuBackgroundColor 25px); /* Firefox 3.6+ */
+    background: -webkit-gradient(linear, to right, to left, color-stop(0px, @JsViewerMenuIconsBackgroundColor), color-stop(25px, @JsViewerMenuBackgroundColor)); /* Chrome 10+, Safari 5.1+ */
+    background: -webkit-linear-gradient(to right, @JsViewerMenuIconsBackgroundColor 25px, @JsViewerMenuBackgroundColor 25px);
+    background: -o-linear-gradient(to right, @JsViewerMenuIconsBackgroundColor 25px, @JsViewerMenuBackgroundColor 25px); /* Opera 11.10+ */
+    background: -ms-linear-gradient(to right, @JsViewerMenuIconsBackgroundColor 25px, @JsViewerMenuBackgroundColor 25px); /* IE10 */
+    background: linear-gradient(to right, @JsViewerMenuIconsBackgroundColor 25px, @JsViewerMenuBackgroundColor 25px); /* CSS3 */
+    -moz-box-shadow: 0px 0px 7px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0px 0px 7px rgba(0,0,0,0.6);
+    box-shadow: 0 0 7px rgba(0,0,0,0.3);
+    cursor: default;
+    color: #202020;
+}
+
+.stiJsViewerVerticalMenuSeparator {
+	height: 1px;
+	background: @JsViewerMenuSeparatorUpColor;
+    border-bottom: 1px solid @JsViewerMenuSeparatorDownColor;
+    margin: 1px 2px 0 30px;
+}
+
+/* Mouse */
+.stiJsViewerMenuStandartItem {
+	white-space: nowrap;
+    cursor: default;
+    font-size: 12px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid @JsViewerMenuItemBorderColor;
+}
+
+.stiJsViewerMenuStandartItemOver {
+    border: 1px solid @JsViewerMenuItemOverBorderColor;
+    background:  @JsViewerMenuItemOverBackgroundDownColor;
+    background: -moz-linear-gradient(top, @JsViewerMenuItemOverBackgroundUpColor, @JsViewerMenuItemOverBackgroundDownColor); /* Firefox 3.6+ */    
+    background: -webkit-gradient(linear, top, bottom, color-stop(0%,@JsViewerMenuItemOverBackgroundUpColor), color-stop(100%,@JsViewerMenuItemOverBackgroundDownColor));  /* Chrome 10+, Safari 5.1+ */	
+	background: -webkit-linear-gradient(top, @JsViewerMenuItemOverBackgroundUpColor, @JsViewerMenuItemOverBackgroundDownColor);
+    background: -o-linear-gradient(top, @JsViewerMenuItemOverBackgroundUpColor, @JsViewerMenuItemOverBackgroundDownColor); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, @JsViewerMenuItemOverBackgroundUpColor, @JsViewerMenuItemOverBackgroundDownColor); /* IE10 */
+    background: linear-gradient(top, @JsViewerMenuItemOverBackgroundUpColor, @JsViewerMenuItemOverBackgroundDownColor); /* CSS3 */
+}
+
+.stiJsViewerMenuStandartItemSelected {
+    border: 1px solid @JsViewerMenuItemSelectedBorderColor;
+    background:  @JsViewerMenuItemSelectedBackgroundDownColor;
+    background: -moz-linear-gradient(top, @JsViewerMenuItemSelectedBackgroundUpColor, @JsViewerMenuItemSelectedBackgroundDownColor); /* Firefox 3.6+ */    
+    background: -webkit-gradient(linear, top, bottom, color-stop(0%,@JsViewerMenuItemSelectedBackgroundUpColor), color-stop(100%,@JsViewerMenuItemSelectedBackgroundDownColor));  /* Chrome 10+, Safari 5.1+ */	
+	background: -webkit-linear-gradient(top, @JsViewerMenuItemSelectedBackgroundUpColor, @JsViewerMenuItemSelectedBackgroundDownColor);
+    background: -o-linear-gradient(top, @JsViewerMenuItemSelectedBackgroundUpColor, @JsViewerMenuItemSelectedBackgroundDownColor); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, @JsViewerMenuItemSelectedBackgroundUpColor, @JsViewerMenuItemSelectedBackgroundDownColor); /* IE10 */
+    background: linear-gradient(top, @JsViewerMenuItemSelectedBackgroundUpColor, @JsViewerMenuItemSelectedBackgroundDownColor); /* CSS3 */
+}
+
+.stiJsViewerMenuStandartItemDisabled {
+    border: 1px solid @JsViewerMenuItemDisabledBorderColor;
+    color: @JsViewerControlsFontDisabledColor;
+}

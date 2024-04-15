@@ -1,0 +1,43 @@
+
+/* Mouse */
+.stiJsViewerCheckBox {
+    padding: 0px;
+	margin: 0px;
+	border: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+    font-size: 12px; 
+    color: @JsViewerControlsFontColor;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+	color: #202020;
+}
+
+.stiJsViewerCheckBoxDisabled {
+    font-size: 12px; 
+    color: @JsViewerControlsFontDisabledColor;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    border: 0;
+}
+
+.stiJsViewerCheckBoxImageBlock {
+    border: 1px solid @JsViewerControlsBorderColor;
+    background: @JsViewerControlsBackgroundColor;
+}
+
+.stiJsViewerCheckBoxImageBlockOver {
+    border: 1px solid @JsViewerControlsOverBorderColor;
+    background: @JsViewerControlsOverBackgroundColor;
+}
+
+.stiJsViewerCheckBoxImageBlockDisabled {
+    border: 1px solid @JsViewerControlsDisabledBorderColor;
+    background: @JsViewerControlsDisabledBackgroundColor;
+}

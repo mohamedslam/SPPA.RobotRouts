@@ -1,0 +1,61 @@
+
+.stiDesignerAuthFormSuccessfullyText {
+    white-space: normal;
+    color: @MobileDesignerFontColor;
+    cursor: default;
+    font-family: Arial;
+    font-size: 12px;
+    margin: 0px 0 40px 0;
+    line-height: 1.5;
+}
+
+.stiDesignerSmallProgressMarker {
+    position: relative;
+    height: 18px;
+    width: 18px;
+}
+
+.stiDesignerBigProgressMarker {
+    position: absolute;
+    height: 76px;
+    width: 76px;
+    z-index: 100;
+}
+
+.stDesignerFormTextBeforeControl {
+    color: @MobileDesignerFontColor;
+    cursor: default;
+    font-family: Arial;
+    font-size: 12px;
+    padding-left: 8px;
+    white-space: nowrap;
+}
+
+.stiThemeColorButton {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #c5c5c5;
+    float: left;
+    margin-right: 5px;
+}
+    .stiThemeColorButton:hover {
+        border: 1px solid #f29436;
+    }
+
+.stiThemeColorButtonIn {
+    width: 23px;
+    height: 23px;
+}
+
+    .stiThemeColorButtonIn:hover {
+        border: 1px solid #ffe294;
+    }
+
+.stiDesignerToolbarUserImage {
+    border-radius: 40px;
+    margin: 0 5px 0 5px;
+}
+
+.stiDesignerLicenseFormText {
+    color: @MobileDesignerFontColor !important;
+}

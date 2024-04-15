@@ -1,0 +1,143 @@
+<?xml version="1.0" ?>
+<StiFunctions>
+	<Category name="Drawing">
+		<Function>
+			<Name>ARGB</Name>
+			<Description>Creates a Color from the four ARGB component (alpha, red, green, and blue) values.</Description>
+			<TypeOfFunction>Stimulsoft.Report.Dictionary.StiFunctionsDrawing</TypeOfFunction>
+			<ReturnType>System.Drawing.Color</ReturnType>
+			<ReturnDescription>A color value.</ReturnDescription>
+      <ArgumentType>System.Int32</ArgumentType>
+      <ArgumentType>System.Int32</ArgumentType>
+      <ArgumentType>System.Int32</ArgumentType>
+      <ArgumentType>System.Int32</ArgumentType>
+      <ArgumentName>alpha</ArgumentName>
+      <ArgumentName>red</ArgumentName>
+      <ArgumentName>green</ArgumentName>
+      <ArgumentName>blue</ArgumentName>
+      <ArgumentDescription>An alpha component, which ranges from 0 (fully transparent) to 255 (fully opaque).</ArgumentDescription>
+      <ArgumentDescription>A red component, which ranges from 0 (no saturation) to 255 (full saturation).</ArgumentDescription>
+      <ArgumentDescription>A green component, which ranges from 0 (no saturation) to 255 (full saturation).</ArgumentDescription>
+      <ArgumentDescription>A blue component, which ranges from 0 (no saturation) to 255 (full saturation).</ArgumentDescription>      
+    </Function>
+    <Function>
+      <Name>RGB</Name>
+      <Description>Creates a Color from the three RGB component (red, green, and blue) values.</Description>
+      <TypeOfFunction>Stimulsoft.Report.Dictionary.StiFunctionsDrawing</TypeOfFunction>
+      <ReturnType>System.Drawing.Color</ReturnType>
+      <ReturnDescription>A color value.</ReturnDescription>
+      <ArgumentType>System.Int32</ArgumentType>
+      <ArgumentType>System.Int32</ArgumentType>
+      <ArgumentType>System.Int32</ArgumentType>
+      <ArgumentName>red</ArgumentName>
+      <ArgumentName>green</ArgumentName>
+      <ArgumentName>blue</ArgumentName>
+      <ArgumentDescription>A red component, which ranges from 0 (no saturation) to 255 (full saturation).</ArgumentDescription>
+      <ArgumentDescription>A green component, which ranges from 0 (no saturation) to 255 (full saturation).</ArgumentDescription>
+      <ArgumentDescription>A blue component, which ranges from 0 (no saturation) to 255 (full saturation).</ArgumentDescription>
+    </Function>
+		<Function>
+			<Name>ColorValue</Name>
+			<Description>Translates a string representation to a color. For example: ColorValue("Red"), ColorValue("#FF0000"), ColorValue("#55009900").</Description>
+			<TypeOfFunction>Stimulsoft.Report.Dictionary.StiFunctionsDrawing</TypeOfFunction>
+			<ReturnType>System.Drawing.Color</ReturnType>
+			<ReturnDescription>A color value.</ReturnDescription>
+			<ArgumentName>value</ArgumentName>
+			<ArgumentDescription>A string representation of a color to translate.</ArgumentDescription>
+			<ArgumentType>System.String</ArgumentType>
+		</Function>
+		<Function>
+			<Name>ColorFade</Name>
+			<Description>Makes a color darker or lighter on a specified fade value. For example: ColorFade("#00ff00", -0.5), ColorFade(Color.Green, 0.3).</Description>
+      <TypeOfFunction>Stimulsoft.Report.Dictionary.StiFunctionsDrawing</TypeOfFunction>
+			<ReturnType>System.Drawing.Color</ReturnType>
+			<ReturnDescription>A color value.</ReturnDescription>
+			<ArgumentType>System.Object</ArgumentType>
+			<ArgumentType>System.Double</ArgumentType>
+			<ArgumentName>color</ArgumentName>
+			<ArgumentName>fadeAmount</ArgumentName>
+			<ArgumentDescription>A color value.</ArgumentDescription>
+			<ArgumentDescription>A number between -1 and 1. -1 fully darkens a color to black, 0 doesn't affect the color, and 1 fully brightens a color to white.</ArgumentDescription>
+		</Function>
+    <Function>
+      <Name>SolidBrushValue</Name>
+      <Description>Makes a solid brush. For example: SolidBrushValue("red"), SolidBrushValue(Color.Yellow).</Description>
+      <TypeOfFunction>Stimulsoft.Report.Dictionary.StiFunctionsDrawing</TypeOfFunction>
+      <ReturnType>Stimulsoft.Base.Drawing.StiSolidBrush</ReturnType>
+      <ReturnDescription>A solid brush value.</ReturnDescription>
+      <ArgumentType>System.Object</ArgumentType>
+      <ArgumentName>color</ArgumentName>
+      <ArgumentDescription>A color value for the solid brush.</ArgumentDescription>
+    </Function>
+    <Function>
+      <Name>GradientBrushValue</Name>
+      <Description>Makes a gradient brush. For example: GradientBrushValue("red", "green", 45), GradientBrushValue("red", "green", 45).</Description>
+      <TypeOfFunction>Stimulsoft.Report.Dictionary.StiFunctionsDrawing</TypeOfFunction>
+      <ReturnType>Stimulsoft.Base.Drawing.StiGradientBrush</ReturnType>
+      <ReturnDescription>A gradient brush.</ReturnDescription>
+      <ArgumentType>System.Object</ArgumentType>
+      <ArgumentType>System.Object</ArgumentType>
+      <ArgumentType>System.Double</ArgumentType>
+      <ArgumentName>startColor</ArgumentName>
+      <ArgumentName>endColor</ArgumentName>
+      <ArgumentName>angle</ArgumentName>
+      <ArgumentDescription>A starting color for the gradient.</ArgumentDescription>
+      <ArgumentDescription>An ending color for the gradient.</ArgumentDescription>
+      <ArgumentDescription>An angle, measured in degrees clockwise from the x-axis, of the gradient's orientation line.</ArgumentDescription>
+    </Function>
+    <Function>
+      <Name>GlareBrushValue</Name>
+      <Description>Makes a glare brush. For example: GlareBrushValue("red", "green", 45), GlareBrushValue(Color.Red, Color.Green, 45).</Description>
+      <TypeOfFunction>Stimulsoft.Report.Dictionary.StiFunctionsDrawing</TypeOfFunction>
+      <ReturnType>Stimulsoft.Base.Drawing.StiGlareBrush</ReturnType>
+      <ReturnDescription>A glare brush.</ReturnDescription>
+      <ArgumentType>System.Object</ArgumentType>
+      <ArgumentType>System.Object</ArgumentType>
+      <ArgumentType>System.Double</ArgumentType>
+      <ArgumentType>System.Double</ArgumentType>
+      <ArgumentType>System.Double</ArgumentType>
+      <ArgumentName>startColor</ArgumentName>
+      <ArgumentName>endColor</ArgumentName>
+      <ArgumentName>angle</ArgumentName>
+      <ArgumentName>focus</ArgumentName>
+      <ArgumentName>scale</ArgumentName>
+      <ArgumentDescription>A starting color for the gradient.</ArgumentDescription>
+      <ArgumentDescription>An ending color for the gradient.</ArgumentDescription>
+      <ArgumentDescription>An angle, measured in degrees clockwise from the x-axis, of the gradient's orientation line.</ArgumentDescription>
+      <ArgumentDescription>A value from 0 through 1 that specifies the center of the gradient (the point where the gradient is composed of only the ending color).</ArgumentDescription>
+      <ArgumentDescription>A value from 0 through 1 that specifies how fast the colors falloff from the focus.</ArgumentDescription>
+    </Function>
+    <Function>
+      <Name>GlassBrushValue</Name>
+      <Description>Makes a glass brush. For example: GlassBrushValue("#ff0000", true, 0.2), GlassBrushValue(Color.Red, true, 0.2).</Description>
+      <TypeOfFunction>Stimulsoft.Report.Dictionary.StiFunctionsDrawing</TypeOfFunction>
+      <ReturnType>Stimulsoft.Base.Drawing.StiGlassBrush</ReturnType>
+      <ReturnDescription>A gradient brush.</ReturnDescription>
+      <ArgumentType>System.Object</ArgumentType>
+      <ArgumentType>System.Boolean</ArgumentType>
+      <ArgumentType>System.Double</ArgumentType>
+      <ArgumentName>color</ArgumentName>
+      <ArgumentName>drawHatch</ArgumentName>
+      <ArgumentName>blendFactor</ArgumentName>
+      <ArgumentDescription>A color for the glass brush.</ArgumentDescription>
+      <ArgumentDescription>Draw hatch at background or not.</ArgumentDescription>
+      <ArgumentDescription>A blend factor of the glass brush. The value must be in range between 0 and 1.</ArgumentDescription>
+    </Function>
+    <Function>
+      <Name>HatchBrushValue</Name>
+      <Description>Makes a hatch brush. For example: HatchBrushValue(HatchStyle.Cross, "gray", "white").</Description>
+      <TypeOfFunction>Stimulsoft.Report.Dictionary.StiFunctionsDrawing</TypeOfFunction>
+      <ReturnType>Stimulsoft.Base.Drawing.StiHatchBrush</ReturnType>
+      <ReturnDescription>A hatch brush.</ReturnDescription>
+      <ArgumentType>System.Drawing.Drawing2D.HatchStyle</ArgumentType>
+      <ArgumentType>System.Object</ArgumentType>
+      <ArgumentType>System.Object</ArgumentType>
+      <ArgumentName>style</ArgumentName>
+      <ArgumentName>foreColor</ArgumentName>
+      <ArgumentName>backColor</ArgumentName>
+      <ArgumentDescription>A hatch style of the brush.</ArgumentDescription>
+      <ArgumentDescription>A foreground color for the brush.</ArgumentDescription>
+      <ArgumentDescription>A background color for the brush.</ArgumentDescription>      
+    </Function>
+  </Category>
+</StiFunctions>

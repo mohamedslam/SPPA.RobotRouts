@@ -1,0 +1,32 @@
+
+/* Mouse */
+.stiJsViewerResourceDropDownButton {
+    height: 15px;
+    width: 15px;
+    cursor: default;
+    font-size: 12px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.stiJsViewerResourceDropDownButtonDefault {
+    background: @JsViewerControlsBackgroundColor;
+    border: 1px solid transparent;
+}
+
+.stiJsViewerResourceDropDownButtonOver {
+    background: @JsViewerButtonOverBackgroundColor;
+    border: 1px solid @JsViewerControlsOverBorderColor;
+}
+
+.stiJsViewerResourceDropDownButtonSelected {
+    background: @JsViewerButtonSelectedBackgroundColor;
+    border: 1px solid @JsViewerControlsSelectedBorderColor;
+}
+
+.stiJsViewerResourceDropDownButtonDisabled {
+    background: @JsViewerButtonDisabledBackgroundColor;
+    border: 1px solid @JsViewerControlsDisabledBorderColor;
+}

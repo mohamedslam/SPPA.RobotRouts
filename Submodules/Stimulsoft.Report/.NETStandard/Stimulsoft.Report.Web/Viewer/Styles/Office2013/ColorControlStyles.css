@@ -1,0 +1,67 @@
+
+/* Color Control */
+.stiJsViewerColorControlWithBorder {
+	border: 1px solid @JsViewerControlsBorderColor;
+	background: @JsViewerControlsBackgroundColor;
+}
+
+.stiJsViewerColorControlWithBorderDisabled {
+	border: 1px solid @JsViewerControlsDisabledBorderColor;
+}
+
+.stiJsViewerColorControlImage {
+	border: 1px solid @JsViewerControlsBorderColor;
+	width: 64px;
+	cursor: default;
+	overflow: hidden;
+}
+
+.stiJsViewerColorControlImage div {
+}
+
+.stiJsViewerColorControlWithImage_ColorBar {
+	border: 1px solid transparent;
+	width: 14px;
+	height: 2px;
+	cursor: default;
+}
+
+/* Color Form */
+.stiJsViewerColorFormControlsTable {
+	font-family: Arial;
+	font-size: 12px;
+	color: @JsViewerControlsFontColor;
+	cursor: default;
+}
+
+.stiJsViewerColorFormColorBar {
+	border: 1px solid @JsViewerMainPanelsBorderColor;
+	width: 128px;
+	height: 128px;
+	display: inline-block;
+}
+
+.stiColorFormWebColorPanel {
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+/* Color Dialog */
+.stiJsViewerColorDialogHeader {
+	background: @JsViewerGroupPanelCaptionBackgroundColor;
+	font-family: Arial;
+	font-size: 12px;
+	color: @JsViewerControlsFontColor;
+	cursor: default;
+	padding: 7px;
+}
+
+.stiJsViewerColorDialogButton {
+	border: 1px solid #e2e4e7;
+	cursor: default;
+}
+
+.stiJsViewerColorDialogButtonOver {
+	border: 1px solid #f29436;
+	cursor: default;
+}

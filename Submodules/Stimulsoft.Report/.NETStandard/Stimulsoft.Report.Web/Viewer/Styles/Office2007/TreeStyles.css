@@ -1,0 +1,74 @@
+
+/* Opening Icon */
+.stiJsViewerTreeItemIconOpening {
+    margin: 0 3px 0 0;
+}
+
+/* Button */
+.stiJsViewerTreeItem {
+    box-sizing: border-box;
+    border: 1px solid @JsViewerMenuItemBorderColor;
+    color: @JsViewerControlsFontColor;
+    cursor: default;
+    font-family: Arial;
+    font-size: 12px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.stiJsViewerTreeItemOver {
+    box-sizing: border-box;
+    border: 1px solid @JsViewerMenuItemOverBorderColor;
+    background: @JsViewerMenuItemOverBackgroundDownColor;
+    background: -moz-linear-gradient(top, @JsViewerMenuItemOverBackgroundUpColor, @JsViewerMenuItemOverBackgroundMiddleColor 50%, @JsViewerMenuItemOverBackgroundDownColor 50%, @JsViewerMenuItemOverBackgroundMiddleColor); /* Firefox 3.6+ */
+    background: -webkit-gradient(linear, top, bottom, color-stop(0%,@JsViewerMenuItemOverBackgroundUpColor), color-stop(50%,@JsViewerMenuItemOverBackgroundMiddleColor), color-stop(50%,@JsViewerMenuItemOverBackgroundDownColor), color-stop(100%,@JsViewerMenuItemOverBackgroundMiddleColor)); /* Chrome 10+, Safari 5.1+ */
+    background: -webkit-linear-gradient(top, @JsViewerMenuItemOverBackgroundUpColor, @JsViewerMenuItemOverBackgroundMiddleColor 50%, @JsViewerMenuItemOverBackgroundDownColor 50%, @JsViewerMenuItemOverBackgroundMiddleColor);
+    background: -o-linear-gradient(top, @JsViewerMenuItemOverBackgroundUpColor, @JsViewerMenuItemOverBackgroundMiddleColor 50%, @JsViewerMenuItemOverBackgroundDownColor 50%, @JsViewerMenuItemOverBackgroundMiddleColor); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, @JsViewerMenuItemOverBackgroundUpColor, @JsViewerMenuItemOverBackgroundMiddleColor 50%, @JsViewerMenuItemOverBackgroundDownColor 50%, @JsViewerMenuItemOverBackgroundMiddleColor); /* IE10 */
+    background: linear-gradient(top, @JsViewerMenuItemOverBackgroundUpColor, @JsViewerMenuItemOverBackgroundMiddleColor 50%, @JsViewerMenuItemOverBackgroundDownColor 50%, @JsViewerMenuItemOverBackgroundMiddleColor); /* CSS3 */
+    color: @JsViewerControlsFontColor;
+    cursor: default;
+    font-family: Arial;
+    font-size: 12px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.stiJsViewerTreeItemSelected {
+    box-sizing: border-box;
+    border: 1px solid @JsViewerMenuItemSelectedBorderColor;
+    background: @JsViewerMenuItemSelectedBackgroundDownColor;
+    color: @JsViewerControlsFontColor;
+    cursor: default;
+    font-family: Arial;
+    font-size: 12px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+/* Button Image */
+.stiJsViewerTreeItemImage {
+    border: 0px;
+    padding: 0px;
+    margin: 1px 2px 1px 2px;
+}
+
+/* Button Caption */
+.stiJsViewerTreeItemCaption {
+    margin: 0px;
+    border: 0px;
+    text-align: left;
+    padding: 2px 7px 2px 7px;
+}

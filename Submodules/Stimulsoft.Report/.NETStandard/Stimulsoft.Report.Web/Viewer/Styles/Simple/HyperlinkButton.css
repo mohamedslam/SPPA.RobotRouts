@@ -1,0 +1,28 @@
+
+/* Mouse */
+.stiJsViewerHyperlinkButton {
+    cursor: pointer;
+    font-family: Arial;
+    font-size: 12px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.stiJsViewerHyperlinkButtonDefault {
+    color: @JsViewerHyperlinkButtonFontColor;
+}
+
+.stiJsViewerHyperlinkButtonOver {
+	text-decoration: underline;
+    color: @JsViewerHyperlinkButtonFontColor;
+}
+
+.stiJsViewerHyperlinkButtonSelected {
+    color: @JsViewerHyperlinkButtonFontColor;
+}
+
+.stiJsViewerHyperlinkButtonDisabled {
+    color: @JsViewerHyperlinkButtonFontColor;
+}

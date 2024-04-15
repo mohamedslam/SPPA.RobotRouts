@@ -1,0 +1,30 @@
+
+.stiJsViewerToolBar {
+	overflow-x: auto;
+	overflow-y: hidden;
+	width: 100%;
+	position: relative;
+	z-index: 2;
+	color: @JsViewerToolbarFontColor;
+}
+
+.stiJsViewerToolBarSeparated {
+	border-bottom: 1px solid @JsViewerMainPanelsBorderColor;
+	background: @JsViewerToolbarBackgroundColor;
+}
+
+.stiJsViewerToolBarTable {
+	cursor: default;
+	font-size: 12px;
+	border-radius: 3px;
+	border: 1px solid @JsViewerMainPanelsBorderColor;
+	background: @JsViewerToolbarBackgroundColor;
+	width: 100%;
+	border-collapse: separate;
+	color: @JsViewerToolbarFontColor;
+}
+
+.stiJsViewerToolBarSeparator {
+	border: 0;
+	background: @JsViewerMenuSeparatorColor;
+}

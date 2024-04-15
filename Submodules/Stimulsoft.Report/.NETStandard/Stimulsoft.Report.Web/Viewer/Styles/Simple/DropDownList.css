@@ -1,0 +1,90 @@
+
+/* Mouse */
+.stiJsViewerDropDownList {
+    border: 1px solid @JsViewerControlsBorderColor;  
+	background: @JsViewerControlsBackgroundColor;
+    border-collapse: separate;    
+}
+
+.stiJsViewerDropDownListOver {
+    border: 1px solid @JsViewerControlsOverBorderColor;
+	background: @JsViewerControlsBackgroundColor;
+    border-collapse: separate;
+}
+
+.stiJsViewerDropDownListDisabled {
+    border: 1px solid @JsViewerControlsDisabledBorderColor;
+	background: @JsViewerControlsBackgroundColor;
+    border-collapse: separate;
+}
+
+.stiJsViewerDropDownList_TextBox {
+    font-size: 12px;
+    border: 0px;
+    margin: 0px;
+    padding: 0px 0px 0px 4px;
+    -webkit-border-radius: 0px;
+    outline: none;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(hsla(0,0%,100%,0)), to(hsla(0,0%,100%,0)));
+    background-image: -webkit-linear-gradient(hsla(0,0%,100%,0), hsla(0,0%,100%,0));
+    background: @JsViewerControlsBackgroundColor;
+	color: #202020;
+}
+
+.stiJsViewerDropDownListImage {
+    height: 17px;
+    width: 32px;
+    margin: 0 3px 0 3px;
+}
+
+.stiJsViewerDropdownMenu {
+	position: absolute;
+	padding: 1px;
+	font-size: 12px;
+	border:1px solid @JsViewerMenuBorderColor;	
+	-moz-box-shadow: 0px 0px 7px rgba(0,0,0,0.6); 
+    -webkit-box-shadow: 0px 0px 7px rgba(0,0,0,0.6);
+    box-shadow: 0 0 7px rgba(0,0,0,0.3);
+    cursor: default;
+    background: @JsViewerControlsBackgroundColor;
+	color: #202020;
+}
+
+.stiJsViewerDropdownPanel {
+	position: absolute;
+	padding: 1px;
+	font-size: 12px;
+	border:1px solid @JsViewerMenuBorderColor;	
+	-moz-box-shadow: 0px 0px 7px rgba(0,0,0,0.6); 
+    -webkit-box-shadow: 0px 0px 7px rgba(0,0,0,0.6);
+    box-shadow: 0 0 7px rgba(0,0,0,0.3);
+    cursor: default;
+    background: @JsViewerGroupPanelBackgroundColor;
+	color: #202020;
+}
+
+
+/* Mouse */
+.stiJsViewerDropDownListButton {
+    cursor: default;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.stiJsViewerDropDownListButtonDefault {
+	background: @JsViewerControlsBackgroundColor;
+}
+
+.stiJsViewerDropDownListButtonOver {
+    background: @JsViewerButtonOverBackgroundColor;
+}
+
+.stiJsViewerDropDownListButtonSelected {
+    background: @JsViewerButtonSelectedBackgroundColor;
+}
+
+.stiJsViewerDropDownListButtonDisabled {
+    color: @JsViewerControlsFontDisabledColor;
+}

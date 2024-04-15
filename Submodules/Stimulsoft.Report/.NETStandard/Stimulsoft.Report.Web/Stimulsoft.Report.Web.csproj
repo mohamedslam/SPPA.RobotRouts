@@ -1,0 +1,186 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net452</TargetFrameworks>
+    <AssemblyName>Stimulsoft.Report.Web</AssemblyName>
+    <RootNamespace>Stimulsoft.Report.Web</RootNamespace>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Stimulsoft.snk</AssemblyOriginatorKeyFile>
+    <DelaySign>false</DelaySign>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <DebugSymbols>true</DebugSymbols>
+    <Configurations>Debug;Release;Debug-Cloud;Debug-Server;Release-Cloud;Release-Server</Configurations>
+  </PropertyGroup>
+  
+  <PropertyGroup>
+    <DefineConstants>TRACE</DefineConstants>
+    <DefineConstants Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU' OR '$(Configuration)|$(Platform)' == 'Debug-Server|AnyCPU' OR '$(Configuration)|$(Platform)' == 'Debug-Cloud|AnyCPU'">TRACE;DEBUG;</DefineConstants>
+    <DefineConstants Condition="'$(Configuration)|$(Platform)' == 'Debug-Server|AnyCPU' OR '$(Configuration)|$(Platform)' == 'Release-Server|AnyCPU'">$(DefineConstants);SERVER</DefineConstants>
+    <DefineConstants Condition="'$(Configuration)|$(Platform)' == 'Debug-Cloud|AnyCPU' OR '$(Configuration)|$(Platform)' == 'Release-Cloud|AnyCPU'">$(DefineConstants);CLOUD</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Viewer\Images\**" />
+    <EmbeddedResource Include="Viewer\Scripts\**" />
+    <EmbeddedResource Include="Viewer\Styles\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Viewer\Images\CheckBoxWhite_x1_5.png" />
+    <None Remove="Viewer\Images\CheckBoxWhite_x2.png" />
+    <None Remove="Viewer\Images\ColorControl\BorderColor.png" />
+    <None Remove="Viewer\Images\ColorControl\BorderColor_x1_5.png" />
+    <None Remove="Viewer\Images\ColorControl\BorderColor_x2.png" />
+    <None Remove="Viewer\Images\ColorControl\MoreColors.png" />
+    <None Remove="Viewer\Images\ColorControl\MoreColors_x2.png" />
+    <None Remove="Viewer\Images\ColorControl\NoFill.png" />
+    <None Remove="Viewer\Images\ColorControl\NoFill_x1_5.png" />
+    <None Remove="Viewer\Images\ColorControl\NoFill_x2.png" />
+    <None Remove="Viewer\Images\ColorControl\TextColor.png" />
+    <None Remove="Viewer\Images\ColorControl\TextColor_x1_5.png" />
+    <None Remove="Viewer\Images\ColorControl\TextColor_x2.png" />
+    <None Remove="Viewer\Images\Dashboards\Actions\Dark\Parameters_x1_25.png" />
+    <None Remove="Viewer\Images\Dashboards\Actions\Dark\Parameters_x1_75.png" />
+    <None Remove="Viewer\Images\Dashboards\Actions\Light\Parameters_x1_25.png" />
+    <None Remove="Viewer\Images\Dashboards\Actions\Light\Parameters_x1_75.png" />
+    <None Remove="Viewer\Images\Dashboards\Actions\Light\Parameters_x3.png" />
+    <None Remove="Viewer\Images\Dashboards\Actions\Light\Parameters_x4.png" />
+    <None Remove="Viewer\Images\Dashboards\Charts\Dark\ClusteredColumn3D.png" />
+    <None Remove="Viewer\Images\Dashboards\Charts\Dark\ClusteredColumn3D_x2.png" />
+    <None Remove="Viewer\Images\Dashboards\Charts\Dark\FullStackedColumn3D.png" />
+    <None Remove="Viewer\Images\Dashboards\Charts\Dark\FullStackedColumn3D_x2.png" />
+    <None Remove="Viewer\Images\Dashboards\Charts\Dark\StackedColumn3D.png" />
+    <None Remove="Viewer\Images\Dashboards\Charts\Dark\StackedColumn3D_x2.png" />
+    <None Remove="Viewer\Images\DateTimeButton_x1_5.png" />
+    <None Remove="Viewer\Images\DateTimeButton_x2.png" />
+    <None Remove="Viewer\Images\Font\AlignBottom.png" />
+    <None Remove="Viewer\Images\Font\AlignBottom_x1_5.png" />
+    <None Remove="Viewer\Images\Font\AlignBottom_x2.png" />
+    <None Remove="Viewer\Images\Font\AlignCenter.png" />
+    <None Remove="Viewer\Images\Font\AlignCenter_x1_5.png" />
+    <None Remove="Viewer\Images\Font\AlignCenter_x2.png" />
+    <None Remove="Viewer\Images\Font\AlignLeft.png" />
+    <None Remove="Viewer\Images\Font\AlignLeft_x1_5.png" />
+    <None Remove="Viewer\Images\Font\AlignLeft_x2.png" />
+    <None Remove="Viewer\Images\Font\AlignMiddle.png" />
+    <None Remove="Viewer\Images\Font\AlignMiddle_x1_5.png" />
+    <None Remove="Viewer\Images\Font\AlignMiddle_x2.png" />
+    <None Remove="Viewer\Images\Font\AlignRight.png" />
+    <None Remove="Viewer\Images\Font\AlignRight_x1_5.png" />
+    <None Remove="Viewer\Images\Font\AlignRight_x2.png" />
+    <None Remove="Viewer\Images\Font\AlignTop.png" />
+    <None Remove="Viewer\Images\Font\AlignTop_x1_5.png" />
+    <None Remove="Viewer\Images\Font\AlignTop_x2.png" />
+    <None Remove="Viewer\Images\Font\Bold.png" />
+    <None Remove="Viewer\Images\Font\Bold_x1_5.png" />
+    <None Remove="Viewer\Images\Font\Bold_x2.png" />
+    <None Remove="Viewer\Images\Font\Italic.png" />
+    <None Remove="Viewer\Images\Font\Italic_x1_5.png" />
+    <None Remove="Viewer\Images\Font\Italic_x2.png" />
+    <None Remove="Viewer\Images\Font\Underline.png" />
+    <None Remove="Viewer\Images\Font\Underline_x1_5.png" />
+    <None Remove="Viewer\Images\Font\Underline_x2.png" />
+    <None Remove="Viewer\Images\GuidButton_x1_5.png" />
+    <None Remove="Viewer\Images\GuidButton_x2.png" />
+    <None Remove="Viewer\Images\Remove.png" />
+    <None Remove="Viewer\Images\Remove_x1_5.png" />
+    <None Remove="Viewer\Images\Remove_x2.png" />
+    <None Remove="Viewer\Images\Signature.png" />
+    <None Remove="Viewer\Images\SignatureForm\ClearAllFormatting.png" />
+    <None Remove="Viewer\Images\SignatureForm\Image.png" />
+    <None Remove="Viewer\Images\SignatureForm\Image_x1_5.png" />
+    <None Remove="Viewer\Images\SignatureForm\Image_x2.png" />
+    <None Remove="Viewer\Images\SignatureForm\Text.png" />
+    <None Remove="Viewer\Images\SignatureForm\Text_x1_5.png" />
+    <None Remove="Viewer\Images\SignatureForm\Text_x2.png" />
+    <None Remove="Viewer\Images\Signature_x1_5.png" />
+    <None Remove="Viewer\Images\Signature_x2.png" />
+    <None Remove="Viewer\Images\VariableCategory\Minus.png" />
+    <None Remove="Viewer\Images\VariableCategory\Munus_x1_5.png" />
+    <None Remove="Viewer\Images\VariableCategory\Munus_x2.png" />
+    <None Remove="Viewer\Images\VariableCategory\Plus.png" />
+    <None Remove="Viewer\Images\VariableCategory\Plus_x1_5.png" />
+    <None Remove="Viewer\Images\VariableCategory\Plus_x2.png" />
+    <None Remove="Viewer\Scripts\Controls\InitializeColorControl.js" />
+    <None Remove="Viewer\Scripts\Controls\InitializeColorControlWithImage.js" />
+    <None Remove="Viewer\Scripts\Controls\InitializeColorDialog.js" />
+    <None Remove="Viewer\Scripts\Controls\InitializeFontList.js" />
+    <None Remove="Viewer\Scripts\Controls\InitializeImageControl.js" />
+    <None Remove="Viewer\Scripts\Controls\InitializeTabbedPane.js" />
+    <None Remove="Viewer\Scripts\Forms\InitializeEditSignatureForm.js" />
+    <None Remove="Viewer\Scripts\Forms\InitializeMoreColorsForm.js" />
+    <None Remove="Viewer\Scripts\Forms\InitializeSignatureImageForm.js" />
+    <None Remove="Viewer\Scripts\Forms\InitializeSignatureTextForm.js" />
+    <None Remove="Viewer\Styles\Office2003\ColorControlStyles.css" />
+    <None Remove="Viewer\Styles\Office2003\GroupHeaderButton.css" />
+    <None Remove="Viewer\Styles\Office2003\SignatureForm.css" />
+    <None Remove="Viewer\Styles\Office2003\TabbedPaneStyles.css" />
+    <None Remove="Viewer\Styles\Office2007\ColorControlStyles.css" />
+    <None Remove="Viewer\Styles\Office2007\GroupHeaderButton.css" />
+    <None Remove="Viewer\Styles\Office2007\SignatureForm.css" />
+    <None Remove="Viewer\Styles\Office2007\TabbedPaneStyles.css" />
+    <None Remove="Viewer\Styles\Office2010\ColorControlStyles.css" />
+    <None Remove="Viewer\Styles\Office2010\GroupHeaderButton.css" />
+    <None Remove="Viewer\Styles\Office2010\SignatureForm.css" />
+    <None Remove="Viewer\Styles\Office2010\TabbedPaneStyles.css" />
+    <None Remove="Viewer\Styles\Office2013\ColorControlStyles.css" />
+    <None Remove="Viewer\Styles\Office2013\FormButtonThemeStyles.css" />
+    <None Remove="Viewer\Styles\Office2013\GroupHeaderButton.css" />
+    <None Remove="Viewer\Styles\Office2013\SignatureForm.css" />
+    <None Remove="Viewer\Styles\Office2013\SmallButtonWithBorderStyles.css" />
+    <None Remove="Viewer\Styles\Office2013\TabbedPaneStyles.css" />
+    <None Remove="Viewer\Styles\Office2022\ColorControlStyles.css" />
+    <None Remove="Viewer\Styles\Office2022\GroupHeaderButton.css" />
+    <None Remove="Viewer\Styles\Office2022\Office2022BlackBlue\Constants.css" />
+    <None Remove="Viewer\Styles\Office2022\Office2022BlackCarmine\Constants.css" />
+    <None Remove="Viewer\Styles\Office2022\Office2022BlackGreen\Constants.css" />
+    <None Remove="Viewer\Styles\Office2022\Office2022BlackOrange\Constants.css" />
+    <None Remove="Viewer\Styles\Office2022\Office2022BlackPurple\Constants.css" />
+    <None Remove="Viewer\Styles\Office2022\Office2022BlackTeal\Constants.css" />
+    <None Remove="Viewer\Styles\Office2022\Office2022BlackViolet\Constants.css" />
+    <None Remove="Viewer\Styles\Office2022\Office2022DarkGrayBlue\Constants.css" />
+    <None Remove="Viewer\Styles\Office2022\Office2022DarkGrayCarmine\Constants.css" />
+    <None Remove="Viewer\Styles\Office2022\Office2022DarkGrayGreen\Constants.css" />
+    <None Remove="Viewer\Styles\Office2022\Office2022DarkGrayOrange\Constants.css" />
+    <None Remove="Viewer\Styles\Office2022\Office2022DarkGrayPurple\Constants.css" />
+    <None Remove="Viewer\Styles\Office2022\Office2022DarkGrayTeal\Constants.css" />
+    <None Remove="Viewer\Styles\Office2022\Office2022DarkGrayViolet\Constants.css" />
+    <None Remove="Viewer\Styles\Office2022\Office2022LightGrayBlue\Constants.css" />
+    <None Remove="Viewer\Styles\Office2022\Office2022LightGrayCarmine\Constants.css" />
+    <None Remove="Viewer\Styles\Office2022\Office2022LightGrayGreen\Constants.css" />
+    <None Remove="Viewer\Styles\Office2022\Office2022LightGrayOrange\Constants.css" />
+    <None Remove="Viewer\Styles\Office2022\Office2022LightGrayPurple\Constants.css" />
+    <None Remove="Viewer\Styles\Office2022\Office2022LightGrayTeal\Constants.css" />
+    <None Remove="Viewer\Styles\Office2022\Office2022LightGrayViolet\Constants.css" />
+    <None Remove="Viewer\Styles\Office2022\SignatureForm.css" />
+    <None Remove="Viewer\Styles\Office2022\TabbedPaneStyles.css" />
+    <None Remove="Viewer\Styles\Simple\ColorControlStyles.css" />
+    <None Remove="Viewer\Styles\Simple\GroupHeaderButton.css" />
+    <None Remove="Viewer\Styles\Simple\SignatureForm.css" />
+    <None Remove="Viewer\Styles\Simple\TabbedPaneStyles.css" />
+    <None Remove="Viewer\Styles\Windows7\ColorControlStyles.css" />
+    <None Remove="Viewer\Styles\Windows7\GroupHeaderButton.css" />
+    <None Remove="Viewer\Styles\Windows7\SignatureForm.css" />
+    <None Remove="Viewer\Styles\Windows7\TabbedPaneStyles.css" />
+    <None Remove="Viewer\Styles\WindowsXP\ColorControlStyles.css" />
+    <None Remove="Viewer\Styles\WindowsXP\GroupHeaderButton.css" />
+    <None Remove="Viewer\Styles\WindowsXP\SignatureForm.css" />
+    <None Remove="Viewer\Styles\WindowsXP\TabbedPaneStyles.css" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\Stimulsoft.Base\Stimulsoft.Base.csproj" />
+    <ProjectReference Include="..\Stimulsoft.Data\Stimulsoft.Data.csproj" />
+    <ProjectReference Include="..\Stimulsoft.Map\Stimulsoft.Map.csproj" />
+    <ProjectReference Include="..\Stimulsoft.Report\Stimulsoft.Report.csproj" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Reference Include="System.Web" />
+  </ItemGroup>
+
+</Project>

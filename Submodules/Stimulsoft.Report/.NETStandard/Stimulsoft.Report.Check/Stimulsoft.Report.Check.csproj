@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>Stimulsoft.Report.Check</AssemblyName>
+    <RootNamespace>Stimulsoft.Report.Check</RootNamespace>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Stimulsoft.snk</AssemblyOriginatorKeyFile>
+    <DelaySign>false</DelaySign>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <UseWindowsForms>true</UseWindowsForms>
+    <EmbeddedResourceUseDependentUponConvention>true</EmbeddedResourceUseDependentUponConvention>
+    <DebugSymbols>true</DebugSymbols>
+    <Configurations>Debug;Release;Debug-Cloud;Release-Cloud;Debug-Server;Release-Server</Configurations>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <DefineConstants>TRACE</DefineConstants>
+    <DefineConstants Condition="'$(TargetFramework)' == 'netcoreapp3.1'">$(DefineConstants);NETCOREAPP</DefineConstants>
+    <DefineConstants Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU' OR '$(Configuration)|$(Platform)' == 'Debug-Server|AnyCPU' OR '$(Configuration)|$(Platform)' == 'Debug-Cloud|AnyCPU'">$(DefineConstants);DEBUG</DefineConstants>
+    <DefineConstants Condition="'$(Configuration)|$(Platform)' == 'Debug-Server|AnyCPU' OR '$(Configuration)|$(Platform)' == 'Release-Server|AnyCPU'">$(DefineConstants);SERVER</DefineConstants>
+    <DefineConstants Condition="'$(Configuration)|$(Platform)' == 'Debug-Cloud|AnyCPU' OR '$(Configuration)|$(Platform)' == 'Release-Cloud|AnyCPU'">$(DefineConstants);SERVER;CLOUD</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU' OR '$(Configuration)|$(Platform)' == 'Release-Server|AnyCPU' OR '$(Configuration)|$(Platform)' == 'Release-Cloud|AnyCPU'">
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Stimulsoft.Base\Stimulsoft.Base.csproj" />
+    <ProjectReference Include="..\Stimulsoft.Report.Helper\Stimulsoft.Report.Helper.csproj" />
+    <ProjectReference Include="..\Stimulsoft.Report\Stimulsoft.Report.csproj" />
+  </ItemGroup>
+
+</Project>

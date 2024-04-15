@@ -1,0 +1,450 @@
+
+/* Small intervals */
+.stiDesignerCaptionControls {
+	white-space: nowrap;
+	padding: 0 15px 0 7px;
+	border: 0px;
+	font-family: Arial;
+    font-size: 12px;
+    color: @MobileDesignerFontColor;
+    width: 1px;
+}
+
+.stiDesignerTextContainer {
+    display: inline-block;
+    white-space: normal;
+    border: 0px;
+    font-family: Arial;
+    font-size: 12px;
+    color: @MobileDesignerFontColor;
+}
+
+.stiDesignerControlCells{
+	padding: 3px 4px 3px 0;	
+	border: 0px;
+}
+
+/* Big intervals */
+.stiDesignerCaptionControlsBigIntervals {
+	white-space: nowrap;
+	padding: 0 25px 0 15px;
+	border: 0px;
+	font-family: Arial;
+    font-size: 12px;
+    color: @MobileDesignerFontColor;
+    width: 1px;
+}
+
+.stiDesignerControlCellsBigIntervals {
+	padding: 3px 12px 3px 0;
+	border: 0px;
+}
+
+.stiDesignerControlCellsBigIntervals2 {
+    padding: 5px 12px 5px 0;
+    border: 0px;
+}
+
+.stiDesignerHomePanelSeparator {
+	background: @MobileDesignerToolbarSeparatorColor;
+}
+
+.stiDesignerDrillDownFormCaptionControls{
+	white-space: nowrap;
+	min-width: 200px;
+	padding: 0 8px 0 15px;
+	border: 0px;
+	margin: 0px;
+	font-family: Arial;
+    font-size: 12px;
+    color: @MobileDesignerFontColor;
+}
+
+/* Panel */
+.stiDesignerCaptionControlsOnPanel{
+	white-space: nowrap;
+	padding: 0 5px 0 3px;
+	border: 0px;
+	font-family: Arial;
+    font-size: 12px;
+    color: @MobileDesignerFontColor;
+    width: 1px;
+}
+
+.stiDesignerCaptionControlsOnPanelDisabled{
+	white-space: nowrap;
+	padding: 0 5px 0 3px;
+	border: 0px;
+	font-family: Arial;
+    font-size: 12px;
+    color: @MobileDesignerFontDisabledColor;
+    width: 1px;
+}
+
+.stiDesignerControlCellsOnPanel{
+	padding: 0 3px 0 0;	
+	border: 0px;
+}
+
+.stiBrushControlColorBar {
+    border: 1px solid @MobileDesignerControlsBorderColor;
+    border-radius: 3px;
+    width: 30px;
+    height: 14px;
+}
+
+/* Status Panel Separator */ 
+.stiDesignerStatusPanelSeparator {
+	border: 0px;
+	border-left: 1px solid @MobileDesignerStatusPanelSeparatorColor;
+	padding: 0px;
+    margin: 0 3px 0 3px;
+    height: 22px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+
+/* VariableItemsForm Controls Cell */
+.stiDesignerVariableItemsFormControlsLeftCell {
+    vertical-align: top;
+    margin: 0px;
+    padding: 0px;
+    text-align: right;
+    border-left: 1px dashed #c6c6c6;
+}
+
+.stiDesignerVariableItemsFormControlsRightCell {
+	vertical-align: top;	
+	margin: 0px;	
+	padding: 0px;
+}
+
+/* Style Designer Form */
+.stiDesignerStyleDesignerFormToolbarCell {
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    border-bottom: 1px dotted @MobileDesignerFormSeparatorColor;
+}
+
+.stiDesignerStyleDesignerFormPropertiesPanel {
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+
+.styleDesignerItemsContainer {
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.stiDesignerSelectDataProgress {	
+	position: absolute;
+	left: 200px;
+	top: 150px;	
+}
+
+.stiDesignerTextEditFormSystemVariablesInfo {
+	border-top: 1px dotted @MobileDesignerFormSeparatorColor;
+	padding: 6px 6px 0 6px;
+	font-family: Arial;
+    font-size: 12px;
+    color: @MobileDesignerFontColor;
+}
+
+.stiDesignerRightBorderContainer {
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+	border-right: 1px dotted @MobileDesignerFormSeparatorColor;
+}
+
+.stiDesignerConditionsFormMainContainerCell {
+	border-left: 1px dotted @MobileDesignerFormSeparatorColor;
+}
+
+.stiDesignerConditionPanel {
+	width: 700px;
+	height: 380px;	
+	overflow: auto;
+}
+
+.stiDesignerConditionsFormSampleBar {
+	border: 1px solid @MobileDesignerControlsBorderColor;
+	margin: 0 4px 0 4px;
+}
+
+.stiDesignerPagesContainer {
+	overflow-x: auto;
+    overflow-y: hidden;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+}
+
+.stiDesignerViewDataTableCell {
+    font-family: Arial;
+    font-size: 12px;
+    padding: 4px 15px 4px 4px;
+    color: @MobileDesignerFontColor;
+    border-bottom: 1px dotted @MobileDesignerContainersBorderColor;
+    border-right: 1px dotted @MobileDesignerContainersBorderColor;
+}
+
+.stiDesignerDataGridCell {
+    padding: 4px;
+    font-family: Arial;
+    font-size: 12px;
+    color: @MobileDesignerFontColor;
+    border-bottom: 1px dotted @MobileDesignerContainersBorderColor;
+    border-right: 1px dotted @MobileDesignerContainersBorderColor;
+}
+
+.stiDesignerTextFormatFormCustomContainer {
+	border-top: 1px dotted @MobileDesignerFormSeparatorColor;
+}
+
+.stiDesignerCrossTabContainerCell {
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+	border-left: 1px dotted @MobileDesignerFormSeparatorColor;
+	border-bottom: 1px dotted @MobileDesignerFormSeparatorColor;
+}
+
+.stiDesignerrCrossTabContainerToolbar {
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial;
+	font-size: 12px;
+	color: @MobileDesignerFontColor;
+	border-bottom: 1px dotted @MobileDesignerContainersBorderColor;
+	width: 100%;
+}
+
+.stiDesignerDescriptionForBigButton {
+    white-space: nowrap;
+    padding: 0 25px 0 15px;
+    border: 0px;
+    font-family: Arial;
+    font-size: 12px;
+    color: #767676;
+    line-height: 1.7;
+}
+
+.stiDesignerFileMenuPanelHeader {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    background: @MobileDesignerContainersBackgroundColor;
+    color: #767676;
+    text-align: center;
+    cursor: default;
+    padding: 30px;
+    height: 60px;
+    text-align: left;
+}
+
+.stiImageContainerWithBorder {
+	border: 1px dashed @MobileDesignerControlsBorderColor;
+    border-radius: 3px;
+}
+
+.stiSimpleContainerWithBorder {
+    border: 1px solid @MobileDesignerControlsBorderColor;
+    border-radius: 3px;
+}
+
+.stiIconImageContainerWithBorder {
+    border: 1px dashed @MobileDesignerControlsBorderColor;
+    border-radius: 3px;
+    margin: 0 0 8px 8px;
+    text-align: center;
+    font-size: 150pt;
+    font-family: 'Stimulsoft';
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.stiDesignerPageSetupFormSample {
+    margin: 4px;
+}
+
+.stiDesignerPageSetupFormSampleCell {
+	border-right: 1px dotted @MobileDesignerFormSeparatorColor;
+    text-align: center;
+    vertical-align: top;
+    width: 150px;
+}
+
+.stiDragAndDropHintText {
+    color: @MobileDesignerDragAndDropContainerHintText;
+    text-align: center;
+}
+
+.stiResourceContainerWithBorder {
+	border: 1px solid @MobileDesignerControlsBorderColor;
+    border-radius: 3px;
+}
+
+.stiResourceInnerContainer {
+	overflow: auto;
+    text-align: center;
+    display: inline-block;
+}
+
+.stiCloudDemoPanel {
+	text-align: center;
+    font-family: Arial;
+    font-size: 15px;
+    line-height: 1.3;
+    color: #888888;
+    padding: 10px 0 10px 0;
+}
+
+.stiUsingMarker {
+	position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 20px;
+    background: #ffffff;
+    right: 10px;
+    top: calc(50% - 6px);
+}
+
+.stiUsingMarker div {
+	margin: 2px 0 0 2px;
+    width: 8px;
+    height: 8px;
+    border-radius: 20px;
+    background: @MobileDesignerFormHeaderFontColor;
+}
+
+.stiUsingMarkerForBigButton {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 20px;
+    background: #ffffff;
+    bottom: 1px;
+    left: calc(50% - 6px);
+}
+
+.stiUsingMarkerForBigButton div {
+    margin: 2px 0 0 2px;
+    width: 8px;
+    height: 8px;
+    border-radius: 20px;
+    background: @MobileDesignerControlsBorderColor;
+}
+
+.stiCrossTabsTree {
+    border: 1px solid @MobileDesignerControlsBorderColor;
+    border-radius: 3px;
+    background: @MobileDesignerContainersBackgroundColor;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 12px;
+    margin: 6px 12px 12px 12px;
+}
+
+.stiDataContainer {
+    border: 1px dashed @MobileDesignerContainersBorderColor;
+    border-radius: 3px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+    padding: 1px;
+}
+
+.stiDataGrid {
+    border: 1px dashed @MobileDesignerContainersBorderColor;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.stiDataTransformHintBlock {
+    font-family: Arial;
+    font-size: 12px;
+    color: @MobileDesignerFontColor;
+    margin: 12px;
+    line-height: 1.3;
+}
+
+.stiDataTransformErrorBlock {
+    font-family: Arial;
+    font-size: 12px;
+    color: #ff0000;
+    background: #fcdcdc;
+    padding: 15px;
+    margin-top: 12px;
+    line-height: 1.3;
+}
+
+.stiStylesControlItem {
+    font-family: Arial;
+    font-size: 12px;
+    float: left;
+    max-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.stiDesignerSymbolsContainer {
+    overflow: auto;
+    border: 1px solid @MobileDesignerControlsBorderColor;
+    border-radius: 3px;
+    padding: 2px;
+    margin: 12px;
+}
+
+.stiDesignerBigText {
+    white-space: normal;
+    font-family: Arial;
+    font-size: 25px;
+    color: @MobileDesignerFontColor;
+    text-align: center;
+}
+
+.stiDesignerBorderImageRotate90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    margin-left: -5px;
+}
+
+.stiManualControlCell {
+    font-family: Arial;
+    font-size: 12px;
+    color: @MobileDesignerFontColor;
+    background: @MobileDesignerControlsBackgroundColor;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid @MobileDesignerControlsBorderColor;
+    line-height: 1.3;
+}
+
+.stiManualControlHeaderCell {
+    color: @MobileDesignerFontColor !important;
+    background: @MobileDesignerContainersHeaderColor !important;
+}
+
+.stiManualControlCellSelected {
+    background: @MobileDesignerControlsSelectedBackgroundColor !important;
+}
+
+.stiSignatureFormDrawContainer {
+    border: 1px solid @MobileDesignerControlsBorderColor;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    line-height: 1;
+}

@@ -1,0 +1,43 @@
+
+.stiDesignerFormButtonTheme {
+    cursor: default;
+    font-family: Arial;
+    font-size: 12px;
+    border-radius: 3px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+.stiDesignerFormButtonTheme_Mouse {
+    height: 24px;
+}
+
+.stiDesignerFormButtonTheme_Touch {
+    height: 28px;
+}
+
+.stiDesignerFormButtonThemeDefault {
+    background: @MobileDesignerFileMenuBackgroundColor;
+    border: 1px solid @MobileDesignerFileMenuBackgroundColor;
+    color: @MobileDesignerFileMenuFontColor;
+}
+
+.stiDesignerFormButtonThemeOver {
+    background: @MobileDesignerFileMenuItemOverBackgroundColor;
+    border: 1px solid @MobileDesignerFileMenuItemOverBackgroundColor;
+    color: @MobileDesignerFileMenuFontColor;
+}
+
+.stiDesignerFormButtonThemeSelected {
+    background: @MobileDesignerFileMenuItemSelectedBackgroundColor;
+    border: 1px solid @MobileDesignerFileMenuItemSelectedBackgroundColor;
+    color: @MobileDesignerFileMenuFontColor;
+}
+
+.stiDesignerFormButtonThemeDisabled {
+    background: @MobileDesignerFileMenuItemOverBackgroundColor;
+    border: 1px solid @MobileDesignerFileMenuItemOverBackgroundColor;
+    color: @MobileDesignerFileMenuFontDisabledColor;
+}
+

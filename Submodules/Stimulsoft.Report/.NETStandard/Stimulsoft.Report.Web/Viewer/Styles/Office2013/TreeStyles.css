@@ -1,0 +1,53 @@
+
+/* Opening Icon */
+.stiJsViewerTreeItemIconOpening {
+    margin: 0 3px 0 0;
+}
+
+/* Button */
+.stiJsViewerTreeItem {
+    color: @JsViewerControlsFontColor;
+    cursor: default;
+    font-family: Arial;
+    font-size: 12px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+.stiJsViewerTreeItemOver {
+    background: @JsViewerButtonOverBackgroundColor;
+    color: @JsViewerControlsFontColor;
+    cursor: default;
+    font-family: Arial;
+    font-size: 12px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+.stiJsViewerTreeItemSelected {
+    background: @JsViewerButtonSelectedBackgroundColor;
+    color: @JsViewerControlsFontColor;
+    cursor: default;
+    font-family: Arial;
+    font-size: 12px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Button Image */
+.stiJsViewerTreeItemImage {
+    border: 0px;
+    padding: 0px;
+    margin: 1px 2px 1px 2px;
+}
+
+/* Button Caption */
+.stiJsViewerTreeItemCaption {
+    margin: 0px;
+    border: 0px;
+    text-align: left;
+    padding: 2px 7px 2px 7px;
+}

@@ -1,0 +1,30 @@
+
+.stiJsViewerGroupHeaderButton {
+    height: 23px;
+    cursor: default;
+    font-size: 12px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.stiJsViewerGroupHeaderButtonDefault {
+    background: @JsViewerControlsBackgroundColor;
+    border: 1px solid @JsViewerControlsBorderColor;
+}
+
+.stiJsViewerGroupHeaderButtonOver {
+    border: 1px solid @JsViewerButtonOverBorderColor;
+    background: @JsViewerButtonOverBackgroundDownColor;
+}
+
+.stiJsViewerGroupHeaderButtonSelected {
+    border: 1px solid @JsViewerButtonSelectedBorderColor;
+    background: @JsViewerButtonSelectedBackgroundDownColor;
+}
+
+.stiJsViewerGroupHeaderButtonDisabled {
+    background: @JsViewerButtonDisabledBackgroundColor;
+    border: 1px solid @JsViewerControlsDisabledBorderColor;
+}

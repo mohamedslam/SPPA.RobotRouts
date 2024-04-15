@@ -1,0 +1,9 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <block type="sti_open_link" id="BU~+[QF(ls,:VC{q24p7" x="264" y="243">
+    <value name="VALUE">
+      <shadow type="text" id=".eFVD7hHjA7CklI5apwd">
+        <field name="TEXT">https://www.stimulsoft.com</field>
+      </shadow>
+    </value>
+  </block>
+</xml>

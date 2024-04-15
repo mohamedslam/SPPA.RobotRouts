@@ -1,0 +1,24 @@
+
+/* Filter Container */
+.stiJsViewerFilterContainer {
+    background: @JsViewerFormContainerBackgroundColor;
+    overflow: auto;
+}
+
+.stiJsViewerFilterPanelHeader {
+    border-bottom: 1px solid @JsViewerMainPanelsBorderColor;
+}
+
+/* Filter Panel */
+.stiJsViewerFilterPanel {
+    border-radius: 3px;
+    border: 1px solid @JsViewerMainPanelsBorderColor;
+    background: @JsViewerFormContainerBackgroundColor;
+    color: @JsViewerControlsFontColor;
+    font-family: Arial;
+    font-size: 12px;
+    margin: 4px;
+    -moz-box-shadow: 0px 0px 7px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0px 0px 7px rgba(0,0,0,0.6);
+    box-shadow: 0 0 7px rgba(0,0,0,0.3);
+}

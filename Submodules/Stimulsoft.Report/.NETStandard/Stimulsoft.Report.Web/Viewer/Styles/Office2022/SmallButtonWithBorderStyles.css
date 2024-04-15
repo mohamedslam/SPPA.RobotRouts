@@ -1,0 +1,31 @@
+
+.stiJsViewerSmallButtonWithBorder {
+    border-radius: 3px;
+    color: @JsViewerControlsFontColor;
+    cursor: default;
+    font-family: Arial;
+    font-size: 12px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+.stiJsViewerSmallButtonWithBorderDefault {
+    background: @JsViewerControlsBackgroundColor;
+    border: 1px solid @JsViewerControlsBorderColor;
+}
+
+.stiJsViewerSmallButtonWithBorderOver {
+    background: @JsViewerControlsOverBackgroundColor;
+    border: 1px solid @JsViewerControlsOverBorderColor;
+}
+
+.stiJsViewerSmallButtonWithBorderSelected {
+    background: @JsViewerControlsSelectedBackgroundColor;
+    border: 1px solid @JsViewerControlsSelectedBorderColor;
+}
+
+.stiJsViewerSmallButtonWithBorderDisabled {
+    background: JsViewerControlsDisabledBackgroundColor;
+    border: 1px solid @JsViewerControlsDisabledBorderColor;
+}

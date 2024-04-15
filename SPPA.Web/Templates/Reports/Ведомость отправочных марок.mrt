@@ -1,0 +1,625 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <AutoLocalizeReportOnRun>True</AutoLocalizeReportOnRun>
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="1">
+      <JSON Ref="2" type="Stimulsoft.Report.Dictionary.StiJsonDatabase" isKey="true">
+        <Alias>JSON</Alias>
+        <Key />
+        <Name>JSON</Name>
+        <PathData>resource://json</PathData>
+      </JSON>
+    </Databases>
+    <DataSources isList="true" count="2">
+      <Elements Ref="3" type="DataTableSource" isKey="true">
+        <Alias>Elements</Alias>
+        <Columns isList="true" count="23">
+          <value>Id,System.String</value>
+          <value>IfcId,System.String</value>
+          <value>IfcTeklaId,System.String</value>
+          <value>Type,System.String</value>
+          <value>ParentId,System.String</value>
+          <value>RootId,System.String</value>
+          <value>Mf_ManufacturingStatus,System.String</value>
+          <value>Mf_Queue,System.String</value>
+          <value>Mf_WeldType,System.String</value>
+          <value>Mf_Length,System.Decimal</value>
+          <value>Mf_WeldSize,System.Decimal</value>
+          <value>PartType,System.String</value>
+          <value>Mf_Position,System.String</value>
+          <value>Mf_Name,System.String</value>
+          <value>Mf_Material,System.String</value>
+          <value>Mf_Profile,System.String</value>
+          <value>Mf_ProfileType,System.String</value>
+          <value>Mf_Weight,System.Decimal</value>
+          <value>Mf_PaintingArea,System.Decimal</value>
+          <value>Mf_Height,System.Decimal</value>
+          <value>Mf_HasHoles,System.Boolean</value>
+          <value>Mf_Width,System.Decimal</value>
+          <value>Mf_Standard,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Key>5a94749844a1406bab9ec290ebfda864</Key>
+        <Name>Elements</Name>
+        <NameInSource>JSON.Elements</NameInSource>
+      </Elements>
+      <Order Ref="4" type="DataTableSource" isKey="true">
+        <Alias>Order</Alias>
+        <Columns isList="true" count="8">
+          <value>OrderId,System.String</value>
+          <value>Name,System.String</value>
+          <value>Code,System.String</value>
+          <value>Customer,System.String</value>
+          <value>Archived,System.Boolean</value>
+          <value>Status,System.String</value>
+          <value>WorkspaceId,System.String</value>
+          <value>UserRole,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Key>142702a28ba3416ab8d7980f42a3f764</Key>
+        <Name>Order</Name>
+        <NameInSource>JSON.Order</NameInSource>
+      </Order>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Resources isList="true" count="0" />
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="2">
+    <Item4 Ref="5" type="Stimulsoft.Report.StiGlobalizationContainer" isKey="true">
+      <CultureName>ru-RU</CultureName>
+      <Items isList="true" count="0" />
+    </Item4>
+    <Item5 Ref="6" type="Stimulsoft.Report.StiGlobalizationContainer" isKey="true">
+      <CultureName>en-US</CultureName>
+      <Items isList="true" count="14">
+        <value>Text11.Text,Weight</value>
+        <value>Text20.Text,Bill_x0020_of_x0020_materials_x000D__x000A_</value>
+        <value>ReportAlias,Bill_x0020_of_x0020_materials</value>
+        <value>Text10.Text,Weight</value>
+        <value>Text6.Text,Name:_x0020__x007B_Order.Name_x007D__x000D__x000A_Code:_x0020__x007B_Order.Code_x007D__x000D__x000A_Customer:_x0020__x007B_Order.Customer_x007D_</value>
+        <value>Text14.Text,_x007B__x0022_Total:_x0020__x0022__x002B_Count_x0028_GroupHeaderBand1_x002C__x0020_Elements.Type_x0029__x002B__x0020__x0022__x0020_unit_x0020__x0022__x002B_Sum_x0028_Elements.Mf_Weight_x002F_1000_x0029__x002B__x0022__x0020_t_x0020__x0022__x002B_Sum_x0028_GroupHeaderBand1_x002C_Elements.Mf_PaintingArea_x0029__x007D__x0020_m2</value>
+        <value>Text5.Text,Qty.</value>
+        <value>Text19.Text,total_x002C__x0020_t</value>
+        <value>Text8.Text,Name</value>
+        <value>Text21.Text,unit_x002C__x0020_t</value>
+        <value>Page1.ExcelSheet,Bill_x0020_of_x0020_materials</value>
+        <value>Text18.Text,Painting_x0020_area_x002C__x0020_m2</value>
+        <value>Text7.Text,Mark</value>
+        <value>Текст1.Text,Name:_x0020__x007B_Order.Name_x007D__x000D__x000A_Code:_x0020__x007B_Order.Code_x007D__x000D__x000A_Customer:_x0020__x007B_Order.Customer_x007D_</value>
+      </Items>
+    </Item5>
+  </GlobalizationStrings>
+  <Key>b22f6c67d430499fb78d121e65c4bcd1</Key>
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="7" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="7">
+        <ЗаголовокСтраницы1 Ref="8" type="PageHeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,4,190,34</ClientRectangle>
+          <Components isList="true" count="3">
+            <Текст1 Ref="9" type="Text" isKey="true">
+              <Border>None;[0:0:0];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>0,16.1,190,14</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Текст1</Name>
+              <Page isRef="7" />
+              <Parent isRef="8" />
+              <Text>Название: {Order.Name}
+Шифр: {Order.Code}
+Заказчик: {Order.Customer}</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+            </Текст1>
+            <Изображение1 Ref="10" type="Image" isKey="true">
+              <AspectRatio>True</AspectRatio>
+              <Border>None;[0:0:0];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.1,12,12</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Hyperlink>https://SPPA.ru/</Hyperlink>
+              <IconColor>68, 114, 196</IconColor>
+              <ImageBytes>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
+RK5CYII=</ImageBytes>
+              <Margins>0,0,0,0</Margins>
+              <Name>Изображение1</Name>
+              <Page isRef="7" />
+              <Parent isRef="8" />
+              <Stretch>True</Stretch>
+              <VertAlignment>Center</VertAlignment>
+            </Изображение1>
+            <Text20 Ref="11" type="Text" isKey="true">
+              <Border>None;[0:0:0];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>12,2.5,146,9.5</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,16,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text20</Name>
+              <Page isRef="7" />
+              <Parent isRef="8" />
+              <Text>Ведомость отправочных марок на заказ
+</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+            </Text20>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Name>ЗаголовокСтраницы1</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+          <PrintOn>OnlyFirstPage</PrintOn>
+        </ЗаголовокСтраницы1>
+        <PageHeaderBand2 Ref="12" type="PageHeaderBand" isKey="true">
+          <Brush>[249:223:187]</Brush>
+          <ClientRectangle>0,46,190,12</ClientRectangle>
+          <Components isList="true" count="8">
+            <Text7 Ref="13" type="Text" isKey="true">
+              <Border>Left, Right;Black;1;Solid;False;4;Black</Border>
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>0,0,28,12</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text7</Name>
+              <Page isRef="7" />
+              <Parent isRef="12" />
+              <Text>Марка</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text7>
+            <Text8 Ref="14" type="Text" isKey="true">
+              <Border>Left, Right;Black;1;Solid;False;4;Black</Border>
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>28,0,70,12</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text8</Name>
+              <Page isRef="7" />
+              <Parent isRef="12" />
+              <Text>Наименование</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text8>
+            <Text5 Ref="15" type="Text" isKey="true">
+              <Border>Left, Right;Black;1;Solid;False;4;Black</Border>
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>98,0,16,12</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text5</Name>
+              <Page isRef="7" />
+              <Parent isRef="12" />
+              <Text>Кол-во</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text5>
+            <Text10 Ref="16" type="Text" isKey="true">
+              <Border>Left, Right;Black;1;Solid;False;4;Black</Border>
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>114,0,24,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text10</Name>
+              <Page isRef="7" />
+              <Parent isRef="12" />
+              <Text>Масса</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text10>
+            <Text11 Ref="17" type="Text" isKey="true">
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>138,0,24,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text11</Name>
+              <Page isRef="7" />
+              <Parent isRef="12" />
+              <Text>Масса</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text11>
+            <Text18 Ref="18" type="Text" isKey="true">
+              <Border>Left, Right;Black;1;Solid;False;4;Black</Border>
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>162,0,28,12</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text18</Name>
+              <Page isRef="7" />
+              <Parent isRef="12" />
+              <Text>Площадь покраски, м2</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text18>
+            <Text19 Ref="19" type="Text" isKey="true">
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>138,6,24,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text19</Name>
+              <Page isRef="7" />
+              <Parent isRef="12" />
+              <Text>всего, т</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text19>
+            <Text21 Ref="20" type="Text" isKey="true">
+              <Border>Left, Right;Black;1;Solid;False;4;Black</Border>
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>114,6,24,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text21</Name>
+              <Page isRef="7" />
+              <Parent isRef="12" />
+              <Text>шт., т</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text21>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Name>PageHeaderBand2</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+        </PageHeaderBand2>
+        <PageFooterBand1 Ref="21" type="PageFooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,269,190,8</ClientRectangle>
+          <Components isList="true" count="2">
+            <Text9 Ref="22" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>174,1,16,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text9</Name>
+              <Page isRef="7" />
+              <Parent isRef="21" />
+              <Text>{PageNumber}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text9>
+            <Text16 Ref="23" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,1,30,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text16</Name>
+              <Page isRef="7" />
+              <Parent isRef="21" />
+              <Text>{Today}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="24" type="DateFormat" isKey="true">
+                <StringFormat>dd.MM.yy</StringFormat>
+              </TextFormat>
+              <Type>SystemVariables</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text16>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Name>PageFooterBand1</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+        </PageFooterBand1>
+        <GroupHeaderBand2 Ref="25" type="GroupHeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,66,190,10</ClientRectangle>
+          <Components isList="true" count="6">
+            <Text1 Ref="26" type="Text" isKey="true">
+              <Border>None;[127:127:127];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,28,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11</Font>
+              <Margins>3,3,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="7" />
+              <Parent isRef="25" />
+              <Text>{Replace(Elements.Mf_Position, "_", "")}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text1>
+            <Text3 Ref="27" type="Text" isKey="true">
+              <Border>None;[127:127:127];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>28,0,70,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11</Font>
+              <Margins>3,3,0,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="7" />
+              <Parent isRef="25" />
+              <Text>{Elements.Mf_Name}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text3>
+            <Text2 Ref="28" type="Text" isKey="true">
+              <Border>None;[127:127:127];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>98,0,16,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text2</Name>
+              <Page isRef="7" />
+              <Parent isRef="25" />
+              <Text>{Count(GroupHeaderBand2, Elements.Type)}
+</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text2>
+            <Text4 Ref="29" type="Text" isKey="true">
+              <Border>None;[127:127:127];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>114,0,24,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>3,3,0,0</Margins>
+              <Name>Text4</Name>
+              <Page isRef="7" />
+              <Parent isRef="25" />
+              <Text>{Elements.Mf_Weight/1000}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text4>
+            <Text12 Ref="30" type="Text" isKey="true">
+              <Border>None;[127:127:127];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>138,0,24,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>3,3,0,0</Margins>
+              <Name>Text12</Name>
+              <Page isRef="7" />
+              <Parent isRef="25" />
+              <Text>{Sum(Elements.Mf_Weight/1000)}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text12>
+            <Text17 Ref="31" type="Text" isKey="true">
+              <Border>None;[127:127:127];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>162,0,28,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>3,3,0,0</Margins>
+              <Name>Text17</Name>
+              <Page isRef="7" />
+              <Parent isRef="25" />
+              <Text>{Sum(GroupHeaderBand2,Elements.Mf_PaintingArea)}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Totals</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text17>
+          </Components>
+          <Condition>{Elements.Mf_Position}</Condition>
+          <Conditions isList="true" count="1">
+            <value>_x007B_GroupLine_x0020__x0025__x0020_2_x0020__x003D__x003D__x0020_0_x007D_,[0:0:0],WhiteSmoke,Roboto_x002C_11,True,False,,,None</value>
+          </Conditions>
+          <Expressions isList="true" count="0" />
+          <Name>GroupHeaderBand2</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+        </GroupHeaderBand2>
+        <DataBand1 Ref="32" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,84,190,0</ClientRectangle>
+          <Components isList="true" count="0" />
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>Elements</DataSourceName>
+          <Expressions isList="true" count="0" />
+          <FilterMode>Or</FilterMode>
+          <Filters isList="true" count="1">
+            <value>Type,EqualTo,Mark,,String</value>
+          </Filters>
+          <Name>DataBand1</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+          <Sort isList="true" count="0" />
+        </DataBand1>
+        <GroupHeaderBand1 Ref="33" type="GroupHeaderBand" isKey="true">
+          <Brush>[249:223:187]</Brush>
+          <ClientRectangle>0,92,190,10</ClientRectangle>
+          <Components isList="true" count="1">
+            <Text14 Ref="34" type="Text" isKey="true">
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>0,0,190,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,16,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text14</Name>
+              <Page isRef="7" />
+              <Parent isRef="33" />
+              <Text>{"Всего: "+Count(GroupHeaderBand1, Elements.Type)+ " шт "+Sum(Elements.Mf_Weight/1000)+" т "+Sum(GroupHeaderBand1,Elements.Mf_PaintingArea)} м2</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text14>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Name>GroupHeaderBand1</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+        </GroupHeaderBand1>
+        <DataBand2 Ref="35" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,110,190,0</ClientRectangle>
+          <Components isList="true" count="0" />
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>Elements</DataSourceName>
+          <Expressions isList="true" count="0" />
+          <FilterMode>Or</FilterMode>
+          <Filters isList="true" count="1">
+            <value>Type,EqualTo,Mark,,String</value>
+          </Filters>
+          <Name>DataBand2</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+          <Sort isList="true" count="0" />
+        </DataBand2>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <ExcelSheet>Ведомость отправочных марок</ExcelSheet>
+      <Expressions isList="true" count="0" />
+      <Guid>0dd8918d9c224de78274de38e116e9bf</Guid>
+      <Margins>10,10,10,10</Margins>
+      <Name>Page1</Name>
+      <PageHeight>297</PageHeight>
+      <PageWidth>210</PageWidth>
+      <Report isRef="0" />
+    </Page1>
+  </Pages>
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Ведомость отправочных марок на заказ</ReportAlias>
+  <ReportChanged>4/24/2023 10:54:55 AM</ReportChanged>
+  <ReportCreated>12/27/2022 8:14:19 PM</ReportCreated>
+  <ReportFile>C:\Users\Andrei\Desktop\исправлено\Ведомость отправочных марок.mrt</ReportFile>
+  <ReportGuid>62394072fd4b4c70b0e9e5ac248b94b4</ReportGuid>
+  <ReportName>Ведомость отправочных марок на заказ</ReportName>
+  <ReportUnit>Millimeters</ReportUnit>
+  <ReportVersion>2023.2.2.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Ведомость_отправочных_марок_на_заказ : Stimulsoft.Report.StiReport
+    {
+        public Ведомость_отправочных_марок_на_заказ()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

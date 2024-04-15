@@ -1,0 +1,45 @@
+
+.stiJsViewerGroupHeaderButton {
+    height: 23px;
+    cursor: default;
+    font-size: 12px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.stiJsViewerGroupHeaderButtonDefault {
+    background: @JsViewerControlsBackgroundColor;
+    border: 1px solid @JsViewerControlsBorderColor;
+}
+
+.stiJsViewerGroupHeaderButtonOver {
+    border: 1px solid @JsViewerButtonOverBorderColor;
+    background: @JsViewerButtonOverBackgroundDownColor;
+    background: -moz-linear-gradient(top, @JsViewerButtonOverBackgroundUpColor 15%, @JsViewerButtonOverBackgroundDownColor 93%, @JsViewerButtonOverBorderColor); /* Firefox 3.6+ */
+    background: -webkit-gradient(linear, top, bottom, color-stop(15%, @JsViewerButtonOverBackgroundUpColor), color-stop(93%, @JsViewerButtonOverBackgroundDownColor), color-stop(100%, @JsViewerButtonOverBorderColor)); /* Chrome 10+, Safari 5.1+ */
+    background: -webkit-linear-gradient(top, @JsViewerButtonOverBackgroundUpColor 15%, @JsViewerButtonOverBackgroundDownColor 93%, @JsViewerButtonOverBorderColor);
+    background: -o-linear-gradient(top, @JsViewerButtonOverBackgroundUpColor 15%, @JsViewerButtonOverBackgroundDownColor 93%, @JsViewerButtonOverBorderColor); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, @JsViewerButtonOverBackgroundUpColor 15%, @JsViewerButtonOverBackgroundDownColor 93%, @JsViewerButtonOverBorderColor); /* IE10 */
+    background: linear-gradient(top, @JsViewerButtonOverBackgroundUpColor 15%, @JsViewerButtonOverBackgroundDownColor 93%, @JsViewerButtonOverBorderColor); /* CSS3 */
+}
+
+.stiJsViewerGroupHeaderButtonSelected {
+    border: 1px solid @JsViewerButtonSelectedBorderColor;
+    background: @JsViewerButtonSelectedBackgroundDownColor;
+    background: -moz-linear-gradient(top, @JsViewerButtonSelectedBackgroundUpColor, @JsViewerButtonSelectedBackgroundDownColor); /* Firefox 3.6+ */
+    background: -webkit-gradient(linear, top, bottom, color-stop(0%,@JsViewerButtonSelectedBackgroundUpColor), color-stop(100%,@JsViewerButtonSelectedBackgroundDownColor)); /* Chrome 10+, Safari 5.1+ */
+    background: -webkit-linear-gradient(top, @JsViewerButtonSelectedBackgroundUpColor, @JsViewerButtonSelectedBackgroundDownColor);
+    background: -o-linear-gradient(top, @JsViewerButtonSelectedBackgroundUpColor, @JsViewerButtonSelectedBackgroundDownColor); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, @JsViewerButtonSelectedBackgroundUpColor, @JsViewerButtonSelectedBackgroundDownColor); /* IE10 */
+    background: linear-gradient(top, @JsViewerButtonSelectedBackgroundUpColor, @JsViewerButtonSelectedBackgroundDownColor); /* CSS3 */
+}
+
+.stiJsViewerGroupHeaderButtonDisabled {
+    background: @JsViewerButtonDisabledBackgroundColor;
+    border: 1px solid @JsViewerControlsDisabledBorderColor;
+}

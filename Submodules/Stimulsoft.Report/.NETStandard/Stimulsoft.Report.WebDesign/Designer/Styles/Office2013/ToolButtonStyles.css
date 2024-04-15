@@ -1,0 +1,44 @@
+
+.stiDesignerToolButtonCell {
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    vertical-align: bottom;
+}
+
+.stiDesignerToolButton {
+    white-space: nowrap;
+    border: 0px;
+    cursor: default;
+    font-family: Arial;
+    font-size: 12px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+.stiDesignerToolButton_Mouse {
+}
+
+.stiDesignerToolButton_Touch {
+}
+
+.stiDesignerToolButtonDefault {
+    background: @MobileDesignerToolbarBackgroundColor;
+    color: @MobileDesignerFileMenuFontColor;
+}
+
+.stiDesignerToolButtonOver {
+    background: @MobileDesignerFileMenuItemOverBackgroundColor;
+    color: @MobileDesignerFileMenuFontColor;
+}
+
+.stiDesignerToolButtonSelected {
+    background: @MobileDesignerWorkPanelBackgroundColor;
+    color: @MobileDesignerFontOverColor;
+}
+
+.stiDesignerToolButtonDisabled {
+    background: @MobileDesignerToolbarBackgroundColor;
+    color: @MobileDesignerFileMenuFontColor;
+}

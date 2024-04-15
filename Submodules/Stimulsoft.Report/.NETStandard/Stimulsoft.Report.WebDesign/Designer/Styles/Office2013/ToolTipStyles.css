@@ -1,0 +1,27 @@
+
+/* ToolTip */
+.stiDesignerToolTip {
+    position: absolute;
+    border: 1px solid @MobileDesignerMainPanelsBorderColor;
+    padding: 0px;
+    background: @MobileDesignerWorkPanelBackgroundColor;
+    cursor: default;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    z-index: 44;
+    max-width: 300px;
+    -moz-box-shadow: 0px 0px 7px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0px 0px 7px rgba(0,0,0,0.6);
+    box-shadow: 0 0 7px rgba(0,0,0,0.3);
+}
+
+.stiDesignerToolTipTextCell {    
+    font-size: 12px;
+    font-family: Arial;
+	color: @MobileDesignerFontColor;
+	padding: 10px;
+	border: 0px;
+	border-bottom:1px solid @MobileDesignerMainPanelsBorderColor;
+	white-space: normal;
+}

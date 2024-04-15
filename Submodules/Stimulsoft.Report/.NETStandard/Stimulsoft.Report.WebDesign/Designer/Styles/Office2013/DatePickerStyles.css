@@ -1,0 +1,43 @@
+
+.stiDesignerDatePickerSeparator {    
+	border-top: 1px solid @MobileDesignerMenuSeparatorColor;   
+}
+
+.stiDesignerDatePickerDayOfWeekCell {    
+	white-space: nowrap;
+    color: @MobileDesignerFontColor;
+    cursor: default;
+    font-family: Arial;
+    font-size: 12px;
+	padding: 3px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.stiDesignerDatePickerDayButton {
+    cursor: default;
+    font-family: Arial;
+    font-size: 12px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+.stiDesignerDatePickerDayButtonDefault {
+    color: @MobileDesignerFontColor;
+}
+
+.stiDesignerDatePickerDayButtonOver {
+    color: @MobileDesignerFontColor;
+    background: @MobileDesignerButtonOverBackgroundColor;
+}
+
+.stiDesignerDatePickerDayButtonSelected {
+    color: @MobileDesignerFontColor;
+    background: @MobileDesignerButtonSelectedBackgroundColor;
+}
+
+.stiDesignerDatePickerDayButtonDisabled {
+    color: @MobileDesignerFontColor;
+    color: @MobileDesignerFontDisabledColor;
+}

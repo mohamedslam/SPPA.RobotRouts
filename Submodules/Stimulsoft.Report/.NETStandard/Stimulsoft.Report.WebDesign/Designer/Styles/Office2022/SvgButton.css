@@ -1,0 +1,25 @@
+
+.stiDesignerSvgButton {
+    color: #ffffff;
+    fill: @MobileDesignerFileMenuBackgroundColor;
+}
+
+.stiDesignerSvgButtonOver {
+    color: #ffffff;
+    fill: @MobileDesignerFileMenuItemOverBackgroundColor;
+}
+
+.stiDesignerSvgButtonDisabled {
+    color: @MobileDesignerFileMenuFontDisabledColor;
+    fill: #eeeeee;
+}
+
+.stiDesignerSvgButtonSeparator {
+    stroke: @MobileDesignerFileMenuItemOverBackgroundColor;
+}
+
+.stiDesignerSvgButtonArrow {
+    fill: @MobileDesignerFileMenuBackgroundColor;
+    stroke: @MobileDesignerFileMenuBackgroundColor;
+    stroke-width: 1;
+}

@@ -1,0 +1,17 @@
+**/.dockerignore
+**/.git
+**/.gitignore
+**/.vs
+**/.vscode
+**/.idea
+**/*.*proj.user
+**/*.DotSettings.user
+**/*.DotSettings
+**/bin
+**/obj
+**/Dockerfile*
+**/_ReSharper.Caches
+LICENSE
+README.md
+/MasterFab.Web/FileStorage
+/Ifc/IfcParserConsole/test_ifc

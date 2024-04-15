@@ -1,0 +1,76 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>Stimulsoft.Report</AssemblyName>
+    <RootNamespace>Stimulsoft.Report</RootNamespace>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Stimulsoft.snk</AssemblyOriginatorKeyFile>
+    <DelaySign>false</DelaySign>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <UseWindowsForms>true</UseWindowsForms>
+    <EmbeddedResourceUseDependentUponConvention>true</EmbeddedResourceUseDependentUponConvention>
+    <DebugSymbols>true</DebugSymbols>
+    <Configurations>Debug;Release;Debug-Cloud;Release-Cloud;Debug-Server;Release-Server</Configurations>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <DefineConstants>TRACE</DefineConstants>
+    <DefineConstants Condition="'$(TargetFramework)' == 'netcoreapp3.1'">$(DefineConstants);NETCOREAPP</DefineConstants>
+    <DefineConstants Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU' OR '$(Configuration)|$(Platform)' == 'Debug-Server|AnyCPU' OR '$(Configuration)|$(Platform)' == 'Debug-Cloud|AnyCPU'">TRACE;DEBUG;Signature;</DefineConstants>
+    <DefineConstants Condition="'$(Configuration)|$(Platform)' == 'Debug-Server|AnyCPU' OR '$(Configuration)|$(Platform)' == 'Release-Server|AnyCPU'">$(DefineConstants);SERVER</DefineConstants>
+    <DefineConstants Condition="'$(Configuration)|$(Platform)' == 'Debug-Cloud|AnyCPU' OR '$(Configuration)|$(Platform)' == 'Release-Cloud|AnyCPU'">$(DefineConstants);SERVER;CLOUD</DefineConstants>
+    <EnforceCodeStyleInBuild>false</EnforceCodeStyleInBuild>
+    <EnableNETAnalyzers>false</EnableNETAnalyzers>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU' OR '$(Configuration)|$(Platform)' == 'Release-Server|AnyCPU' OR '$(Configuration)|$(Platform)' == 'Release-Cloud|AnyCPU'">
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Bmp\**" />
+    <EmbeddedResource Include="Components\Indicators\Images\*.png" />
+    <EmbeddedResource Include="Cursors\*.cur" />
+    <EmbeddedResource Include="Dialogs\Bmp\*.gif" />
+    <EmbeddedResource Include="Dictionary\Functions\*.xml" />
+    <EmbeddedResource Include="Dictionary\Toolbox\*.bmp" />
+    <EmbeddedResource Include="Export\Dtree\**" />
+    <EmbeddedResource Include="Export\Services\Htmls\ChartScripts\stianimation.js" />
+    <EmbeddedResource Include="Images\**\*.png" />
+    <EmbeddedResource Include="ImagesLight\**\*.png" />
+    <EmbeddedResource Include="ImagesDark\**\*.png" />
+    <EmbeddedResource Include="Images\**\*.bmp" />
+    <EmbeddedResource Include="Images\**\*.jpg" />
+    <EmbeddedResource Include="Labels\Labels.data" />
+    <EmbeddedResource Include="Resources\**\*.png" />
+    <EmbeddedResource Include="Toolbox\*.bmp" />
+    <Compile Remove="FormContainer\**" />
+    <EmbeddedResource Remove="FormContainer\**" />
+    <None Remove="FormContainer\**" />
+    <EmbeddedResource Include="app.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Stimulsoft.Base\Stimulsoft.Base.csproj" />
+    <ProjectReference Include="..\Stimulsoft.Data\Stimulsoft.Data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'netcoreapp3.1'">
+    <PackageReference Include="Microsoft.CodeAnalysis.Common" Version="4.4.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.4.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.VisualBasic" Version="4.4.0" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.0.1" />
+    <PackageReference Include="System.Data.Odbc" Version="6.0.1" />
+    <PackageReference Include="System.Data.OleDb" Version="6.0.0" />
+    <PackageReference Include="System.CodeDom" Version="6.0.0" />
+    <PackageReference Include="System.Resources.Extensions" Version="6.0.0" />
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="6.0.0" />
+  </ItemGroup>
+
+</Project>

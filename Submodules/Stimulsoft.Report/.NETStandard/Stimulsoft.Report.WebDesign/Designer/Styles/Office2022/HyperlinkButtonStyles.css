@@ -1,0 +1,32 @@
+
+.stiDesignerHyperlinkButton {
+    cursor: pointer;
+    font-family: Arial;
+    font-size: 12px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+.stiDesignerHyperlinkButton_Mouse {   
+}
+
+.stiDesignerHyperlinkButton_Touch {
+}
+
+.stiDesignerHyperlinkButtonDefault {
+    color: @MobileDesignerHyperlinkFontColor;
+}
+
+.stiDesignerHyperlinkButtonOver {
+	text-decoration: underline;
+    color: @MobileDesignerHyperlinkFontColor;
+}
+
+.stiDesignerHyperlinkButtonSelected {
+    color: @MobileDesignerHyperlinkFontColor;
+}
+
+.stiDesignerHyperlinkButtonDisabled {
+    color: @MobileDesignerFontDisabledColor;
+}

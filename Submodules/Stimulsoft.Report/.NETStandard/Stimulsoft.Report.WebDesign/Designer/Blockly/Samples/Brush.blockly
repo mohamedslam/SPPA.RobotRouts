@@ -1,0 +1,24 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <block type="sti_set_property_of_object_to" id="z/Z$Q#jLHA#;V1q:Zl5f" x="308" y="212">
+    <value name="PROPERTY">
+      <shadow type="text" id="|dbp(ro5cE{D|h!,B2^u">
+        <field name="TEXT"></field>
+      </shadow>
+      <block type="text" id=".2YR:#vJ!WsLFc.dmw%J">
+        <field name="TEXT">Brush</field>
+      </block>
+    </value>
+    <value name="OBJECT">
+      <block type="sti_this_component" id="H1OiW_`Xr[q5B(/iE`/P"></block>
+    </value>
+    <value name="VALUE">
+      <block type="sti_new_solid_brush" id="pLgR2a$q[QuhBybF#5Oa">
+        <value name="COLOR">
+          <block type="colour_picker" id="FndQ-L-b_@`o3^hEWbe7">
+            <field name="COLOUR">#4d82b8</field>
+          </block>
+        </value>
+      </block>
+    </value>
+  </block>
+</xml>

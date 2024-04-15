@@ -1,0 +1,76 @@
+
+.stiDesignerCheckPanel{
+	background: @MobileDesignerFormBackgroundColor;
+	color: @MobileDesignerFontColor;
+    cursor: default;
+    font-family: Arial;
+    font-size: 12px;
+}
+
+.stiDesignerCheckPopupPanel{
+	position: absolute;	
+    cursor: default;
+    font-family: Arial;
+    font-size: 12px;
+    background: @MobileDesignerFormBackgroundColor;
+    border:1px solid @MobileDesignerFormBorderColor;
+    -moz-box-shadow: 0px 0px 7px rgba(0,0,0,0.6); 
+    -webkit-box-shadow: 0px 0px 7px rgba(0,0,0,0.6);
+    box-shadow: 0 0 7px rgba(0,0,0,0.3);
+    border-radius: 3px;
+    min-width: 250px;
+    max-width: 450px;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.stiDesignerCheckPopupPanelArrow {
+	overflow: hidden;
+	position: absolute;
+	width: 31px;
+	height: 21px; 
+	left: 11px;
+}
+
+.stiDesignerCheckPopupPanelArrow:after {
+	overflow: hidden;
+	position: absolute;
+	background: @MobileDesignerFormBackgroundColor;
+	border: 1px solid @MobileDesignerFormBorderColor;
+	left: 7px;
+    top: -17px;
+	width: 21px;
+	height: 21px;
+	content: "";
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+}
+
+.stiDesignerCheckPreviewPanel{
+	position: absolute;	
+    background: @MobileDesignerFormBackgroundColor;
+    -moz-box-shadow: 0px 0px 7px rgba(0,0,0,0.6); 
+    -webkit-box-shadow: 0px 0px 7px rgba(0,0,0,0.6);
+    box-shadow: 0 0 7px rgba(0,0,0,0.3);
+    cursor: default;
+    z-index: 100;
+}
+
+.stiDesignerCheckContainer {
+    width: 600px;
+    height: 400px;
+    overflow: auto;
+    position: relative;
+}
+
+.stiDesignerCheckContainerItem{	
+	border-bottom :1px dashed @MobileDesignerContainersBorderColor;	
+	background: @MobileDesignerContainersBackgroundColor;
+	color: @MobileDesignerFontColor;
+    margin: 15px 15px 0 15px;
+    font-family: Arial;
+    font-size: 12px;
+    line-height: 1.2;
+}

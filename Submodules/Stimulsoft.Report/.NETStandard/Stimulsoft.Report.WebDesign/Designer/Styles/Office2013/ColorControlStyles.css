@@ -1,0 +1,64 @@
+
+/* Color Control */
+.stiColorControlWithBorder {
+	border: 1px solid @MobileDesignerControlsBorderColor;
+	background: @MobileDesignerControlsBackgroundColor;
+}
+
+.stiColorControlWithBorderDisabled {
+	border: 1px solid @MobileDesignerControlsDisabledBorderColor;
+}
+
+.stiColorControlImage {
+	border: 1px solid @MobileDesignerControlsBorderColor;
+	width: 64px;	
+    cursor: default;
+	overflow: hidden;
+}
+
+.stiColorControlWithImage_ColorBar {
+	border: 1px solid transparent;
+	width: 14px;
+	height: 2px;
+	cursor: default;
+}
+
+/* Color Form */
+.stiColorFormControlsTable {
+	font-family: Arial;
+    font-size: 12px;
+    color: @MobileDesignerFontColor;
+    cursor: default;
+}
+
+.stiColorFormColorBar {
+	border: 1px solid @MobileDesignerContainersBorderColor;
+	width: 128px;
+	height: 128px;
+	display: inline-block;
+}
+
+.stiColorFormWebColorPanel {
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+/* Color Dialog */
+.stiColorDialogHeader {    
+	background: @MobileDesignerContainersHeaderColor;
+	font-family: Arial;
+    font-size: 12px;
+    color: @MobileDesignerContainersHeaderFontColor;
+    cursor: default;
+    padding: 7px;    
+}
+
+.stiColorDialogButton {
+	border: 1px solid #e2e4e7;
+    cursor: default;    
+}
+
+.stiColorDialogButtonOver {
+	border: 1px solid #f29436;
+    cursor: default;    
+}

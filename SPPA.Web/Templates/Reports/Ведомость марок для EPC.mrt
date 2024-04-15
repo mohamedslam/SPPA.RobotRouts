@@ -1,0 +1,1449 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="1">
+      <JSON Ref="2" type="Stimulsoft.Report.Dictionary.StiJsonDatabase" isKey="true">
+        <Alias>JSON</Alias>
+        <Key>1e26697b2acf4a258f99b5de304df6b7</Key>
+        <Name>JSON</Name>
+        <PathData>resource://json</PathData>
+      </JSON>
+    </Databases>
+    <DataSources isList="true" count="4">
+      <Part Ref="3" type="Stimulsoft.Report.Dictionary.StiDataTransformation" isKey="true">
+        <Actions isList="true" count="0" />
+        <Alias>Part</Alias>
+        <Columns isList="true" count="2">
+          <value>TRANSFORM,Mf_Profile,Mf_Profile,System.String,Elements.Mf_Profile,_x0035_9c1137efd354415b2e7af665590730b,Dimension</value>
+          <value>TRANSFORM,Mf_Length,Mf_Length,System.Decimal,Elements.Mf_Length,_x0039_945abe753ae4c68b4154819e46e128a,Dimension</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Filters isList="true" count="1">
+          <Item3 Ref="4" type="Stimulsoft.Data.Engine.StiDataFilterRule" isKey="true">
+            <Condition>IsNotNull</Condition>
+            <Key>59c1137efd354415b2e7af665590730b</Key>
+            <Path>Elements.Mf_Profile</Path>
+          </Item3>
+        </Filters>
+        <Key>e02c2811aa404e15a60b019c878eac95</Key>
+        <Name>Part</Name>
+        <NameInSource>Категория</NameInSource>
+        <Sorts isList="true" count="0" />
+      </Part>
+      <Elements Ref="5" type="DataTableSource" isKey="true">
+        <Alias>Elements</Alias>
+        <Columns isList="true" count="35">
+          <value>Id,System.String</value>
+          <value>IfcId,System.String</value>
+          <value>IfcTeklaId,System.String</value>
+          <value>Type,System.String</value>
+          <value>PartType,System.String</value>
+          <value>ParentId,System.String</value>
+          <value>RootId,System.String</value>
+          <value>Mf_Position,System.String</value>
+          <value>Mf_Name,System.String</value>
+          <value>Mf_Material,System.String</value>
+          <value>Mf_Profile,System.String</value>
+          <value>Mf_ProfileType,System.String</value>
+          <value>Mf_Weight,System.Decimal</value>
+          <value>Mf_Comment,System.String</value>
+          <value>Mf_ManufacturingStatus,System.String</value>
+          <value>Mf_Queue,System.String</value>
+          <value>Mf_WeldType,System.String</value>
+          <value>Mf_WeldSize,System.Decimal</value>
+          <value>Mf_Width,System.Decimal</value>
+          <value>Mf_HasHoles,System.Boolean</value>
+          <value>Mf_Length,System.Decimal</value>
+          <value>Mf_Height,System.Decimal</value>
+          <value>Mf_PaintingArea,System.Decimal</value>
+          <value>Mf_MarkNumber,System.Decimal</value>
+          <value>Mf_Standard,System.String</value>
+          <value>Mf_NutsCount,System.Decimal</value>
+          <value>Mf_WashersCount,System.Decimal</value>
+          <value>Mf_Finish,System.String</value>
+          <value>tomf_ogz,System.Decimal</value>
+          <value>tomf_ozp,System.Decimal</value>
+          <value>tomf_ral,System.String</value>
+          <value>tomf_akz,System.Decimal</value>
+          <value>tomf_sheet,System.Decimal</value>
+          <value>tomf_profile,System.String</value>
+          <value>product_code,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Key>7144755f04234025950f295b9f2b7335</Key>
+        <Name>Elements</Name>
+        <NameInSource>JSON.Elements</NameInSource>
+      </Elements>
+      <Order Ref="6" type="DataTableSource" isKey="true">
+        <Alias>Order</Alias>
+        <Columns isList="true" count="7">
+          <value>OrderId,System.String</value>
+          <value>Name,System.String</value>
+          <value>Code,System.String</value>
+          <value>Customer,System.String</value>
+          <value>Archived,System.Boolean</value>
+          <value>Status,System.String</value>
+          <value>CustomFields,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Key>25bb6cfb439c4cfb9c8a66f53ab58f5c</Key>
+        <Name>Order</Name>
+        <NameInSource>JSON.Order</NameInSource>
+      </Order>
+      <Order_CustomFields Ref="7" type="DataTableSource" isKey="true">
+        <Alias>Order_CustomFields</Alias>
+        <Columns isList="true" count="12">
+          <value>title-name,System.String</value>
+          <value>manufacturer-code,System.String</value>
+          <value>internal-subcontr.-number,System.String</value>
+          <value>title-subtitle-cia,System.String</value>
+          <value>structure,System.String</value>
+          <value>dp,System.String</value>
+          <value>customer,System.String</value>
+          <value>document-category,System.String</value>
+          <value>drawing-number,System.String</value>
+          <value>revision,System.String</value>
+          <value>kmd,System.String</value>
+          <value>relationId,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Key>3460f256914e4c709b08e740b3bc75a6</Key>
+        <Name>Order_CustomFields</Name>
+        <NameInSource>JSON.Order_CustomFields</NameInSource>
+      </Order_CustomFields>
+    </DataSources>
+    <Relations isList="true" count="1">
+      <Order Ref="8" type="DataRelation" isKey="true">
+        <Alias>Order</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>relationId</value>
+        </ChildColumns>
+        <ChildSource isRef="7" />
+        <Dictionary isRef="1" />
+        <Name>Order</Name>
+        <NameInSource>Order_CustomFields</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>CustomFields</value>
+        </ParentColumns>
+        <ParentSource isRef="6" />
+      </Order>
+    </Relations>
+    <Report isRef="0" />
+    <Resources isList="true" count="1">
+      <value>Name=Image1, Alias=Image1, Content=Zdm5CPqQjQAR_x002B_axUJ0434Y0x1vAesRD6ltUhk_x002F_XEH8w8qMtxBAeLMY9EzsuTBQivi3_x002F_8mz7yBXqpKmLry1s5yjOyOEPGa7D1GdsJhlDwMGFlFrt_x002F_chS4hCQ0CVqXtcNAXfsdzXkWXtwIDRZr6F0DJTdXWboHiVvnUnrqfrQwZ38eHg50DKYaxYHojFTtUJdPuaPHCsNuMxYEWqJIDsMyzbHQPAjarNszwNaofjfcmsnHJWKKhqPWGbUByISYe7geH7_x002B_sgayT9CUnq3iist_x002B_jcjGCdKorkCrosUc9VO5l833wyIwY2_x002F__x002B_drGtZE4pQytLGZc1h9v0DPmtnCKzyejAaTgZheyxIPm5o8rRJFwauKL6GtohdH4mDsqyqqmu0UbL75YZWwAFVdhLRM2qQdhmxO3tJAmva_x002B_vv18yV5qTvbZiLeon_x002F_HCW_x002B_ZS8SX7bINGBcbFAuBAPy0whHPRf7Yyn4bLPMPHpqJqq6Y8ex7De7xh6v_x002F_zcbQIXcngHvrzPh3Au4ZuNtWsxuk4llym9rNJAxoO_x002F_Wq17kJZ9RXWE9QfptPjGaVzmlxCsShWkkyI1AWztCwCl9qcOa2Q9Uy9RCbRACd9fmah_x002F_5Bka3FswsSrFhaDj1gaIQi_x002F_W3XO3vbu5amGSXT9WT0XKFayjkynCTti9gZGLf7Ba5aTrHXAExRw3DX9ke9VLRF4u4zpW9ZT_x002B_08ZrCBZUY2RahL7TNoUol00Jq63iki1VRvzqd_x002F_odg1aeauBoeF8Z8UvarOs58clvHmnGVmNQITEZl4o7dZMOyTXZHyzVTbJG2Zbj3YbGWW_x002F_54aJY0Kt2UipqZkWM9K4GJvlREwbEpDtMsDF6YceluOsIyDII5kN0HffLgOgC0RwKEdnuJHpRea954b7dXn22gqGy_x002B_4qJEkuXCr2aYO8MO8Ue6_x002B_mOEqzibR3onM6kJPGToAThVyaTHlbWFdtjTJ2EAfy1qSENS1eTZ_x002F_oxhmbjGKJbq17or8b0upv9Y3Q4X8d6UB3EnljKH3VR_x002B_pnKG9ONSLqmvvqmcFhUVBvEhmCKP2bfvpqPzjyTU593JoKXebSBkpYWDzn2yHj3zuXezIwCkM15JMKFbFxadjG1A2pskJfuRvDmUCwqtyCx0Qi21sIVw_x002F_OFwXLo_x002B_beGLUVwZpx0CXFjI_x002F_thMyD97JLftvfpQuutaO1hCRTXmRY0F40_x002F_HWQSGRz2AyjWTOX9cobhfiMsatL_x002F_bLz4FJwpqxkHb7kOCF_x002F_G8GjhsRV2T_x002F_k4Zox4MZNpg0fbhXva1QRS5E9EiAsQDOkiLw_x002B_SWc5fsOFpIx3hjPvL0faf8SeDkX9FGCab5_x002F_cLI2TvbKlzDH5HhzKLso_x002F_b_x002F_EUz7bFmDfmd2CpUy2VNQT01ZR_x002F_6r0tTzB3UrEgTT14FkjBlXzamGs9nz2F5dAEi2ZaDBo_x002B_Kpb51IrdGUQXVJJPon3Xr354wzYuiNdY8v1GZKOUiDXsGruT_x002B_XIpiXiFkzOXeSAASt3rB5IwtFfKhXrJuCnbwufNTMkYYvPcBG6WLfgkuiZHErXUoswRrjVGBSqDQnWxIl_x002B_JR0dVzFi21pKzwu3_x002F_5r1gACIZ15De7gtNOyJUsU8OQufJ1_x002B_T46zYPGzz8XGv54KqnDBlljogCtzVybE2utPb7PN8gFdX4F6Y_x002F_MYJo7d0guC227IlVrvfhwK4Ve2PhRRg7cwJUOCP1JSjZBvuiycieEyPRkYgAgvLYGVwcgXfejhJj7Hci479iVufNFPfardkGG9r3KQRROiFKhAZc9k1NjUeGQE2IKNX817YNvdsK6NEV2r5hqgWxrSO_x002B_p3GytAWvDAk29EKG_x002B__x002B_ykejeiWHAUjA863T_x002F_YMQgU3WcTUrQEAE1o1y6Ddnm0EI0kO4VNLJTG49sq1BFk4BDVNSMrgnICRGdDQ2ITPp5Ay6NegYgokFqMSBlFRi5gQefJgRyEftg0xEekqn7IGOPHYfs15jgPoffvurABeF8lFOeoDwiLCjU56Aus63_x002B_kezErUkCqEjkRAj6eouvcAYfe5GO9SfxjN7tXxx6cuSlI3FiYzpkvyBtvQy7sylGa8_x002F_B0awDVFxcbQ4Mx1XxS4DJLrQPqWVMJRMM8QtDwo2W4GwkgtqiF6rExKzmhqNNLjPCnw2BOTMe7Fd_x002F_4ACcATfytVexSFwS1U8djr0F2Tp_x002B_r1_x002B_b7SC3hon3wyrxA8GeOVX_x002B_KLoQa_x002F_TSmV85_x002F_BPiBZy_x002B_FjyRGmgXs56HCQ_x002B_FYL9O9gGTVsE5IlMZxsVoiTy543GrS2ihTwzY8PakKdmYpTSdJf90i43wzte_x002F_Pok6seAlqowh94wXQHEm098BsQMZu9DlYT6cQPJkMmAtnxEbC4WRhSQaEU_x002B_Ncy6kq9rOGiVOk1FC5nPRr7Y6kExOOsSKLE_x002B_XHZ1nOSP_x002B_pDi5nNVl5UqeNHFMFnCHX5HOop3rKwD3Hvj5zuiaPRs8sL69Fo8INg1ca7kO_x002B_Q3ySU3xjfuLTQVL321wkp_x002B_IBu2wSL7NtXqR0mQK7OjMRr0y50umwmmEalrfYXyM0A7QTtSXLy04gUOzmsupNjhMdk7iYn41c_x002F_8aeRTwg0N0mwDacXTdqXAqUii_x002F_2_x002B_zwIz_x002B_62eBICxDXKBLwhrzWkpmMuSeuPPCWa_x002F_aFG2lB8UZP_x002F_HQBd57QE79maCjNUTyhDQB1JeJM2DML_x002B_S42Zxhd30RcymgXxO2yXe27qhbniv08_x002F_fQ9ERFWK022jjacQDWhLzYsr6yRHL6P9DslZ8BPXRcJDx9SlRHYNRzDcsfErwmnBnrn5zcVzwPu07g6e7eeO8FtsOMnnMHnxG_x002B_AlEdbRkKc55H4dwsnsxq6n9vJO5IM6LFTF_x002B_DsIBt3SgeTVXovTuH5xzWc7hu_x002B_8LZz4bqccjVxXwEYZWNcb_x002F_RJRO4hduqFtmLbrSvusCopi5RnHzTYrnih6MphX1OoJEWijq8ZLGpku4VG6tRPBdHaH3eGPxZ_x002B_b6ssc6S34kym5mRw0QuJ8b3oI3T2vyJWX8ZopsmIu9PDC3uZ_x002F_bCrclxTeWvTBXypeiHRS60ICMilwlkvwTlBfiu0eoLz2W_x002F_qhMUSbktDvWGzE5Ff2ZWIthDu_x002B_B2dsyP_x002B_z1bBbqBbF9F0WzN2x2NWggFpZb6pV5C2Z6TcCfr7lgMRzng7rGWB746TAGzOGoZjGQtNfX3zYK_x002F_nJm586qThRHk5mf0_x002B_a4NzbHUM2w3U0AnHgWN9oz_x002F_KcXMJ3bf7Y7A1oKDsuD_x002B_tgIOEr_x002B_ATlMR9JpzOTHZ9_x002F_LNak6HmAXUETpgKxATHBuHy3GpEIUzKA7hU9gmIBUfLyA7YSahLi6Jz2Y3YvOVEBl51U52IPCpe1dKw4BN_x002F_fWaM9Jb_x002F_2YJNxy04knD9XX2GVlTBYVehFpTGyQuPgjp9nTpJAuZckNfbImRdrCknTYBFDeC5U8uRWUhSegwcZXuorZOWh2l8V3VVX1qjkPyoV25MAaFyu8RTeqioL_x002B_ob0AlJ5H05SFgF1kWOP_x002F_lreRB2b2Ic_x002B_YDpA2yqC9_x002F_LI_x002B_hfcQ3zmhIjHwPipMIL_x002F_2X1m8sna40iXT08EoNHNFCsf_x002B_sO2qOvmo_x002B_Gz9x3DCGfzMGz0JEGsI_x002B_jwvdDEesKO01Q0LViDgRRHgQm1t3lwWtHqWkksH0NMMPpBeNHlWzzUhnr_x002B__x002B_HiZD9IxRGiUwSQRV2VcT1txtpt1FYMekgiUy2Ai7oQAzurLbu679S6GZ84SBTPqSHfo7fifGWI5bkgZ7ao9CmJN9ngut_x002B_FTDWcZTCRNQoOp_x002F_Q6pK8aeCMPTgxWapcZM4B4ZVKo2yC7RDlpJMjLlFqcxEmTfJVMiPsYwJyFAVhfbAxWBFdZ5mTGKZgqscurwMPn5Snd9ICmvmmDM8haSUk5FMnEeIalBFw15vI3KzhcWYL4besBKtkmYJuI_x002F_heHBZwcKsB6PtlEBnm67Kwaax79hls2hWyN8Jsy_x002F_dN07GuksG8wWpz5Gc4eMszRhtuuqlMf8gI4p5RLOjw8BxZdwZlLeMacICmSYxHIEVf7CVBfwJPCL8EL53RPOqa2ecGK7ht_x002B_y7OeMSGGZtU1otU3stTWpY50AAkQb81o9fTwep_x002B_C9SsdYX5heCbgL_x002B_Ng_x002B_2xRCbnn0cD04gy97eKQjBQ3xecLeLRl1Uzrz8nH86DuBaOXcDmwF3N2Hf1ca4TQYLEyAMjwB0JnrgFHNWQGnb1gNTMa1xMcQxQPtNmPdtxL_x002B_mL67kgTmr1loqPcfFNaU3S6vfG_x002B_hgcoxQqmOJyLF4UokWRCIKPjWnuIbfxnURu_x002B_C_x002B_lVFx_x002B_mnome3YecGk3li75vGtFI3dMss3WZVU6mH3FvyIDud4dRRCkPPhbFJqB1co8VkoXLU4jJPMuBrtb_x002F_LmfTbEd0rXHy_x002F_0nQrihSquhkwo_x002B_xabU7OrBvRU3tAWl2Hgy2nKsxtXvSu3t0stnMT1TDuqzwAH6QhaQo9vMEnPOW1SGG9yyd8Zwm2GSCuEmEADqq79MDZuFf_x002F_b1vw_x002F_cdcZn_x002F_zV3xkCTxA4IoZmj9LFfMiGRMeK18Y84Oy3llezD9qM8PiRpjkxGSqu8fNbnXSKYaz26hO9WTLi_x002F_Qywad25M96PgHDroyYGRKzjwrW9ZF56yrSdGcvFh1RznlZZ5yR_x002B_bJOCKQrBJl8LpzWakJUtvYLblP4PQ27VIpBkX9OCXHaCR6mtgjujIdCr23GiMllT9Yde5zonTs60yYFQq98BvKGs6EyDr50I_x002F_qEbsk332wbIXd_x002F_l6gVmhg3w0khRnsGDmbKYQjzwSXr8OHrl125T4WdoZmfz8RmMPKsVpo28Fl_x002F_cwJdNvCxR7fs66GNMYVIvN3nWZryh_x002B_yg_x002F_pxcWrIcXHPOZujxe1vp49hVXpBoU_x002F_7mKm_x002B_4xkAA7UklevEMJYLDCiE3DIdpK6U1JTeoz2HyN615px8vizqpD6yrnD_x002F_dnjQW_x002F_A4lhB4Q3o98jcujG8c8CnEt0qxRkebcGCs3GNqmqw7BpCUZ6de4qsJqJhXhUFXHoTKIAuW_x002B_ruC8fio3KpcMT_x002F_RjXc1YvWRKFdpfRaEY6IMS5vjUcDY2FxkzAPYb84HNq_x002F_KVHiK0hRE0lMcyWPgsoo_x002F__x002B_0VIwqSX4CpUIvEjGRtTJmHFJvtVOWe5JJx5NRDjksd0ZZAN2IwdvdvbCV8HHbUnlyQt1x1e8rIhWsgXyQQRvQkqAiEUwuVOIz_x002B_ctDrp134vLNuVRk9Etqya1L6x4G2AnhFDH2h1X1eXAGCwq386bvh8H_x002F_Ew_x002B_PPvuVHywbcXRyPWDatiBLX_x002F_b04D9dHhwLX7ySOVhC8EX70heJ4g7aPix8oS_x002B_ckR8n_x002B_Memg5Flveu_x002F_Dhz5Ss3g_x002B_yPKO72N1IObcS_x002B_0uxBMkJTjAfjUNf_x002B__x002F_pbZIlqltbtGy4jwWQWdZbzgAoRcyPJVOMN6Xxz7iHl1BfZDU1_x002F_d03Up1htVGdZKKhHp8xQPwjzayx_x002B_1_x002B_iJEcG2LvL435pkOvAJZ_x002B_e9az75s1GKANh_x002B_kglxq9XSAOTV9bChCtdU6ye_x002B_UFzMoyEKEZszIeaFzzpBfnrWPgbkrq6_x002F_n48fNPjb_x002F_nUbptdYo_x002B_aB8lbFx0uT9EiDnCoK7GB1rO2ueSwGhphIFlN5Y0PuQ3qOE5v75Yz8jDW3gbMcR2HEwXS_x002F_OmwHUblk_x002F_g8kP8FfJLddNT_x002B_j_x002B_9A7rdIwFd0uhzOgGQo4y9dhuzodIHtFXVX2P5sAQIV3ZlugwwY1WlE7b2TzbTH_x002F_5VPMJwPDjCx_x002B_42sY0NoXeVsRM8FopB83gLHXet6rZbtKxXE_x002B_tZ8H8IiZAiKHRh26QsCoIX2G32RlmpiuzzD_x002F_C_x002F_8pQ5g6_x002B_40lKae0WqJ08FmF3446tiigQz8dn2hFjVt_x002B_mz3L_x002F_pQ7mbLAL5yEAGXZmnetJo_x002B_mQxqhrC2weVyb1_x002B_TnIeZaS3MHRivVW7ZRhEj4OQoHkQmP650ZYxCquWRKMs2uIsE4oYy5fVU5xePaDwXRqYZ2MBQmRopWg4RbTH_x002F_6d5acypr_x002B_Q_x002F_rXphqAu1wTTSvojoVLN2evUlFdrjojgweJva38g6JK0WtwtnELSGpK8rXJq77KhUwmSkkp173DjKuVGraHgZYCdwERNx4YW3n1rv_x002B_IBenKWJPkezrwppy8h6kXTbvhgXyBKQVuiq8oe2NkeFxNMOG_x002F_eLmmKGfUufqGFJrLY9HWlGeGQIg6NciUvm90kKN4rxSvHtcGEVPXTNAf6rUH_x002B_AllwVRuRod111SFJBHwN0WSxz5C25gPmTxrTubKOjGfUvB_x002F_p7k00Z6Lr9CAGjLDyU04up97oLPRMDvNC0ZoTAJ8RN0O2bNZto8Xz6SnxedgdOelfP382JTzNGsUL_x002B_GZ_x002F_U2dwEg1jrRoRAtsti311AZsZOj3cIfYVNADftSi83uxrRvv7D_x002B_wmNUwg2ZDBci9oSU2T7q6ROuIOlpQsXXjUGF4hFcQrnz8uyvnX6WroNXMwMGWZaja0p4ZHkn9QXUeByKpZUM_x002B__x002F_z25ds_x002F_yJcVAyLViW_x002F_eYHn_x002B_4JbS4zUUAGPdaB7VmX2oybEtgSEn5d31HM1E_x002F_ucOYj1bA2Gwz3wDaaMuW3mbEkBs6Im1ZTDoYDJMCpImEcpqKRGvvXZPqcRE9y0ntIFsX8S9hDMcoe2rgMCQ4Fb4O3tRR2HgzYunukF_x002B_XodwlqXy2AMJGnMvrBaNGqRVGoDLA0hSsr6DGzWV6bmgXSHXOfUTiGdX_x002B_KqNqDZnL4Xk_x002F_h2K1erUP7CKrUDaV7ahIJuzm0Y_x002B_AygvyCM0dRv4cnzET_x002B_4KldwuGFDb_x002B_Qv3cDU54IuRhFtgsqto_x002F_lnzXnrNN2VcbhSq9cNAGC4SzWZHYpAuIr93ePM4Sc_x002B_XwqUyghdGnoRGfFyfiyrharZoIDQzB5cGSSqfNIjj7Us_x002F_enirxQF7O7vxisyZVLy5qm9T8K8KO16N_x002B_N7nprel8qvmH1FS_x002B_iozondNzqYTG8ETkz53UqRx9Za1hTDPOAP_x002F__x002F_WxciZDZ0PgoOfC8AEe_x002B_EljRsd0f_x002B_ZedKHZ_x002B_1HyHuzd7Q9Mc582OQ7MSS8U5W_x002F_qzvkboqcjx_x002F_HQI6mPq236PqJDVuxDv7lHmclIJwRAMDhkIymnVIgoVo3oYi26E1EIoqnszAVvcleFquSRN_x002F_LkEz5GsvMRPrHLw_x002F_4LvPDi81ZcY9eA9MDzeL_x002B_R6Cr3Mbqt8wK_x002B_ndvj9N2Y5Umfc55OEIqTLnWQxP6UuCvUF82S53e43sXVAakfNEoUH_x002B_CGSPzI8fz788MDCKwWsPTzANIqh3DGQ8rBzR60Abkkbw4L7WNXx_x002B_JDgHAsmAFiZXF3uyACrrNUbqegOeqnY_x002B_elg7hfebWyvrHt_x002B_3eWlP5QF37dXSWSRgcsFsaoWir6yUeke58Ik9V_x002B_5vKbP5quSsFj5bbO3U2LaKF3tQynPvRKLLSvSzF5Mw3fLvBkQhBL3fFX9BsGzCwBLsemsG319_x002F_SkuQTLh3JZegaASKadLqNnysTtFu0EzQ8KybuX4zH9SZJG2NudPc2I5e65cAKH_x002F_dF7Ltyi5mhPU6aI6_x002F_gnqetKhvzvOZqsyVlF7rv5KOXtw8k9vEMtZc0Xp88RTYQPxO_x002F_Q37s7eMhd6gfW2YjQcTdJWXk7fkMd0AL9y2Tp50_x002F_3bP8r6lWrf4QcFHAalWyWbaKF8ElDT8Osqp5mdukVPNkEx9FtsmyaoAMhjXAifrkOGDDjVi0DvHr0g0dgsTxvH1tPNqABtY7lmXFOsxxGo_x002F_wvO7MoljJr88couI0An9HTeAaWWteiDxv3wL8_x002F_I1h2RWGuCa1IfyNhzasyzoi6vs4xF6h5BHRJXt8HoYHuNZ0cvFPHElBmvleNqbyKHsO1h97psHT67QzBNyNc6J41JVZ30hqtRIebK2wFtDyvoPGxeW6G3_x002F_cSlfzVzPVsE424gHwj2oXCOqPwPaItaHbOr1sURw2llvqKoqqdIFneZEObfuF7ijFsO5_x002F_4PVWn5PWik5rV4DrvJ81FxtP_x002F_hhp8kBCwK_x002F_kOfHMw_x002B_8VIhrJo_x002B_ODLgEBO8_x002F_Z7Njv_x002B_kO6s9IRPPULPAIvGxPmqb3kBL3MKqlIeOY4xRSDdAqKixa7gCmQAmdVKZ6_x002B_63vOXFUzbBIKQkhap8JOxmM3fZlIouWCRNBJ2P9bESHDG4WzyWZo1p1V6srv7UoyQSiX4AMySZX26QcveVgn1K97oqo9_x002F_Vt1E9U5awJJfgSC5ScZP5qmiqQzB3AOIPLNss9N_x002F_85oIHxbk3_x002F_74e9hgFon8gOq_x002F_LZ890qow8hXDMk4koH3_x002F_pyxkfM66y5ci9SiUuESWOhj9AXcnkWFCTcSiE60zi2kuawChvJxz_x002B_mOLvIq_x002B_SzxM7KboYc8Cuthz5ly_x002F_vITfuJfc5RfkUkVGJvm7ZtjfSElnd9h1_x002F_IS05OJ5vvdPyRXokAxuCn0FF38XLbMGEsKGEKy_x002B_PZwsKz0akDqkGCE1ui5nsAyvYc3JQNfa1tWlxCgWNB3Gtor_x002B_ho157g0ZxKItaLy4_x002B_U5rKlJfo43f7nSLlJfndbapcU_x002B_C_x002B_6wB1cKF7Yc6Hkt2V2qUdXmp7EBIigeaakqPyVUDjHpaphzhx6Z1WYxIBhxfVMl4V1E1C_x002B_6n8DjsQrZ1smkJiHfbX3jc52PreGszOzCqI3_x002F_cjIPrtn9c1kQLcmf4UmtY8N_x002F_cb_x002F_v9yfrWnz6Mru9nrvRxUEHzIogRvoUVoPviAtqbMNb25PnC4UtlUAA1FhbUUPEK33fALWzxu2j_x002F_J7yGX2Vi47RVi9PIwvkfWtBsEOKKhqZoWazHVkk1G1U3a8hWeEraUbw515DtEctPZNl8J20iwN4tdjZ8F9MMDOUFYi99EHH3s9dRn_x002F_QjIeCNOERMfZVx7roMONPCw1K_x002B_N6PEX_x002F_9X1jXFDQylMRgeyEgT_x002B_tW91oefxEuYh63kRZFdWTHmI_x002B_WuTimGEvzm6JNX8DQKryr8PejTWPYZ2t8B5hBBwG79FR7eC8Fodx7dNNcv0bCw4MQbs3c0YrWjD3qR2VBm3rmW77fBIEhGFcgG9po2lnYHFT8LNT76JEhtXexHDg2lb8DcDShvVq_x002F_qq0E4r3wDQ_x002F_xFHmf_x002F_Bx5DK_x002F_BzSPUK4e3D8sEeblbIZ57JjCRthUTB_x002F_FihhsrvpE7YPgGFC9bBGlJ6XrR_x002F_BSU2s8LFnAbYiFo20OHkTNSeG1HO7j4HQDFKRBw7AM_x002B_f5hrXVMsRf_x002F_6EdYYm5dGzfdA6BuPxNmiuBjP9872Avfb_x002F_VYNuVCb7MY45oBB2hUMa1KbTgSoOjGjnYmuxWCiZ9WeE1NHL_x002F_aOEGhAj0yc2MfRfpitYTlRtIu59klJKKXxJO1sNImsKVe13WxAfjnaWv_x002B_j3aT93HqSrnSoRAGNTuuZs7xsQpyUOjYlM2bDxZHvsfuNKBMskKa8Et_x002F_k_x002F_oumBFmLL1edVCvPZu9r5_x002F_V3j1MokrOB2xJaT6ZW1pR6aMtY1FRWkLgSi9P0sJitmG3ABs2VaYmCtLyqCBmkjMAejPq7_x002F_HvunK7fN32N6ITjsvl4pamHFN9hHLNKNIN26SIFSN_x002B_ocNaq6YYjPda6r0CAiA8MXO2ZNiMhDnmeUUwdyLY8mddipv89AmAge5EXxHBURhhPMXNkRDz5f4T7z6Wz6c0Qr8bpTwr8ZLZwXe7cYhLc_x002F_g7RvtwHwyl8PD6X7XMzDFii_x002F_1S_x002F_H3UQwkR2QYGSnxTFdBdEwQhooRiPKk3K11QzRhrzjnMVn1nESa_x002F_DJUhAjZoMtJanZilQb2XYcotzl9IFZeGjCN_x002F_ZjGonpZjVNkgmuksVf1M8DsxT_x002B_0nN6anM2BbtNnyHiONjNx_x002F_ZuVlebXzO8q8dGkGWCNl3X6bbGF5PnHqkgJPLezT2KT2_x002F_8kkQ0bxtl5pWj7EG7uUYJoV2cL1reFIXfDTst79Oa0_x002F_L356H_x002B_JeiEPSCn8W3C8Se6e0wlroCvtmERztPTPsQk2IuOFjAaohBrK1oyYLtpH4nlSIh7nEYkbqfsGC55mGwkoqX8iZQt8au14dFn_x002F_xE_x002F_4vJNQxY5JMG_x002B_W2TKghU98wKuzb4OHkOLxXqwp_x002B_VGMm898iud9eVcXOKW643IXb1OX_x002B_8QWm7qLb4z38y0LDKOnZmMtPj0_x002B_H8uGQVoJbfd_x002F_e5olo4xGuxe9TEw1yV5rrNlbuM2dsxQJBvp5_x002B_A5A2QQHIeCI3JWaLpo49BBRcuBNpdZPLhqgSDzDeczoGTyqCFbvSmlYDw4V2C4Fudhcra9bljOlALPoEKG2dZplIPkBa2dhROiBQ3RjP9dE65O0nPLkvShfVIwdqagUKBf6cTW2WWj4aPKnsH9bIDTds5ftLfSXrB0CA_x002F_CxHiXa6eEUSCR212gE_x002F_gmPiugS7ITCHFWs90qc_x002F_oGF5uDp5dMVUFsfGOYv5vHpee52wHwSa9O3IHYYZLozw2bjr_x002F_E1hnjVGMvylKHvjHypI_x002F_DDCl9pGc9Owv55HCitPSHKjI7eIuEUnPbxzZlvLt_x002F_x81NwY82LuOeNRbSMZwDCl6H91IS63AJd_x002F_0RizAh3qmscoUuZ6lW0proSSCMYIGTefldVFfqg0bW_x002B_Ggx8TosamBA4toF1kJZEGbG7R2kAHHID_x002F_nxZ_x002B_pBP_x002B__x002B_VkR_x002B_s4z_x002F_dhEBEKqZKe4gjrVkhCBVoaKDvCQOB7mulFNZbW3xj1jx_x002B_zEUj4d1cvfNqI4s2FzzMkuMjWvfMsZWWq0aQ4LJM7_x002B_lCGwQYCQbkhZ_x002F_WJY3CFDDiYtga_x002B_TRIJD6VWacM8F1oQcXzRPX3nEHqxMF8XULJlVYy3Rlfwct_x002F_nC5SO38_x002B_TlU6p63J2VWjDCYiUk2OZnN6M0JKj6ydLg58gF4ezWX1bj_x002B_hrawoTWMZSUnnaSFWm8QAptH467TbSXZV1P_x002F_sn5KYf9SfXTCViG1YlGMHvTz942ILeI6z9nggDdsspDQ1zxd75cL9JcknVOVdM9SIRCJMpcoiyoROAQx5CGAmu0rXKMm8TVAtrp6FpkX1_x002F_dlf4_x002B_mvxI3hnhMLMZJtJKYPYPBbnaV_x002F_Uy7eYwxrceCw_x002F_xoZAyLKNqyTo6p_x002B_SJWg7MPJEFkmMFBWOTJrtgKjtfd6TodjSkmUN_x002F_IRrH56TGARvNren9rQBwKxj1PRy5NTNeeNOdGbWUTZobyPfktoLfD6t4_x002B_ufJUx0vDNAFvjW4KVcZhE_x002F_wSc2kshtUgqwD2d4fykVh8t5bgcJpBFWnTdWH55YHrLHmHY_x002B_daJrSGHuMEV5JX_x002F_O8DbCC0DY_x002F_m7G_x002B_nV4_x002F_alN0nVd5wd2D2peM5MOLY_x002B_U0vZx0tMJJFWlx4ad4PXUpzA7ZZwlyttX0qGKRUk0UujAdz5rJcxhqFAueu2Knb64qH6_x002F_FTxqxFdkmRovluaSndWoJ6Z12R2RYvArdJySk1Ckc9A26s796LsCX3UDcVSKwRlw4_x002B_7fnWWPth4wDAoxXNjWlYRHQiaGSifsFXKmsXFh5HXA9gVFjOrq8bi7LvFXrQSopP_x002F_GOP_x002B_FPcM11N_x002B_AiSOJXBDI2KHcqdbUQ7ZTBa6XA4hGfIObD83bG6EpiO6LVWUaQQ_x002F_oDna_x002F_IjWn53LzYV8_x002B_jdvvhlCE_x003D_</value>
+    </Resources>
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <Key>995af2ccdc1249088387ac449a945ac8</Key>
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="9" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="4">
+        <ReportTitleBand1 Ref="10" type="ReportTitleBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0.4,58.4,2.8</ClientRectangle>
+          <Components isList="true" count="1">
+            <Text33 Ref="11" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,13.8,2.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text33</Name>
+              <Page isRef="9" />
+              <Parent isRef="10" />
+              <Text>Attachment 5 / Приложение 5
+Mark List / Ведомость марок</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text33>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Name>ReportTitleBand1</Name>
+          <Page isRef="9" />
+          <Parent isRef="9" />
+        </ReportTitleBand1>
+        <HeaderBand1 Ref="12" type="HeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,4,58.4,5.4</ClientRectangle>
+          <Components isList="true" count="32">
+            <Text1 Ref="13" type="Text" isKey="true">
+              <Border>Top, Left, Bottom;[0:0:0];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>19.2,0,14.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>GOST type A,11,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="9" />
+              <Parent isRef="12" />
+              <Text>Ведомость отправочных марок</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text1>
+            <Text13 Ref="14" type="Text" isKey="true">
+              <Border>All;[0:0:0];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>56.2,0,2.2,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>GOST type A,11,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text13</Name>
+              <Page isRef="9" />
+              <Parent isRef="12" />
+              <TextBrush>[0:0:0]</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text13>
+            <Text16 Ref="15" type="Text" isKey="true">
+              <Border>All;[0:0:0];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>56.2,0.8,2.2,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>GOST type A,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text16</Name>
+              <Page isRef="9" />
+              <Parent isRef="12" />
+              <Text>Issue:
+Ред.</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text16>
+            <Text24 Ref="16" type="Text" isKey="true">
+              <Border>All;[0:0:0];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>56.2,1.8,2.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>GOST type A,11,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text24</Name>
+              <Page isRef="9" />
+              <Parent isRef="12" />
+              <Text>{Order_CustomFields.revision}</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text24>
+            <Text25 Ref="17" type="Text" isKey="true">
+              <Border>All;[0:0:0];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>56.2,2.4,2.2,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>GOST type A,11,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text25</Name>
+              <Page isRef="9" />
+              <Parent isRef="12" />
+              <Text>{Date}</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+              <TextFormat Ref="18" type="DateFormat" isKey="true">
+                <StringFormat>dd.MM.yy</StringFormat>
+              </TextFormat>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text25>
+            <Text26 Ref="19" type="Text" isKey="true">
+              <Border>Top, Left, Bottom;[0:0:0];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>19.2,0.8,14.6,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>GOST type A,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text26</Name>
+              <Page isRef="9" />
+              <Parent isRef="12" />
+              <Text>Металлические конструкции</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text26>
+            <Text27 Ref="20" type="Text" isKey="true">
+              <Border>Top, Left, Bottom;[0:0:0];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>19.2,1.8,14.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>GOST type A,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text27</Name>
+              <Page isRef="9" />
+              <Parent isRef="12" />
+              <Text>Структура:  {Order_CustomFields.structure}</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text27>
+            <Text28 Ref="21" type="Text" isKey="true">
+              <Border>Top, Left, Bottom;[0:0:0];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>19.2,2.4,37,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>GOST type A,11</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text28</Name>
+              <Page isRef="9" />
+              <Parent isRef="12" />
+              <Text>Rev. Date:
+Дата:</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text28>
+            <Text29 Ref="22" type="Text" isKey="true">
+              <Border>Top, Left, Bottom;[0:0:0];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>33.8,1.8,10.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>GOST type A,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text29</Name>
+              <Page isRef="9" />
+              <Parent isRef="12" />
+              <Text>Structure:  {Order_CustomFields.structure}</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text29>
+            <Text30 Ref="23" type="Text" isKey="true">
+              <Border>Top, Left, Bottom;[0:0:0];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>33.8,0,10.4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>GOST type A,11,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text30</Name>
+              <Page isRef="9" />
+              <Parent isRef="12" />
+              <Text>Mark list</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text30>
+            <Text31 Ref="24" type="Text" isKey="true">
+              <Border>Top, Left, Bottom;[0:0:0];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>44.2,0,12,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>GOST type A,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text31</Name>
+              <Page isRef="9" />
+              <Parent isRef="12" />
+              <Text>Document Code / Код документа</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text31>
+            <Text32 Ref="25" type="Text" isKey="true">
+              <Alias>GCC-VMM-DDD-13260-11-2100-KMD1</Alias>
+              <Border>Top, Left, Bottom;[0:0:0];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>44.2,0.8,12,1.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>GOST type A,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text32</Name>
+              <Page isRef="9" />
+              <Parent isRef="12" />
+              <Text>{Order_CustomFields.customer+"-"+Order_CustomFields.manufacturer_code+"-"+Order_CustomFields.document_category+"-"+Order_CustomFields.title_subtitle_cia+"-"+Order_CustomFields.kmd+"-"+"ML1-21001"}</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text32>
+            <Text34 Ref="26" type="Text" isKey="true">
+              <Border>Top, Left, Bottom;[0:0:0];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>33.8,0.8,10.4,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>GOST type A,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text34</Name>
+              <Page isRef="9" />
+              <Parent isRef="12" />
+              <Text>Steel structure</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text34>
+            <Text9 Ref="27" type="Text" isKey="true">
+              <Border>Top, Left, Bottom;[0:0:0];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>0,0.01,19.2,3.4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>GOST type A,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text9</Name>
+              <Page isRef="9" />
+              <Parent isRef="12" />
+              <Text>{Order_CustomFields.title_name}
+{Order.Name}
+</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text9>
+            <Text2 Ref="28" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,3.4,3.6,2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>GOST type A,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text2</Name>
+              <Page isRef="9" />
+              <Parent isRef="12" />
+              <Text>Title-Subtitle-CIA /
+Титул-Подтитул-CIA</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text2>
+            <Text3 Ref="29" type="Text" isKey="true">
+              <Border>Top, Left, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>53.8,3.4,2.4,2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>GOST type A,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="9" />
+              <Parent isRef="12" />
+              <Text>RAL</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text3>
+            <Text4 Ref="30" type="Text" isKey="true">
+              <Alias>13260-BD-001</Alias>
+              <Border>Top, Right, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.6,3.4,3.6,2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>GOST type A,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text4</Name>
+              <Page isRef="9" />
+              <Parent isRef="12" />
+              <Text>Structure /
+Структура</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text4>
+            <Text5 Ref="31" type="Text" isKey="true">
+              <Alias>211</Alias>
+              <Border>Top, Right, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>7.2,3.4,2,2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>GOST type A,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text5</Name>
+              <Page isRef="9" />
+              <Parent isRef="12" />
+              <Text>DP</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text5>
+            <Text6 Ref="32" type="Text" isKey="true">
+              <Border>Top, Right, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>9.2,3.4,3.2,2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>GOST type A,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text6</Name>
+              <Page isRef="9" />
+              <Parent isRef="12" />
+              <Text>Mark /
+Марка</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text6>
+            <Text7 Ref="33" type="Text" isKey="true">
+              <Border>Top, Right, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>12.4,3.4,6.8,2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>GOST type A,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text7</Name>
+              <Page isRef="9" />
+              <Parent isRef="12" />
+              <Text>Description /
+Описание</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text7>
+            <Text8 Ref="34" type="Text" isKey="true">
+              <Border>Top, Right, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>19.2,3.4,6.4,2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>GOST type A,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text8</Name>
+              <Page isRef="9" />
+              <Parent isRef="12" />
+              <Text>DWG № /
+Номер чертежа</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text8>
+            <Text10 Ref="35" type="Text" isKey="true">
+              <Border>Top, Right, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>27.6,3.4,2.4,2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>GOST type A,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text10</Name>
+              <Page isRef="9" />
+              <Parent isRef="12" />
+              <Text>Rev. of assembly /
+Ред. марки</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text10>
+            <Text11 Ref="36" type="Text" isKey="true">
+              <Border>Top, Left, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>33.8,3.4,2.4,2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>GOST type A,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text11</Name>
+              <Page isRef="9" />
+              <Parent isRef="12" />
+              <Text>Length /
+Длинна, мм</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text11>
+            <Text14 Ref="37" type="Text" isKey="true">
+              <Border>Top, Left, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>39.4,3.4,2.4,2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>GOST type A,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text14</Name>
+              <Page isRef="9" />
+              <Parent isRef="12" />
+              <Text>Mark weight, kg /
+Вес марки, кг</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text14>
+            <Text15 Ref="38" type="Text" isKey="true">
+              <Border>Top, Left, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>44.2,3.4,3.6,2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>GOST type A,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text15</Name>
+              <Page isRef="9" />
+              <Parent isRef="12" />
+              <Text>Anti-corrosian protection
+area per unit, m2 /
+Площадь АКЗ на одну марку, м2</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text15>
+            <Text17 Ref="39" type="Text" isKey="true">
+              <Border>Top, Left, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>47.8,3.4,3.6,2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>GOST type A,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text17</Name>
+              <Page isRef="9" />
+              <Parent isRef="12" />
+              <Text>Fire protection area per
+unit, m2 / Площадь ОГЗ 
+на одну марку, м2</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text17>
+            <Text18 Ref="40" type="Text" isKey="true">
+              <Border>Top, Left, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>51.4,3.4,2.4,2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>GOST type A,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text18</Name>
+              <Page isRef="9" />
+              <Parent isRef="12" />
+              <Text>PFP rate /
+Предел ОЗП</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text18>
+            <Text19 Ref="41" type="Text" isKey="true">
+              <Border>Top, Right, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>25.6,3.4,2,2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>GOST type A,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text19</Name>
+              <Page isRef="9" />
+              <Parent isRef="12" />
+              <Text>Sheet № /
+Номер листа</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text19>
+            <Text20 Ref="42" type="Text" isKey="true">
+              <Border>Top, Left, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>30,3.4,3.8,2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>GOST type A,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text20</Name>
+              <Page isRef="9" />
+              <Parent isRef="12" />
+              <Text>Cross-section /
+Профиль</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text20>
+            <Text21 Ref="43" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>56.2,3.4,2.2,2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>GOST type A,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text21</Name>
+              <Page isRef="9" />
+              <Parent isRef="12" />
+              <Text>Product code /
+Код товара</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text21>
+            <Text22 Ref="44" type="Text" isKey="true">
+              <Border>Top, Left, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>41.8,3.4,2.4,2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>GOST type A,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text22</Name>
+              <Page isRef="9" />
+              <Parent isRef="12" />
+              <Text>Total weight, kg /
+Вес всего, кг</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text22>
+            <Text23 Ref="45" type="Text" isKey="true">
+              <Border>Top, Left, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>36.2,3.4,3.2,2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>GOST type A,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text23</Name>
+              <Page isRef="9" />
+              <Parent isRef="12" />
+              <Text>QTY /
+кол-во, шт</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text23>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Name>HeaderBand1</Name>
+          <Page isRef="9" />
+          <Parent isRef="9" />
+          <PrintOn>OnlyFirstPage</PrintOn>
+        </HeaderBand1>
+        <GroupHeaderBand1 Ref="46" type="GroupHeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,10.2,58.4,1</ClientRectangle>
+          <Components isList="true" count="18">
+            <Text12 Ref="47" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,3.6,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>GOST type A,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text12</Name>
+              <Page isRef="9" />
+              <Parent isRef="46" />
+              <Text>{Order_CustomFields.title_subtitle_cia}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text12>
+            <Text35 Ref="48" type="Text" isKey="true">
+              <Border>Top, Left, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>53.8,0,2.4,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>GOST type A,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text35</Name>
+              <Page isRef="9" />
+              <Parent isRef="46" />
+              <Text>{Elements.tomf_ral}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text35>
+            <Text36 Ref="49" type="Text" isKey="true">
+              <Alias>13260-BD-001</Alias>
+              <Border>Top, Right, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.6,0,3.6,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>GOST type A,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text36</Name>
+              <Page isRef="9" />
+              <Parent isRef="46" />
+              <Text>{Order_CustomFields.structure}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text36>
+            <Text37 Ref="50" type="Text" isKey="true">
+              <Alias>211</Alias>
+              <Border>Top, Right, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>7.2,0,2,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>GOST type A,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text37</Name>
+              <Page isRef="9" />
+              <Parent isRef="46" />
+              <Text>{Order_CustomFields.dp}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text37>
+            <Text38 Ref="51" type="Text" isKey="true">
+              <Border>Top, Right, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>9.2,0,3.2,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>GOST type A,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text38</Name>
+              <Page isRef="9" />
+              <Parent isRef="46" />
+              <Text>{Elements.Mf_Position}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text38>
+            <Text39 Ref="52" type="Text" isKey="true">
+              <Border>Top, Right, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>12.4,0,6.8,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>GOST type A,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text39</Name>
+              <Page isRef="9" />
+              <Parent isRef="46" />
+              <Text>{Elements.Mf_Name}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text39>
+            <Text40 Ref="53" type="Text" isKey="true">
+              <Border>Top, Right, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>19.2,0,6.4,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>GOST type A,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text40</Name>
+              <Page isRef="9" />
+              <Parent isRef="46" />
+              <Text>{Order_CustomFields.customer+"-"+Order_CustomFields.manufacturer_code+"-"+Order_CustomFields.document_category+"-"+Order_CustomFields.title_subtitle_cia+"-"+Order_CustomFields.kmd+"-"+Order_CustomFields.drawing_number}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text40>
+            <Text41 Ref="54" type="Text" isKey="true">
+              <Border>Top, Right, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>27.6,0,2.4,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>GOST type A,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text41</Name>
+              <Page isRef="9" />
+              <Parent isRef="46" />
+              <Text>{Order_CustomFields.revision}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text41>
+            <Text42 Ref="55" type="Text" isKey="true">
+              <Border>Top, Left, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>33.8,0,2.4,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>GOST type A,11</Font>
+              <HideZeros>True</HideZeros>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text42</Name>
+              <Page isRef="9" />
+              <Parent isRef="46" />
+              <Text>{Elements.Mf_Length}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="56" type="NumberFormat" isKey="true">
+                <DecimalDigits>1</DecimalDigits>
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator> </GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <UseLocalSetting>False</UseLocalSetting>
+              </TextFormat>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text42>
+            <Text43 Ref="57" type="Text" isKey="true">
+              <Border>Top, Left, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>39.4,0,2.4,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>GOST type A,11</Font>
+              <HideZeros>True</HideZeros>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text43</Name>
+              <Page isRef="9" />
+              <Parent isRef="46" />
+              <Text>{Elements.Mf_Weight}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="58" type="NumberFormat" isKey="true">
+                <DecimalDigits>2</DecimalDigits>
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator> </GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <UseLocalSetting>False</UseLocalSetting>
+              </TextFormat>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text43>
+            <Text44 Ref="59" type="Text" isKey="true">
+              <Border>Top, Left, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>44.2,0,3.6,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>GOST type A,11</Font>
+              <HideZeros>True</HideZeros>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text44</Name>
+              <Page isRef="9" />
+              <Parent isRef="46" />
+              <Text>{Elements.tomf_akz}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="60" type="NumberFormat" isKey="true">
+                <DecimalDigits>2</DecimalDigits>
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator> </GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <UseLocalSetting>False</UseLocalSetting>
+              </TextFormat>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text44>
+            <Text45 Ref="61" type="Text" isKey="true">
+              <Border>Top, Left, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>47.8,0,3.6,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>GOST type A,11</Font>
+              <HideZeros>True</HideZeros>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text45</Name>
+              <Page isRef="9" />
+              <Parent isRef="46" />
+              <Text>{Elements.tomf_ogz}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="62" type="NumberFormat" isKey="true">
+                <DecimalDigits>2</DecimalDigits>
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator> </GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <UseLocalSetting>False</UseLocalSetting>
+              </TextFormat>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text45>
+            <Text46 Ref="63" type="Text" isKey="true">
+              <Border>Top, Left, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>51.4,0,2.4,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>GOST type A,11</Font>
+              <HideZeros>True</HideZeros>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text46</Name>
+              <Page isRef="9" />
+              <Parent isRef="46" />
+              <Text>{Elements.tomf_ozp}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="64" type="NumberFormat" isKey="true">
+                <DecimalDigits>2</DecimalDigits>
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator> </GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <UseLocalSetting>False</UseLocalSetting>
+              </TextFormat>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text46>
+            <Text47 Ref="65" type="Text" isKey="true">
+              <Border>Top, Right, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>25.6,0,2,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>GOST type A,11</Font>
+              <HideZeros>True</HideZeros>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text47</Name>
+              <Page isRef="9" />
+              <Parent isRef="46" />
+              <Text>{(Mid(Elements.tomf_sheet,0,1) == "-" ? "":Format("{0:00#}",Elements.tomf_sheet))}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="66" type="NumberFormat" isKey="true">
+                <DecimalDigits>0</DecimalDigits>
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator> </GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <UseLocalSetting>False</UseLocalSetting>
+              </TextFormat>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text47>
+            <Text48 Ref="67" type="Text" isKey="true">
+              <Border>Top, Left, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>30,0,3.8,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>GOST type A,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text48</Name>
+              <Page isRef="9" />
+              <Parent isRef="46" />
+              <Text>{Elements.tomf_profile}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text48>
+            <Text49 Ref="68" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>56.2,0,2.2,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>GOST type A,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text49</Name>
+              <Page isRef="9" />
+              <Parent isRef="46" />
+              <Text>{(Elements.tomf_akz!=0 ? 
+(Elements.Mf_Weight/Elements.Mf_Length*1000&lt;25? "111":
+(Elements.Mf_Weight/Elements.Mf_Length*1000&lt;70?"121":
+(Elements.Mf_Weight/Elements.Mf_Length*1000&lt;125?"131":
+(Elements.Mf_Weight/Elements.Mf_Length*1000&lt;180?"141":
+"151")))):
+(Elements.Mf_Weight/Elements.Mf_Length*1000&lt;25?"112":
+(Elements.Mf_Weight/Elements.Mf_Length*1000&lt;70?"122":
+(Elements.Mf_Weight/Elements.Mf_Length*1000&lt;125?"132":
+(Elements.Mf_Weight/Elements.Mf_Length*1000&lt;180?"142":
+"152")))))}
+</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text49>
+            <Text50 Ref="69" type="Text" isKey="true">
+              <Border>Top, Left, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>41.8,0,2.4,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>GOST type A,11</Font>
+              <HideZeros>True</HideZeros>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text50</Name>
+              <Page isRef="9" />
+              <Parent isRef="46" />
+              <Text>{Sum(Elements.Mf_Weight)}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="70" type="NumberFormat" isKey="true">
+                <DecimalDigits>2</DecimalDigits>
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator> </GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <UseLocalSetting>False</UseLocalSetting>
+              </TextFormat>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text50>
+            <Text51 Ref="71" type="Text" isKey="true">
+              <Border>Top, Left, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>36.2,0,3.2,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>GOST type A,11</Font>
+              <HideZeros>True</HideZeros>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text51</Name>
+              <Page isRef="9" />
+              <Parent isRef="46" />
+              <Text>{Count(GroupHeaderBand1, Elements.Type)}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="72" type="NumberFormat" isKey="true">
+                <DecimalDigits>0</DecimalDigits>
+                <DecimalSeparator>,</DecimalSeparator>
+                <GroupSeparator> </GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+                <UseLocalSetting>False</UseLocalSetting>
+              </TextFormat>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text51>
+          </Components>
+          <Condition>{Elements.Mf_Position}</Condition>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Name>GroupHeaderBand1</Name>
+          <Page isRef="9" />
+          <Parent isRef="9" />
+        </GroupHeaderBand1>
+        <DataBand1 Ref="73" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,12,58.4,0</ClientRectangle>
+          <Components isList="true" count="0" />
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>Elements</DataSourceName>
+          <Expressions isList="true" count="0" />
+          <FilterMode>Or</FilterMode>
+          <Filters isList="true" count="1">
+            <value>Type,EqualTo,Mark,,String</value>
+          </Filters>
+          <Name>DataBand1</Name>
+          <Page isRef="9" />
+          <Parent isRef="9" />
+          <Sort isList="true" count="2">
+            <value>ASC</value>
+            <value>Mf_Position</value>
+          </Sort>
+        </DataBand1>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Expressions isList="true" count="0" />
+      <Guid>d28e47a947e24fa9b17f43c8c64e4f2e</Guid>
+      <Margins>1,1,1,1</Margins>
+      <Name>Page1</Name>
+      <Orientation>Landscape</Orientation>
+      <PageHeight>42</PageHeight>
+      <PageWidth>60.4</PageWidth>
+      <Report isRef="0" />
+    </Page1>
+  </Pages>
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>4/19/2023 6:55:15 PM</ReportChanged>
+  <ReportCreated>10/16/2022 1:50:31 PM</ReportCreated>
+  <ReportFile>C:\Users\Andrei\Desktop\исправлено\Ведомость марок для EPC.mrt</ReportFile>
+  <ReportGuid>4397630999e74debba8a39eb7bc3094e</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2023.2.2.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="12">
+    <Blue_x0020_Steel_Report_Title1 Ref="74" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:0:39];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Blue Steel</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item65 Ref="75" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>ReportTitle</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item65>
+      </Conditions>
+      <Font>GOST type A,14,Bold</Font>
+      <Name>Blue Steel_Report_Title1</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[79:129:189]</TextBrush>
+    </Blue_x0020_Steel_Report_Title1>
+    <Blue_x0020_Steel_Report_Title2 Ref="76" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:0:39];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Blue Steel</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item67 Ref="77" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>ReportTitle</Placement>
+          <PlacementNestedLevel>2</PlacementNestedLevel>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item67>
+      </Conditions>
+      <Font>GOST type A,10,Bold</Font>
+      <Name>Blue Steel_Report_Title2</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[79:129:189]</TextBrush>
+    </Blue_x0020_Steel_Report_Title2>
+    <Blue_x0020_Steel_Report_Summary Ref="78" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:0:39];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Blue Steel</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item69 Ref="79" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>ReportSummary</Placement>
+          <Type>ComponentType, Placement</Type>
+        </Item69>
+      </Conditions>
+      <Font>GOST type A,10,Bold</Font>
+      <Name>Blue Steel_Report_Summary</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[79:129:189]</TextBrush>
+    </Blue_x0020_Steel_Report_Summary>
+    <Blue_x0020_Steel_Page_Header Ref="80" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:0:39];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Blue Steel</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item71 Ref="81" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>PageHeader</Placement>
+          <Type>ComponentType, Placement</Type>
+        </Item71>
+      </Conditions>
+      <Font>GOST type A,10</Font>
+      <Name>Blue Steel_Page_Header</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>Black</TextBrush>
+    </Blue_x0020_Steel_Page_Header>
+    <Blue_x0020_Steel_Page_Footer Ref="82" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:0:39];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Blue Steel</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item73 Ref="83" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>PageFooter</Placement>
+          <Type>ComponentType, Placement</Type>
+        </Item73>
+      </Conditions>
+      <Font>GOST type A,10</Font>
+      <Name>Blue Steel_Page_Footer</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>Black</TextBrush>
+    </Blue_x0020_Steel_Page_Footer>
+    <Blue_x0020_Steel_Group_Header1 Ref="84" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>Top, Bottom;[0:0:39];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Blue Steel</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item75 Ref="85" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>GroupHeader</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item75>
+      </Conditions>
+      <Font>GOST type A,13,Bold</Font>
+      <Name>Blue Steel_Group_Header1</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[79:129:189]</TextBrush>
+    </Blue_x0020_Steel_Group_Header1>
+    <Blue_x0020_Steel_Group_Footer1 Ref="86" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>Top, Bottom;[0:0:39];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Blue Steel</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item77 Ref="87" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>GroupFooter</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item77>
+      </Conditions>
+      <Font>GOST type A,9.75,Bold,Point,False,204</Font>
+      <Name>Blue Steel_Group_Footer1</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[79:129:189]</TextBrush>
+    </Blue_x0020_Steel_Group_Footer1>
+    <Blue_x0020_Steel_Header1 Ref="88" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>Top, Bottom;[0:0:39];2;Solid;False;4;Black;True</Border>
+      <Brush>[79:129:189]</Brush>
+      <CollectionName>Blue Steel</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item79 Ref="89" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>Header</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item79>
+      </Conditions>
+      <Font>GOST type A,9.75,Bold,Point,False,204</Font>
+      <Name>Blue Steel_Header1</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>White</TextBrush>
+    </Blue_x0020_Steel_Header1>
+    <Blue_x0020_Steel_Data1 Ref="90" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:0:39];1;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <CollectionName>Blue Steel</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item81 Ref="91" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image, CheckBox</ComponentType>
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>Data</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item81>
+      </Conditions>
+      <Font>GOST type A,8</Font>
+      <Name>Blue Steel_Data1</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[0:0:0]</TextBrush>
+    </Blue_x0020_Steel_Data1>
+    <Blue_x0020_Steel_Data1_Odd_x0020_Style Ref="92" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:0:39];1;Solid;False;4;Black</Border>
+      <Brush>[255:255:255]</Brush>
+      <CollectionName>Blue Steel</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item83 Ref="93" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>DataOddStyle</Placement>
+          <Type>Placement, PlacementNestedLevel</Type>
+        </Item83>
+      </Conditions>
+      <Font>GOST type A,8</Font>
+      <Name>Blue Steel_Data1_Odd Style</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[0:0:0]</TextBrush>
+    </Blue_x0020_Steel_Data1_Odd_x0020_Style>
+    <Blue_x0020_Steel_Data1_Even_x0020_Style Ref="94" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>None;[0:0:39];1;Solid;False;4;Black</Border>
+      <Brush>[216:216:216]</Brush>
+      <CollectionName>Blue Steel</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item85 Ref="95" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <OperationPlacementNestedLevel>GreaterThanOrEqualTo</OperationPlacementNestedLevel>
+          <Placement>DataEvenStyle</Placement>
+          <Type>Placement, PlacementNestedLevel</Type>
+        </Item85>
+      </Conditions>
+      <Font>GOST type A,8</Font>
+      <Name>Blue Steel_Data1_Even Style</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>[0:0:0]</TextBrush>
+    </Blue_x0020_Steel_Data1_Even_x0020_Style>
+    <Blue_x0020_Steel_Footer1 Ref="96" type="Stimulsoft.Report.StiStyle" isKey="true">
+      <Border>Top, Bottom;[0:0:39];2;Solid;False;4;Black</Border>
+      <Brush>White</Brush>
+      <CollectionName>Blue Steel</CollectionName>
+      <Conditions isList="true" count="1">
+        <Item87 Ref="97" type="Stimulsoft.Report.StiStyleCondition" isKey="true">
+          <ComponentType>Text, Primitive, Image</ComponentType>
+          <Placement>Footer</Placement>
+          <Type>ComponentType, Placement, PlacementNestedLevel</Type>
+        </Item87>
+      </Conditions>
+      <Font>GOST type A,8.25,Bold,Point,False,204</Font>
+      <Name>Blue Steel_Footer1</Name>
+      <NegativeTextBrush>Red</NegativeTextBrush>
+      <TextBrush>Black</TextBrush>
+    </Blue_x0020_Steel_Footer1>
+  </Styles>
+</StiSerializer>

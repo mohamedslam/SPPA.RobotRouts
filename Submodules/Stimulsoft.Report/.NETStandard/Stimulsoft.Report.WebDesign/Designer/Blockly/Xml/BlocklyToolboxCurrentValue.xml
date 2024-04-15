@@ -1,0 +1,8 @@
+﻿<block type="sti_get_current_value"></block>
+<block type="sti_set_current_value">
+  <value name="Value">
+    <shadow type="text">
+      <field name="TEXT"></field>
+    </shadow>
+  </value>
+</block>

@@ -1,0 +1,52 @@
+
+.stiJsViewerParentMenu {
+	z-index: 35;
+	position: absolute;
+}
+
+.stiJsViewerMenu,
+.stiJsViewerDropdownMenu,
+.stiJsViewerDropdownPanel {
+	position: absolute;
+	padding: 1px;
+	font-size: 12px;
+	border-radius: 3px;
+	border: 1px solid @JsViewerMenuBorderColor;
+	background: @JsViewerMenuBackgroundColor;
+	-moz-box-shadow: 0px 0px 7px rgba(0,0,0,0.6);
+	-webkit-box-shadow: 0px 0px 7px rgba(0,0,0,0.6);
+	box-shadow: 0 0 7px rgba(0,0,0,0.3);
+	cursor: default;
+	color: @JsViewerMenuFontColor;
+}
+
+.stiJsViewerVerticalMenuSeparator {
+	height: 1px;
+	background: @JsViewerMenuSeparatorColor;
+	margin: 1px 2px 1px 30px;
+}
+
+/* Mouse */
+.stiJsViewerMenuStandartItem {
+	margin: 1px;
+	border-radius: 3px;
+	white-space: nowrap;
+    cursor: default;
+    font-size: 12px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.stiJsViewerMenuStandartItemOver {
+    background: @JsViewerButtonOverBackgroundColor;
+}
+
+.stiJsViewerMenuStandartItemSelected {
+    background: @JsViewerButtonSelectedBackgroundColor;
+}
+
+.stiJsViewerMenuStandartItemDisabled {
+    color: @JsViewerControlsFontDisabledColor;
+}

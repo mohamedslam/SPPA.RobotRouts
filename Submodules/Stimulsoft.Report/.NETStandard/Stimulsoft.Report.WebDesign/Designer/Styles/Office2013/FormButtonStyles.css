@@ -1,0 +1,45 @@
+
+.stiDesignerFormButton {
+    cursor: default;
+    font-family: Arial;
+    font-size: 12px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+.stiDesignerFormButton_Mouse {
+    height: 24px;
+}
+
+.stiDesignerFormButton_Touch {
+    height: 28px;
+}
+
+.stiDesignerFormButtonDefault {
+    background: @MobileDesignerControlsBackgroundColor;
+    border: 1px solid @MobileDesignerControlsBorderColor;
+    color: @MobileDesignerFontColor;
+}
+
+.stiDesignerFormButtonOver {
+    background: @MobileDesignerButtonOverBackgroundColor;
+    border: 1px solid @MobileDesignerControlsOverBorderColor;
+    color: @MobileDesignerFontColor;
+}
+
+.stiDesignerFormButtonSelected {
+    background: @MobileDesignerButtonSelectedBackgroundColor;
+    border: 1px solid @MobileDesignerControlsSelectedBorderColor;
+    color: @MobileDesignerFontColor;
+}
+
+.stiDesignerFormButtonDisabled {
+    background: @MobileDesignerControlsBackgroundColor;
+    border: 1px solid @MobileDesignerControlsDisabledBorderColor;
+    color: @MobileDesignerFontDisabledColor;
+}
+
+.stiDesignerFormButtonArrowSeparator {
+    border-left: 1px solid @MobileDesignerControlsBorderColor;
+}

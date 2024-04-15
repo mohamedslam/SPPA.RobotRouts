@@ -1,0 +1,194 @@
+
+.stiJsViewerClearAllStyles {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    line-height: normal;
+}
+
+.stiJsViewerMainPanel {
+	overflow: visible;
+	width: 100%;
+    height: 100%;
+    z-index: 2;
+    position: relative;
+}
+
+.stiJsViewerMainPanel *,
+.stiJsViewerMainPanel *:before,
+.stiJsViewerMainPanel *:after {
+    box-sizing: content-box;
+    border-collapse: initial;
+}
+
+.stiJsViewerReportPanel {
+    z-index: 1;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    min-height: 100px;
+    border-collapse: separate;
+}
+
+.stiJsViewerReportPanel table,
+.stiJsViewerReportPanel td {
+	padding: 0px;
+	margin: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.stiJsViewerDisabledPanel {
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	position: absolute;
+	background: white;
+	filter: alpha(Opacity=10);
+    opacity: 0;
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+}
+
+.stiJsViewerAboutPanel {
+    width: 520px;
+    z-index: 500;
+    text-align: center;
+    position: absolute;
+    border: 1px solid @JsViewerFormBorderColor;
+    background: @JsViewerFormBackgroundColor;
+    -moz-box-shadow: 0px 0px 5px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0px 0px 5px rgba(0,0,0,0.6);
+    box-shadow: 0 0 7px rgba(0,0,0,0.3);
+}
+
+.stiJsViewerAboutPanelHeader {
+    width: 100%;
+    font-family: Arial;
+    font-size: 24px;
+    text-align: center;
+    color: @JsViewerFormHeaderFontColor;
+    margin-top: 35px;
+}
+
+.stiJsViewerAboutPanelCopyright {
+    width: 100%;
+    text-align: center;
+    font-family: Arial;
+    font-size: 12px;
+    color: #444444;
+    margin-top: 30px;
+}
+
+.stiJsViewerAboutPanelVersion {
+    width: 100%;
+    text-align: center;
+    font-family: Arial;
+    font-size: 12px;
+    color: #444444;
+    margin-top: 20px;
+}
+
+.stiJsViewerAboutPanelStiLink {
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    font-family: Arial;
+    font-size: 12px;
+    margin: 10px 0 12px 0;
+    color: #19478a;
+    text-decoration: underline;
+}
+
+.stiJsViewerProcessImage {
+    z-index: 45;
+	position: absolute;
+	border: 1px solid #909090;
+    background: #ffffff;    
+    font-size: 12px;
+    color: #303030;
+    -moz-box-shadow: 0px 0px 5px rgba(0,0,0,0.6); 
+    -webkit-box-shadow: 0px 0px 5px rgba(0,0,0,0.6);
+    box-shadow: 0 0 7px rgba(0,0,0,0.3);
+}
+
+.stiJsViewerPageShadow {
+	-moz-box-shadow: 0px 0px 5px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0px 0px 5px rgba(0,0,0,0.6);
+    box-shadow: 0 0 7px rgba(0,0,0,0.3);
+}
+
+.stiJsViewerCaptionControls {
+    white-space: nowrap;
+    padding: 0 25px 0 15px;
+    border: 0px;
+    margin: 0px;
+    font-size: 12px;
+    font-family: Arial;
+}
+
+.stiEditableField {
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	transition: all 0.5s ease;	
+	position: relative;
+}
+
+.stiEditableFieldSelected {
+	background: #f5efd5;
+	cursor: pointer;
+	-webkit-box-shadow: 0 0 8px 0 rgba(0,0,0,0.5);
+	-moz-box-shadow: 0 0 8px 0px rgba(0,0,0,0.5);
+	box-shadow: 0 0 8px 0 rgba(0,0,0,0.5);
+}
+
+.stiEditableTextArea {
+	background: #f5efd5;
+	border: 0px;
+	top: 0px;
+	left: 0px;	
+	position: absolute;
+	outline: 0px;
+}
+
+.stiJsViewerFindLabel {
+	position: absolute;
+    z-index: 150;
+    border: 2px solid #8a8a8a;
+    background: yellow;
+    opacity: 0.6;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;    
+}
+
+.stiJsViewerContainerHideScroll {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.stiJsViewerContainerHideScroll::-webkit-scrollbar {
+    width: 0px;
+}
+
+.stiJsViewerScrollContainer::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+.stiJsViewerScrollContainer::-webkit-scrollbar-thumb {
+    border: 2px solid transparent;
+    background-clip: content-box;
+    background-color: rgba(191, 191, 191, 0.8);
+}
+
+.stiJsViewerScrollContainer::-webkit-scrollbar-track {
+    background-color: rgba(191, 191, 191, 0.2);
+}

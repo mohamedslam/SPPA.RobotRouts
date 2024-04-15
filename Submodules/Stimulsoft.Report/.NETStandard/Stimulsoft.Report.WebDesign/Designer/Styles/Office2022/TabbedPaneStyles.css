@@ -1,0 +1,57 @@
+
+.stiDesignerTabbedPane {
+}
+
+.stiDesignerTabsPanel {	
+}
+
+.stiDesignerTabbedPaneContainer {
+}
+
+.stiDesignerTabbedPanePanel {
+}
+
+.stiDesignerStandartTabFooter {
+    background: @MobileDesignerFileMenuBackgroundColor;
+}
+
+.stiDesignerStandartTab {
+    border-radius: 3px;
+    white-space: nowrap;
+    cursor: default;
+    font-family: Arial;
+    font-size: 12px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+.stiDesignerStandartTab_Mouse {
+}
+
+.stiDesignerStandartTab_Touch {
+}
+
+.stiDesignerStandartTabDefault {
+    background: transparent;
+    border: 1px solid transparent;
+    color: @MobileDesignerFontColor;
+}
+
+.stiDesignerStandartTabOver {
+    color: @MobileDesignerFontColor;
+    background: @MobileDesignerButtonOverBackgroundColor;
+    border: 1px solid @MobileDesignerButtonOverBackgroundColor;
+}
+
+.stiDesignerStandartTabSelected {
+    color: @MobileDesignerFontColor;
+    background: @MobileDesignerButtonSelectedBackgroundColor;
+    border: 1px solid @MobileDesignerButtonSelectedBackgroundColor;
+}
+
+.stiDesignerStandartTabDisabled {
+    background: transparent;
+    border: 1px solid transparent;
+    color: @MobileDesignerFontDisabledColor;
+}

@@ -1,0 +1,1535 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <AutoLocalizeReportOnRun>True</AutoLocalizeReportOnRun>
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="1">
+      <JSON Ref="2" type="Stimulsoft.Report.Dictionary.StiJsonDatabase" isKey="true">
+        <Alias>JSON</Alias>
+        <Key />
+        <Name>JSON</Name>
+        <PathData>resource://json</PathData>
+      </JSON>
+    </Databases>
+    <DataSources isList="true" count="2">
+      <Elements Ref="3" type="DataTableSource" isKey="true">
+        <Alias>Elements</Alias>
+        <Columns isList="true" count="23">
+          <value>Id,System.String</value>
+          <value>IfcId,System.String</value>
+          <value>IfcTeklaId,System.String</value>
+          <value>Type,System.String</value>
+          <value>ParentId,System.String</value>
+          <value>RootId,System.String</value>
+          <value>Mf_ManufacturingStatus,System.String</value>
+          <value>Mf_Queue,System.String</value>
+          <value>Mf_WeldType,System.String</value>
+          <value>Mf_Length,System.Decimal</value>
+          <value>Mf_WeldSize,System.Decimal</value>
+          <value>PartType,System.String</value>
+          <value>Mf_Position,System.String</value>
+          <value>Mf_Name,System.String</value>
+          <value>Mf_Material,System.String</value>
+          <value>Mf_Profile,System.String</value>
+          <value>Mf_ProfileType,System.String</value>
+          <value>Mf_Weight,System.Decimal</value>
+          <value>Mf_PaintingArea,System.Decimal</value>
+          <value>Mf_Height,System.Decimal</value>
+          <value>Mf_HasHoles,System.Boolean</value>
+          <value>Mf_Width,System.Decimal</value>
+          <value>Mf_Standard,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Key>e5228e3236104281be8b2e7b5b2e3977</Key>
+        <Name>Elements</Name>
+        <NameInSource>JSON.Elements</NameInSource>
+      </Elements>
+      <Order Ref="4" type="DataTableSource" isKey="true">
+        <Alias>Order</Alias>
+        <Columns isList="true" count="8">
+          <value>OrderId,System.String</value>
+          <value>Name,System.String</value>
+          <value>Code,System.String</value>
+          <value>Customer,System.String</value>
+          <value>Archived,System.Boolean</value>
+          <value>Status,System.String</value>
+          <value>WorkspaceId,System.String</value>
+          <value>UserRole,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Key>aaf40bdd55b6412e8509c2a9319cfea9</Key>
+        <Name>Order</Name>
+        <NameInSource>JSON.Order</NameInSource>
+      </Order>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Resources isList="true" count="0" />
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="2">
+    <Item4 Ref="5" type="Stimulsoft.Report.StiGlobalizationContainer" isKey="true">
+      <CultureName>ru-RU</CultureName>
+      <Items isList="true" count="0" />
+    </Item4>
+    <Item5 Ref="6" type="Stimulsoft.Report.StiGlobalizationContainer" isKey="true">
+      <CultureName>en-US</CultureName>
+      <Items isList="true" count="36">
+        <value>Text50.Text,Status</value>
+        <value>Text8.Text,Sequence</value>
+        <value>ReportAlias,Weight_x0020_and_x0020_numbering_x0020_check</value>
+        <value>Text7.Text,Weight_x002C__x0020_t</value>
+        <value>Text18.Text,_x007B__x0028_Elements.Mf_ManufacturingStatus_x003D__x003D__x0022_InProgress_x0022__x0020__x003F__x0020__x0022_In_x0020_progress_x0022__x0020_:_x0020__x0028_Elements.Mf_ManufacturingStatus_x003D__x003D__x0022_Manufactured_x0022__x0020__x003F__x0020__x0022_Manufactured_x0022__x0020_:_x0020__x0028_Elements.Mf_ManufacturingStatus_x003D__x003D__x0022_New_x0022__x0020__x003F__x0020__x0022_New_x0022__x0020_:_x0020__x0022_Canceled_x0022__x0029__x0029__x0029__x007D_</value>
+        <value>Page1.ExcelSheet,Weight_x0020_and_x0020_numbering_x0020_check</value>
+        <value>Text51.Text,Sequence</value>
+        <value>Text57.Text,Weight_x002C__x0020_t</value>
+        <value>Text58.Text,Status</value>
+        <value>Text9.Text,Name:_x0020__x007B_Order.Name_x007D__x000D__x000A_Code:_x0020__x007B_Order.Code_x007D__x000D__x000A_Customer:_x0020__x007B_Order.Customer_x007D_</value>
+        <value>Text46.Text,_x007B__x0028_Count_x0028_DataBand1_x002C__x0020_Elements.Mf_Position_x0029__x003D__x003D_0_x0020__x0026__x0026__x0020_Count_x0028_DataBand4_x002C__x0020_Elements.Mf_Position_x0029__x003D__x003D_0_x0020__x0026__x0026__x0020_Count_x0028_DataBand3_x002C__x0020_Elements.Mf_Position_x0029__x003D__x003D_0_x0020__x0026__x0026__x0020_Count_x0028_DataBand5_x002C__x0020_Elements.Mf_Position_x0029__x003D__x003D_0_x0020__x003F__x0020__x0022_Positions_x0020_without_x0020_numbering_x0020_were_x0020_not_x0020_found_x0022__x0020_:_x0020__x0022__x0022__x0029__x007D_</value>
+        <value>Text4.Text,Status</value>
+        <value>Text5.Text,Zero-weight_x0020_parts</value>
+        <value>Text26.Text,Weight_x002C__x0020_t</value>
+        <value>Text55.Text,Modified_x0020_Parts_x0020_without_x0020_numbering</value>
+        <value>Text22.Text,Position</value>
+        <value>Text20.Text,Parts_x0020_without_x0020_numbering</value>
+        <value>Text28.Text,Sequence</value>
+        <value>Text6.Text,Position</value>
+        <value>Text42.Text,_x007B__x0028_Elements.Mf_ManufacturingStatus_x003D__x003D__x0022_InProgress_x0022__x0020__x003F__x0020__x0022_In_x0020_progress_x0022__x0020_:_x0020__x0028_Elements.Mf_ManufacturingStatus_x003D__x003D__x0022_Manufactured_x0022__x0020__x003F__x0020__x0022_Manufactured_x0022__x0020_:_x0020__x0028_Elements.Mf_ManufacturingStatus_x003D__x003D__x0022_New_x0022__x0020__x003F__x0020__x0022_New_x0022__x0020_:_x0020__x0022_Canceled_x0022__x0029__x0029__x0029__x007D_</value>
+        <value>Text48.Text,Mark</value>
+        <value>Text32.Text,_x007B__x0028_Elements.Mf_ManufacturingStatus_x003D__x003D__x0022_InProgress_x0022__x0020__x003F__x0020__x0022_In_x0020_progress_x0022__x0020_:_x0020__x0028_Elements.Mf_ManufacturingStatus_x003D__x003D__x0022_Manufactured_x0022__x0020__x003F__x0020__x0022_Manufactured_x0022__x0020_:_x0020__x0028_Elements.Mf_ManufacturingStatus_x003D__x003D__x0022_New_x0022__x0020__x003F__x0020__x0022_New_x0022__x0020_:_x0020__x0022_Canceled_x0022__x0029__x0029__x0029__x007D_</value>
+        <value>Text27.Text,Status</value>
+        <value>Text3.Text,Weight_x002C__x0020_t</value>
+        <value>Text47.Text,Modified_x0020_Assemblies_x0020_without_x0020_numbering</value>
+        <value>Text56.Text,Position</value>
+        <value>Text53.Text,_x007B__x0028_Count_x0028_DataBand2_x002C__x0020_Elements.Mf_Position_x0029__x003D__x003D_0_x0020__x003F__x0020__x0022_Zero-weight_x0020_parts_x0020_were_x0020_not_x0020_found_x0022__x0020_:_x0020__x0022__x0022__x0029__x007D_</value>
+        <value>Text49.Text,Weight_x002C__x0020_t</value>
+        <value>Text59.Text,Sequence</value>
+        <value>Text61.Text,Verification_x0020_report_x0020_for_x0020_numbering_x0020_and_x0020_weight_x0020_in_x0020_order_x000D__x000A_</value>
+        <value>Text37.Text,_x007B__x0028_Elements.Mf_ManufacturingStatus_x003D__x003D__x0022_InProgress_x0022__x0020__x003F__x0020__x0022_In_x0020_progress_x0022__x0020_:_x0020__x0028_Elements.Mf_ManufacturingStatus_x003D__x003D__x0022_Manufactured_x0022__x0020__x003F__x0020__x0022_Manufactured_x0022__x0020_:_x0020__x0028_Elements.Mf_ManufacturingStatus_x003D__x003D__x0022_New_x0022__x0020__x003F__x0020__x0022_New_x0022__x0020_:_x0020__x0022_Canceled_x0022__x0029__x0029__x0029__x007D_</value>
+        <value>Text1.Text,Assemblies_x0020_without_x0020_numbering</value>
+        <value>Text16.Text,Status</value>
+        <value>Text12.Text,_x007B__x0028_Elements.Mf_ManufacturingStatus_x003D__x003D__x0022_InProgress_x0022__x0020__x003F__x0020__x0022_In_x0020_progress_x0022__x0020_:_x0020__x0028_Elements.Mf_ManufacturingStatus_x003D__x003D__x0022_Manufactured_x0022__x0020__x003F__x0020__x0022_Manufactured_x0022__x0020_:_x0020__x0028_Elements.Mf_ManufacturingStatus_x003D__x003D__x0022_New_x0022__x0020__x003F__x0020__x0022_New_x0022__x0020_:_x0020__x0022_Canceled_x0022__x0029__x0029__x0029__x007D_</value>
+        <value>Text17.Text,Sequence</value>
+        <value>Text2.Text,Mark</value>
+      </Items>
+    </Item5>
+  </GlobalizationStrings>
+  <Key>681d9111e9814bf0a0763d457e2f9b0d</Key>
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="7" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="18">
+        <ЗаголовокСтраницы1 Ref="8" type="PageHeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,4,190,34</ClientRectangle>
+          <Components isList="true" count="3">
+            <Изображение1 Ref="9" type="Image" isKey="true">
+              <AspectRatio>True</AspectRatio>
+              <Border>None;[0:0:0];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.1,12,12</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Hyperlink>https://SPPA.ru/</Hyperlink>
+              <IconColor>68, 114, 196</IconColor>
+              <ImageBytes>iVBORw0KGgoAAAANSUhEUgAAADcAAAA3CAYAAACo29JGAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA
+AXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAaBSURBVHgB7VrNbxtFFH9v/JXQj2wvHBAim54i
+wSE98HXqmhOoRXHKgTZFiiOhqu2l7l8Q5y9IKgE9xqlCCJfGlRJ6qzcnRDnURUj9EFLWIHHgEodW
+bfPhebyx0za2Z3dnCw5Q+SdFyc7s25nfvJn3NQHooosuuviHgCYvWZkpq4apYSS01bNEch8unl8B
+Q9h2xurpOTiMCJaU4AmxXb5zZ74CHUYgOUVKQmqCX8ppuj2JIvdg8ew1P3lFqre3b4JIK+8ibmU7
+SdKXnCJGkCrxn0MQAImQfbB4fra1fXDwpA0NedtPlklXiWrO/ftzt6EDEH4dEpJTEEKs/gGi6Z4T
+X/S396QmIICYgtqmQsSKtp21oAPQkmOt2QiYBSOglZSiads1tAZZM3mwe3rkBegAtOTYeByFCECg
+bHNLcgwiAR3oALTknlpFc2DLtooqH7x9XxQ+Z05W4SWAlpzERBkigZreR6SI8uBBB6Al93DxzEqU
+ASXi9O7nVErMsiWMoH0qQAfg6wpqGM+CGcqtfq5cLlSlpLyZOLh3716ZhQ7Al5zSnnLQEAh0N0Qy
+o+u5d+/KJdZIPlge3CdPcAQ6hNDY0spctiUAh2DkwDOrhi7HlwVdZNKKwcEsy5Fy6M6uZk9tRdbY
+JLwsYKJ2p6KRPceny78Ow78Io5TnRTG6XFkljo5lPJ759sPXOxIcB8GI3KjSAFGGgOwdsTJiYnr+
+2GuVYLnKKtCz6KMAmMiHybRizRmyBCQ4nBNDxGeeJ1zm818+6N4MPe+B5E5eX7VRihKSPjxia5pf
+ONbvaxRayBnJ7Ma68/YFQsy3h3cMAi8lNp3eG7d8F8vXFYQRqwsT5E8tVaYgAhoy3irLBQbX6847
+E4RiWktMAcHeoET58QdH+n3H8uuI1XAmiNjzMSB36rvfImYRqLZXYXTJuzW6/Hvb5Hgr2g2NhX7J
+2pDJgv84Gowurw4BiVtgCD6LLohYvu3jUhb5l4npbzqP6867M4TG+SDEQDoHSj+21XR8NCeiasJh
+Im7rD5gRU8gSbbonlyvK2fNihVcAdkOSPh/025Z77mjVVlXncXSpMsMPkcj55Y9+5PY8n0M1JkJu
+/nj/OEROgcjTtcZ1jTEU5RpJiICyIHmxtVEKMQMGRom34fSjLTlZHBmoLyobMjfKmZMgtTVUXz93
+eskrkWFtQ5JML3w84La26/xc8+DoYlzk5lqilwfp94/WQLpgBs8q/TCg6/DP52I0zqN7EIK6U9YQ
+CwZ5rOn018ffSM9pwrIDpe9XkMzywThQxq/Pl9zCRwOeFDIdRDBKtKGwc67yj7boyFzIgvS5NyeD
+CRIXdDG9v3TzdsB44Th9vTLGR9BRVTGqlw9UjSRRiBRbIrHPS+aix5bv2QKIw7C6BbU5xlWxpSth
+3+wh1w00fB3PCngyVa5KX5yLvHX/4wiLHzsNY83RjGPBq6IP/pDrOO7+L+qaoeS2rqaPEqqD/dwt
+UMNpFpJVuBRGdOsrm+VFlq1Phkd7Gvm4bI8LyfNeaE7256k3x6S6t0BUZ07JVxFkMQky3zt/J/D8
+BpLbWHS4MOQfnSuSfAni4Cc3tINsXD48wUYoQB6KyY3aOF702hZoLWNb2Lt/kUk5fvLI5cO+hZ99
+rbWvK9i+6owFEat/HNDeFNKtb9kWbH55+EIQsYY8ZDZTsRlt3yv7Z4KIKZDAvNKsX7///Rz7IzCA
+IrhtQdMV1OMp2+aJ5czkIaO27u62xoQxYyLPt7vTa5khbaCvJbd9NT0c5aaGmmuSkEjF1GRtMISE
+WNNCSGF6N1iHFdu3pa2yacmxAYmacjhN8hBNHlvfJ4wkT1Jo3xfQAXCJ4O/mg9HkEcy3JYdakUIk
+as2/ZMQrLGrLHz2IBP14WnIJAar2YeyoVazX9JyQkcixUSm2fK8AEZCERFHXrr82HnHZUdI0GEBp
+LZEU+d1tiTPeCs/QNZMnL55qJiOTcb4hMltcVUXrndfXLn3PXGLEneSBixCMaowgh8fanXgNauHl
+At6OMSFz+Plqk/yhQpmDbSNX4iUhnvfrDDQoqRF3BBt3bF5rH6oQKg5O/ERJ+x9Evec8r4Y1lQ8W
+dP2oNBuTTvysp5U/+M1Ps3Ehh8B/gYr0KHbET2s7cwwHLTrWNpfb2NDY9QYB5eSIa3yuHl+27ZgU
+wyjA4m9UUYjbiXO/uKbya5+95QgJDUcvRFVub147tHDXgy666KKLvcJf02iP3FVmaCQAAAAASUVO
+RK5CYII=</ImageBytes>
+              <Margins>0,0,0,0</Margins>
+              <Name>Изображение1</Name>
+              <Page isRef="7" />
+              <Parent isRef="8" />
+              <Stretch>True</Stretch>
+              <VertAlignment>Center</VertAlignment>
+            </Изображение1>
+            <Text61 Ref="10" type="Text" isKey="true">
+              <Border>None;[0:0:0];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>12,2.5,146,9.5</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,16,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text61</Name>
+              <Page isRef="7" />
+              <Parent isRef="8" />
+              <Text>Проверочный отчёт на нумерацию и массу в заказе
+</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+            </Text61>
+            <Text9 Ref="11" type="Text" isKey="true">
+              <Border>None;[0:0:0];1;Solid;False;4;[0:0:0]</Border>
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>0,16.1,190,14</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text9</Name>
+              <Page isRef="7" />
+              <Parent isRef="8" />
+              <Text>Название: {Order.Name}
+Шифр: {Order.Code}
+Заказчик: {Order.Customer}</Text>
+              <TextBrush>[0:0:0]</TextBrush>
+              <TextOptions>,,,,WordWrap=True,A=0</TextOptions>
+              <Type>Expression</Type>
+            </Text9>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Name>ЗаголовокСтраницы1</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+          <PrintOn>OnlyFirstPage</PrintOn>
+        </ЗаголовокСтраницы1>
+        <PageFooterBand1 Ref="12" type="PageFooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,490.6,190,8</ClientRectangle>
+          <Components isList="true" count="2">
+            <Text45 Ref="13" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>174,1,16,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text45</Name>
+              <Page isRef="7" />
+              <Parent isRef="12" />
+              <Text>{PageNumber}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text45>
+            <Text54 Ref="14" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,1,30,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text54</Name>
+              <Page isRef="7" />
+              <Parent isRef="12" />
+              <Text>{Today}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="15" type="DateFormat" isKey="true">
+                <StringFormat>dd.MM.yy</StringFormat>
+              </TextFormat>
+              <Type>SystemVariables</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text54>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Name>PageFooterBand1</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+        </PageFooterBand1>
+        <ColumnHeaderBand1 Ref="16" type="Stimulsoft.Report.Components.StiColumnHeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,46,190,20</ClientRectangle>
+          <Components isList="true" count="6">
+            <Text1 Ref="17" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>64,0,62,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="7" />
+              <Parent isRef="16" />
+              <Text>Марки без нумерации</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text1>
+            <Text2 Ref="18" type="Text" isKey="true">
+              <Border>Left, Right;Black;1;Solid;False;4;Black</Border>
+              <Brush>[249:223:187]</Brush>
+              <ClientRectangle>0,10,22,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text2</Name>
+              <Page isRef="7" />
+              <Parent isRef="16" />
+              <Text>Марка</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text2>
+            <Text3 Ref="19" type="Text" isKey="true">
+              <Border>Left, Right;Black;1;Solid;False;4;Black</Border>
+              <Brush>[249:223:187]</Brush>
+              <ClientRectangle>22,10,24,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="7" />
+              <Parent isRef="16" />
+              <Text>Масса, т</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text3>
+            <Text4 Ref="20" type="Text" isKey="true">
+              <Border>Left, Right;Black;1;Solid;False;4;Black</Border>
+              <Brush>[249:223:187]</Brush>
+              <ClientRectangle>46,10,30,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text4</Name>
+              <Page isRef="7" />
+              <Parent isRef="16" />
+              <Text>Статус</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text4>
+            <Text8 Ref="21" type="Text" isKey="true">
+              <Border>Left, Right;Black;1;Solid;False;4;Black</Border>
+              <Brush>[249:223:187]</Brush>
+              <ClientRectangle>76,10,30,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text8</Name>
+              <Page isRef="7" />
+              <Parent isRef="16" />
+              <Text>Очередь</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text8>
+            <Text24 Ref="22" type="Text" isKey="true">
+              <Border>Left, Right;Black;1;Solid;False;4;Black</Border>
+              <Brush>[249:223:187]</Brush>
+              <ClientRectangle>106,10,84,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text24</Name>
+              <Page isRef="7" />
+              <Parent isRef="16" />
+              <Text>GUID</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text24>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Name>ColumnHeaderBand1</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+        </ColumnHeaderBand1>
+        <GroupHeaderBand1 Ref="23" type="GroupHeaderBand" isKey="true">
+          <BreakIfLessThan>50</BreakIfLessThan>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,74,190,10</ClientRectangle>
+          <Components isList="true" count="5">
+            <Text13 Ref="24" type="Text" isKey="true">
+              <Border>None;[127:127:127];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,22,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11</Font>
+              <Margins>3,3,0,0</Margins>
+              <Name>Text13</Name>
+              <NullValue>-</NullValue>
+              <Page isRef="7" />
+              <Parent isRef="23" />
+              <Text>{Elements.Mf_Position}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text13>
+            <Text14 Ref="25" type="Text" isKey="true">
+              <Border>None;[127:127:127];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>22,0,24,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11</Font>
+              <Margins>3,3,0,0</Margins>
+              <Name>Text14</Name>
+              <Page isRef="7" />
+              <Parent isRef="23" />
+              <Text>{Elements.Mf_Weight/1000}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text14>
+            <Text12 Ref="26" type="Text" isKey="true">
+              <Border>None;[127:127:127];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>46,0,30,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11</Font>
+              <Margins>3,3,0,0</Margins>
+              <Name>Text12</Name>
+              <Page isRef="7" />
+              <Parent isRef="23" />
+              <Text>{(Elements.Mf_ManufacturingStatus=="InProgress" ? "В работе" : (Elements.Mf_ManufacturingStatus=="Manufactured" ? "Готово" : (Elements.Mf_ManufacturingStatus=="New" ? "Новый" : "Отменен")))}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text12>
+            <Text15 Ref="27" type="Text" isKey="true">
+              <Border>None;[127:127:127];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>76,0,30,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>3,3,0,0</Margins>
+              <Name>Text15</Name>
+              <Page isRef="7" />
+              <Parent isRef="23" />
+              <Text>{Elements.Mf_Queue}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text15>
+            <Text25 Ref="28" type="Text" isKey="true">
+              <Border>None;[127:127:127];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>106,0,84,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>3,3,0,0</Margins>
+              <Name>Text25</Name>
+              <Page isRef="7" />
+              <Parent isRef="23" />
+              <Text>{Elements.IfcTeklaId}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text25>
+          </Components>
+          <Condition>{Elements.Mf_Position}
+{Elements.Mf_ManufacturingStatus}
+{Elements.Mf_Queue}
+{Elements.IfcTeklaId}</Condition>
+          <Conditions isList="true" count="4">
+            <value>Elements.Mf_ManufacturingStatus,EqualTo,New,,String,[0:0:0],[205:230:245],Roboto_x002C_11,True,False,,,None</value>
+            <value>Elements.Mf_ManufacturingStatus,EqualTo,InProgress,,String,[0:0:0],[249:223:187],Roboto_x002C_11,True,False,,,None</value>
+            <value>Elements.Mf_ManufacturingStatus,EqualTo,Manufactured,,String,[0:0:0],[246:194:121],Roboto_x002C_11,True,False,,,None</value>
+            <value>Elements.Mf_ManufacturingStatus,EqualTo,Canceled,,String,[0:0:0],[152:146:189],Roboto_x002C_11,True,False,,,None</value>
+          </Conditions>
+          <Expressions isList="true" count="0" />
+          <Name>GroupHeaderBand1</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+          <StartNewPageIfLessThan>50</StartNewPageIfLessThan>
+        </GroupHeaderBand1>
+        <DataBand1 Ref="29" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,92,190,0</ClientRectangle>
+          <Components isList="true" count="0" />
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>Elements</DataSourceName>
+          <Expressions isList="true" count="0" />
+          <Filters isList="true" count="2">
+            <value>Type,EqualTo,Mark,,String</value>
+            <value>Mf_Position,EqualTo,,,String</value>
+          </Filters>
+          <Name>DataBand1</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+          <Sort isList="true" count="0" />
+        </DataBand1>
+        <ColumnHeaderBand4 Ref="30" type="Stimulsoft.Report.Components.StiColumnHeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,100,190,28</ClientRectangle>
+          <Components isList="true" count="6">
+            <Text47 Ref="31" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>48,8,88,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text47</Name>
+              <Page isRef="7" />
+              <Parent isRef="30" />
+              <Text>Изменённые Марки без нумерации</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text47>
+            <Text48 Ref="32" type="Text" isKey="true">
+              <Border>Left, Right;Black;1;Solid;False;4;Black</Border>
+              <Brush>[249:223:187]</Brush>
+              <ClientRectangle>0,18,22,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text48</Name>
+              <Page isRef="7" />
+              <Parent isRef="30" />
+              <Text>Марка</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text48>
+            <Text49 Ref="33" type="Text" isKey="true">
+              <Border>Left, Right;Black;1;Solid;False;4;Black</Border>
+              <Brush>[249:223:187]</Brush>
+              <ClientRectangle>22,18,24,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text49</Name>
+              <Page isRef="7" />
+              <Parent isRef="30" />
+              <Text>Масса, т</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text49>
+            <Text50 Ref="34" type="Text" isKey="true">
+              <Border>Left, Right;Black;1;Solid;False;4;Black</Border>
+              <Brush>[249:223:187]</Brush>
+              <ClientRectangle>46,18,30,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text50</Name>
+              <Page isRef="7" />
+              <Parent isRef="30" />
+              <Text>Статус</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text50>
+            <Text51 Ref="35" type="Text" isKey="true">
+              <Border>Left, Right;Black;1;Solid;False;4;Black</Border>
+              <Brush>[249:223:187]</Brush>
+              <ClientRectangle>76,18,30,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text51</Name>
+              <Page isRef="7" />
+              <Parent isRef="30" />
+              <Text>Очередь</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text51>
+            <Text52 Ref="36" type="Text" isKey="true">
+              <Border>Left, Right;Black;1;Solid;False;4;Black</Border>
+              <Brush>[249:223:187]</Brush>
+              <ClientRectangle>106,18,84,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text52</Name>
+              <Page isRef="7" />
+              <Parent isRef="30" />
+              <Text>GUID</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text52>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Name>ColumnHeaderBand4</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+        </ColumnHeaderBand4>
+        <GroupHeaderBand4 Ref="37" type="GroupHeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,136,190,10</ClientRectangle>
+          <Components isList="true" count="5">
+            <Text35 Ref="38" type="Text" isKey="true">
+              <Border>None;[127:127:127];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,22,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11</Font>
+              <Margins>3,3,0,0</Margins>
+              <Name>Text35</Name>
+              <NullValue>-</NullValue>
+              <Page isRef="7" />
+              <Parent isRef="37" />
+              <Text>{Elements.Mf_Position}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text35>
+            <Text36 Ref="39" type="Text" isKey="true">
+              <Border>None;[127:127:127];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>22,0,24,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11</Font>
+              <Margins>3,3,0,0</Margins>
+              <Name>Text36</Name>
+              <Page isRef="7" />
+              <Parent isRef="37" />
+              <Text>{Elements.Mf_Weight/1000}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text36>
+            <Text37 Ref="40" type="Text" isKey="true">
+              <Border>None;[127:127:127];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>46,0,30,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11</Font>
+              <Margins>3,3,0,0</Margins>
+              <Name>Text37</Name>
+              <Page isRef="7" />
+              <Parent isRef="37" />
+              <Text>{(Elements.Mf_ManufacturingStatus=="InProgress" ? "В работе" : (Elements.Mf_ManufacturingStatus=="Manufactured" ? "Готово" : (Elements.Mf_ManufacturingStatus=="New" ? "Новый" : "Отменен")))}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text37>
+            <Text38 Ref="41" type="Text" isKey="true">
+              <Border>None;[127:127:127];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>76,0,30,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>3,3,0,0</Margins>
+              <Name>Text38</Name>
+              <Page isRef="7" />
+              <Parent isRef="37" />
+              <Text>{Elements.Mf_Queue}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text38>
+            <Text39 Ref="42" type="Text" isKey="true">
+              <Border>None;[127:127:127];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>106,0,84,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>3,3,0,0</Margins>
+              <Name>Text39</Name>
+              <Page isRef="7" />
+              <Parent isRef="37" />
+              <Text>{Elements.IfcTeklaId}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text39>
+          </Components>
+          <Condition>{Elements.Mf_Position}
+{Elements.Mf_ManufacturingStatus}
+{Elements.Mf_Queue}
+{Elements.IfcTeklaId}</Condition>
+          <Conditions isList="true" count="4">
+            <value>Elements.Mf_ManufacturingStatus,EqualTo,New,,String,[0:0:0],[205:230:245],Roboto_x002C_11,True,False,,,None</value>
+            <value>Elements.Mf_ManufacturingStatus,EqualTo,InProgress,,String,[0:0:0],[249:223:187],Roboto_x002C_11,True,False,,,None</value>
+            <value>Elements.Mf_ManufacturingStatus,EqualTo,Manufactured,,String,[0:0:0],[246:194:121],Roboto_x002C_11,True,False,,,None</value>
+            <value>Elements.Mf_ManufacturingStatus,EqualTo,Canceled,,String,[0:0:0],[152:146:189],Roboto_x002C_11,True,False,,,None</value>
+          </Conditions>
+          <Expressions isList="true" count="0" />
+          <Name>GroupHeaderBand4</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+        </GroupHeaderBand4>
+        <DataBand4 Ref="43" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,154,190,0</ClientRectangle>
+          <Components isList="true" count="0" />
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>Elements</DataSourceName>
+          <Expressions isList="true" count="0" />
+          <Filters isList="true" count="2">
+            <value>Type,EqualTo,Mark,,String</value>
+            <value>Mf_Position,Containing,_x003F_,,String</value>
+          </Filters>
+          <Name>DataBand4</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+          <Sort isList="true" count="0" />
+        </DataBand4>
+        <ColumnHeaderBand3 Ref="44" type="Stimulsoft.Report.Components.StiColumnHeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,162,190,28</ClientRectangle>
+          <Components isList="true" count="6">
+            <Text20 Ref="45" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>64,8,62,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text20</Name>
+              <Page isRef="7" />
+              <Parent isRef="44" />
+              <Text>Детали без нумерации</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text20>
+            <Text22 Ref="46" type="Text" isKey="true">
+              <Border>Left, Right;Black;1;Solid;False;4;Black</Border>
+              <Brush>[249:223:187]</Brush>
+              <ClientRectangle>0,18,22,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text22</Name>
+              <Page isRef="7" />
+              <Parent isRef="44" />
+              <Text>Позиция</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text22>
+            <Text26 Ref="47" type="Text" isKey="true">
+              <Border>Left, Right;Black;1;Solid;False;4;Black</Border>
+              <Brush>[249:223:187]</Brush>
+              <ClientRectangle>22,18,24,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text26</Name>
+              <Page isRef="7" />
+              <Parent isRef="44" />
+              <Text>Масса, т</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text26>
+            <Text27 Ref="48" type="Text" isKey="true">
+              <Border>Left, Right;Black;1;Solid;False;4;Black</Border>
+              <Brush>[249:223:187]</Brush>
+              <ClientRectangle>46,18,30,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text27</Name>
+              <Page isRef="7" />
+              <Parent isRef="44" />
+              <Text>Статус</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text27>
+            <Text28 Ref="49" type="Text" isKey="true">
+              <Border>Left, Right;Black;1;Solid;False;4;Black</Border>
+              <Brush>[249:223:187]</Brush>
+              <ClientRectangle>76,18,30,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text28</Name>
+              <Page isRef="7" />
+              <Parent isRef="44" />
+              <Text>Очередь</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text28>
+            <Text29 Ref="50" type="Text" isKey="true">
+              <Border>Left, Right;Black;1;Solid;False;4;Black</Border>
+              <Brush>[249:223:187]</Brush>
+              <ClientRectangle>106,18,84,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text29</Name>
+              <Page isRef="7" />
+              <Parent isRef="44" />
+              <Text>GUID</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text29>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Name>ColumnHeaderBand3</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+        </ColumnHeaderBand3>
+        <GroupHeaderBand3 Ref="51" type="GroupHeaderBand" isKey="true">
+          <BreakIfLessThan>50</BreakIfLessThan>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,198,190,10</ClientRectangle>
+          <Components isList="true" count="5">
+            <Text30 Ref="52" type="Text" isKey="true">
+              <Border>None;[127:127:127];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,22,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11</Font>
+              <Margins>3,3,0,0</Margins>
+              <Name>Text30</Name>
+              <NullValue>-</NullValue>
+              <Page isRef="7" />
+              <Parent isRef="51" />
+              <Text>{Elements.Mf_Position}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text30>
+            <Text31 Ref="53" type="Text" isKey="true">
+              <Border>None;[127:127:127];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>22,0,24,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11</Font>
+              <Margins>3,3,0,0</Margins>
+              <Name>Text31</Name>
+              <Page isRef="7" />
+              <Parent isRef="51" />
+              <Text>{Elements.Mf_Weight/1000}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text31>
+            <Text32 Ref="54" type="Text" isKey="true">
+              <Border>None;[127:127:127];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>46,0,30,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11</Font>
+              <Margins>3,3,0,0</Margins>
+              <Name>Text32</Name>
+              <Page isRef="7" />
+              <Parent isRef="51" />
+              <Text>{(Elements.Mf_ManufacturingStatus=="InProgress" ? "В работе" : (Elements.Mf_ManufacturingStatus=="Manufactured" ? "Готово" : (Elements.Mf_ManufacturingStatus=="New" ? "Новый" : "Отменен")))}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text32>
+            <Text33 Ref="55" type="Text" isKey="true">
+              <Border>None;[127:127:127];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>76,0,30,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>3,3,0,0</Margins>
+              <Name>Text33</Name>
+              <Page isRef="7" />
+              <Parent isRef="51" />
+              <Text>{Elements.Mf_Queue}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text33>
+            <Text34 Ref="56" type="Text" isKey="true">
+              <Border>None;[127:127:127];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>106,0,84,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>3,3,0,0</Margins>
+              <Name>Text34</Name>
+              <Page isRef="7" />
+              <Parent isRef="51" />
+              <Text>{Elements.IfcTeklaId}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text34>
+          </Components>
+          <Condition>{Elements.Mf_Position}
+{Elements.Mf_ManufacturingStatus}
+{Elements.Mf_Queue}
+{Elements.IfcTeklaId}</Condition>
+          <Conditions isList="true" count="4">
+            <value>Elements.Mf_ManufacturingStatus,EqualTo,New,,String,[0:0:0],[205:230:245],Roboto_x002C_11,True,False,,,None</value>
+            <value>Elements.Mf_ManufacturingStatus,EqualTo,InProgress,,String,[0:0:0],[249:223:187],Roboto_x002C_11,True,False,,,None</value>
+            <value>Elements.Mf_ManufacturingStatus,EqualTo,Manufactured,,String,[0:0:0],[246:194:121],Roboto_x002C_11,True,False,,,None</value>
+            <value>Elements.Mf_ManufacturingStatus,EqualTo,Canceled,,String,[0:0:0],[152:146:189],Roboto_x002C_11,True,False,,,None</value>
+          </Conditions>
+          <Expressions isList="true" count="0" />
+          <Name>GroupHeaderBand3</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+          <StartNewPageIfLessThan>50</StartNewPageIfLessThan>
+        </GroupHeaderBand3>
+        <DataBand3 Ref="57" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,216,190,0</ClientRectangle>
+          <Components isList="true" count="0" />
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>Elements</DataSourceName>
+          <Expressions isList="true" count="0" />
+          <Filters isList="true" count="2">
+            <value>Type,EqualTo,Part,,String</value>
+            <value>Mf_Position,EqualTo,,,String</value>
+          </Filters>
+          <Name>DataBand3</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+          <Sort isList="true" count="0" />
+        </DataBand3>
+        <ColumnHeaderBand5 Ref="58" type="Stimulsoft.Report.Components.StiColumnHeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,224,190,28</ClientRectangle>
+          <Components isList="true" count="6">
+            <Text55 Ref="59" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>48,8,88,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text55</Name>
+              <Page isRef="7" />
+              <Parent isRef="58" />
+              <Text>Изменённые Детали без нумерации</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text55>
+            <Text56 Ref="60" type="Text" isKey="true">
+              <Border>Left, Right;Black;1;Solid;False;4;Black</Border>
+              <Brush>[249:223:187]</Brush>
+              <ClientRectangle>0,18,22,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text56</Name>
+              <Page isRef="7" />
+              <Parent isRef="58" />
+              <Text>Позиция</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text56>
+            <Text57 Ref="61" type="Text" isKey="true">
+              <Border>Left, Right;Black;1;Solid;False;4;Black</Border>
+              <Brush>[249:223:187]</Brush>
+              <ClientRectangle>22,18,24,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text57</Name>
+              <Page isRef="7" />
+              <Parent isRef="58" />
+              <Text>Масса, т</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text57>
+            <Text58 Ref="62" type="Text" isKey="true">
+              <Border>Left, Right;Black;1;Solid;False;4;Black</Border>
+              <Brush>[249:223:187]</Brush>
+              <ClientRectangle>46,18,30,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text58</Name>
+              <Page isRef="7" />
+              <Parent isRef="58" />
+              <Text>Статус</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text58>
+            <Text59 Ref="63" type="Text" isKey="true">
+              <Border>Left, Right;Black;1;Solid;False;4;Black</Border>
+              <Brush>[249:223:187]</Brush>
+              <ClientRectangle>76,18,30,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text59</Name>
+              <Page isRef="7" />
+              <Parent isRef="58" />
+              <Text>Очередь</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text59>
+            <Text60 Ref="64" type="Text" isKey="true">
+              <Border>Left, Right;Black;1;Solid;False;4;Black</Border>
+              <Brush>[249:223:187]</Brush>
+              <ClientRectangle>106,18,84,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text60</Name>
+              <Page isRef="7" />
+              <Parent isRef="58" />
+              <Text>GUID</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text60>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Name>ColumnHeaderBand5</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+        </ColumnHeaderBand5>
+        <GroupHeaderBand5 Ref="65" type="GroupHeaderBand" isKey="true">
+          <BreakIfLessThan>50</BreakIfLessThan>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,260,190,10</ClientRectangle>
+          <Components isList="true" count="5">
+            <Text40 Ref="66" type="Text" isKey="true">
+              <Border>None;[127:127:127];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,22,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11</Font>
+              <Margins>3,3,0,0</Margins>
+              <Name>Text40</Name>
+              <NullValue>-</NullValue>
+              <Page isRef="7" />
+              <Parent isRef="65" />
+              <Text>{Elements.Mf_Position}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text40>
+            <Text41 Ref="67" type="Text" isKey="true">
+              <Border>None;[127:127:127];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>22,0,24,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11</Font>
+              <Margins>3,3,0,0</Margins>
+              <Name>Text41</Name>
+              <Page isRef="7" />
+              <Parent isRef="65" />
+              <Text>{Elements.Mf_Weight/1000}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text41>
+            <Text42 Ref="68" type="Text" isKey="true">
+              <Border>None;[127:127:127];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>46,0,30,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11</Font>
+              <Margins>3,3,0,0</Margins>
+              <Name>Text42</Name>
+              <Page isRef="7" />
+              <Parent isRef="65" />
+              <Text>{(Elements.Mf_ManufacturingStatus=="InProgress" ? "В работе" : (Elements.Mf_ManufacturingStatus=="Manufactured" ? "Готово" : (Elements.Mf_ManufacturingStatus=="New" ? "Новый" : "Отменен")))}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text42>
+            <Text43 Ref="69" type="Text" isKey="true">
+              <Border>None;[127:127:127];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>76,0,30,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>3,3,0,0</Margins>
+              <Name>Text43</Name>
+              <Page isRef="7" />
+              <Parent isRef="65" />
+              <Text>{Elements.Mf_Queue}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text43>
+            <Text44 Ref="70" type="Text" isKey="true">
+              <Border>None;[127:127:127];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>106,0,84,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>3,3,0,0</Margins>
+              <Name>Text44</Name>
+              <Page isRef="7" />
+              <Parent isRef="65" />
+              <Text>{Elements.IfcTeklaId}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text44>
+          </Components>
+          <Condition>{Elements.Mf_Position}
+{Elements.Mf_ManufacturingStatus}
+{Elements.Mf_Queue}
+{Elements.IfcTeklaId}</Condition>
+          <Conditions isList="true" count="4">
+            <value>Elements.Mf_ManufacturingStatus,EqualTo,New,,String,[0:0:0],[205:230:245],Roboto_x002C_11,True,False,,,None</value>
+            <value>Elements.Mf_ManufacturingStatus,EqualTo,Manufactured,,String,[0:0:0],[246:194:121],Roboto_x002C_11,True,False,,,None</value>
+            <value>Elements.Mf_ManufacturingStatus,EqualTo,InProgress,,String,[0:0:0],[249:223:187],Roboto_x002C_11,True,False,,,None</value>
+            <value>Elements.Mf_ManufacturingStatus,EqualTo,Canceled,,String,[0:0:0],[152:146:189],Roboto_x002C_11,True,False,,,None</value>
+          </Conditions>
+          <Expressions isList="true" count="0" />
+          <Name>GroupHeaderBand5</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+          <StartNewPageIfLessThan>50</StartNewPageIfLessThan>
+        </GroupHeaderBand5>
+        <DataBand5 Ref="71" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,278,190,0</ClientRectangle>
+          <Components isList="true" count="0" />
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>Elements</DataSourceName>
+          <Expressions isList="true" count="0" />
+          <Filters isList="true" count="2">
+            <value>Type,EqualTo,Part,,String</value>
+            <value>Mf_Position,Containing,_x003F_,,String</value>
+          </Filters>
+          <Name>DataBand5</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+          <Sort isList="true" count="0" />
+        </DataBand5>
+        <ColumnHeaderBand2 Ref="72" type="Stimulsoft.Report.Components.StiColumnHeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,286,190,28</ClientRectangle>
+          <Components isList="true" count="6">
+            <Text5 Ref="73" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>64,8,62,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text5</Name>
+              <Page isRef="7" />
+              <Parent isRef="72" />
+              <Text>Детали с нулевой массой</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text5>
+            <Text6 Ref="74" type="Text" isKey="true">
+              <Border>Left, Right;Black;1;Solid;False;4;Black</Border>
+              <Brush>[249:223:187]</Brush>
+              <ClientRectangle>0,18,22,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text6</Name>
+              <Page isRef="7" />
+              <Parent isRef="72" />
+              <Text>Позиция</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text6>
+            <Text7 Ref="75" type="Text" isKey="true">
+              <Border>Left, Right;Black;1;Solid;False;4;Black</Border>
+              <Brush>[249:223:187]</Brush>
+              <ClientRectangle>22,18,22,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text7</Name>
+              <Page isRef="7" />
+              <Parent isRef="72" />
+              <Text>Масса, т</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text7>
+            <Text16 Ref="76" type="Text" isKey="true">
+              <Border>Left, Right;Black;1;Solid;False;4;Black</Border>
+              <Brush>[249:223:187]</Brush>
+              <ClientRectangle>44,18,32,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text16</Name>
+              <Page isRef="7" />
+              <Parent isRef="72" />
+              <Text>Статус</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text16>
+            <Text17 Ref="77" type="Text" isKey="true">
+              <Border>Left, Right;Black;1;Solid;False;4;Black</Border>
+              <Brush>[249:223:187]</Brush>
+              <ClientRectangle>76,18,30,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text17</Name>
+              <Page isRef="7" />
+              <Parent isRef="72" />
+              <Text>Очередь</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text17>
+            <Text23 Ref="78" type="Text" isKey="true">
+              <Border>Left, Right;Black;1;Solid;False;4;Black</Border>
+              <Brush>[249:223:187]</Brush>
+              <ClientRectangle>106,18,84,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text23</Name>
+              <Page isRef="7" />
+              <Parent isRef="72" />
+              <Text>GUID</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text23>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Name>ColumnHeaderBand2</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+        </ColumnHeaderBand2>
+        <GroupHeaderBand2 Ref="79" type="GroupHeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,322,190,10</ClientRectangle>
+          <Components isList="true" count="5">
+            <Text10 Ref="80" type="Text" isKey="true">
+              <Border>None;[127:127:127];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,22,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11</Font>
+              <Margins>3,3,0,0</Margins>
+              <Name>Text10</Name>
+              <NullValue>-</NullValue>
+              <Page isRef="7" />
+              <Parent isRef="79" />
+              <Text>{Elements.Mf_Position}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text10>
+            <Text11 Ref="81" type="Text" isKey="true">
+              <Border>None;[127:127:127];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>22,0,22,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11</Font>
+              <Margins>3,3,0,0</Margins>
+              <Name>Text11</Name>
+              <Page isRef="7" />
+              <Parent isRef="79" />
+              <Text>{Elements.Mf_Weight/1000}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text11>
+            <Text18 Ref="82" type="Text" isKey="true">
+              <Border>None;[127:127:127];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>44,0,32,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11</Font>
+              <Margins>3,3,0,0</Margins>
+              <Name>Text18</Name>
+              <Page isRef="7" />
+              <Parent isRef="79" />
+              <Text>{(Elements.Mf_ManufacturingStatus=="InProgress" ? "В работе" : (Elements.Mf_ManufacturingStatus=="Manufactured" ? "Готово" : (Elements.Mf_ManufacturingStatus=="New" ? "Новый" : "Отменен")))}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text18>
+            <Text19 Ref="83" type="Text" isKey="true">
+              <Border>None;[127:127:127];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>76,0,30,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>3,3,0,0</Margins>
+              <Name>Text19</Name>
+              <Page isRef="7" />
+              <Parent isRef="79" />
+              <Text>{Elements.Mf_Queue}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text19>
+            <Text21 Ref="84" type="Text" isKey="true">
+              <Border>None;[127:127:127];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>106,0,84,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,11</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>3,3,0,0</Margins>
+              <Name>Text21</Name>
+              <Page isRef="7" />
+              <Parent isRef="79" />
+              <Text>{Elements.IfcTeklaId}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text21>
+          </Components>
+          <Condition>{Elements.Mf_Position}
+{Elements.Mf_ManufacturingStatus}
+{Elements.Mf_Queue}
+{Elements.IfcTeklaId}</Condition>
+          <Conditions isList="true" count="4">
+            <value>Elements.Mf_ManufacturingStatus,EqualTo,New,,String,[0:0:0],[205:230:245],Roboto_x002C_11,True,False,,,None</value>
+            <value>Elements.Mf_ManufacturingStatus,EqualTo,InProgress,,String,[0:0:0],[249:223:187],Roboto_x002C_11,True,False,,,None</value>
+            <value>Elements.Mf_ManufacturingStatus,EqualTo,Manufactured,,String,[0:0:0],[246:194:121],Roboto_x002C_11,True,False,,,None</value>
+            <value>Elements.Mf_ManufacturingStatus,EqualTo,Canceled,,String,[0:0:0],[152:146:189],Roboto_x002C_11,True,False,,,None</value>
+          </Conditions>
+          <Expressions isList="true" count="0" />
+          <Name>GroupHeaderBand2</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+        </GroupHeaderBand2>
+        <DataBand2 Ref="85" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,340,190,0</ClientRectangle>
+          <Components isList="true" count="0" />
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>Elements</DataSourceName>
+          <Expressions isList="true" count="0" />
+          <Filters isList="true" count="2">
+            <value>Type,EqualTo,Part,,String</value>
+            <value>Mf_Weight,EqualTo,_x0030_,,Numeric</value>
+          </Filters>
+          <Name>DataBand2</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+          <Sort isList="true" count="0" />
+        </DataBand2>
+        <ReportSummaryBand1 Ref="86" type="ReportSummaryBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,348,190,34</ClientRectangle>
+          <Components isList="true" count="2">
+            <Text46 Ref="87" type="Text" isKey="true">
+              <Border>None;[127:127:127];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,12,190,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,16,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text46</Name>
+              <Page isRef="7" />
+              <Parent isRef="86" />
+              <Text>{(Count(DataBand1, Elements.Mf_Position)==0 &amp;&amp; Count(DataBand4, Elements.Mf_Position)==0 &amp;&amp; Count(DataBand3, Elements.Mf_Position)==0 &amp;&amp; Count(DataBand5, Elements.Mf_Position)==0 ? "Позиций без нумерации не найдено" : "")}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text46>
+            <Text53 Ref="88" type="Text" isKey="true">
+              <Border>None;[127:127:127];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,24,190,10</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>Roboto,16,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text53</Name>
+              <Page isRef="7" />
+              <Parent isRef="86" />
+              <Text>{(Count(DataBand2, Elements.Mf_Position)==0 ? "Позиций с нулевой массой не найдено" : "")}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text53>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Name>ReportSummaryBand1</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+        </ReportSummaryBand1>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <ExcelSheet>Проверка на массу и нумерацию</ExcelSheet>
+      <Expressions isList="true" count="0" />
+      <Guid>0a056a9cedac4b029420c562c4d718a9</Guid>
+      <Margins>10,10,10,10</Margins>
+      <Name>Page1</Name>
+      <PageHeight>297</PageHeight>
+      <PageWidth>210</PageWidth>
+      <Report isRef="0" />
+    </Page1>
+  </Pages>
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Проверочный отчёт на нумерацию и массу в заказе</ReportAlias>
+  <ReportChanged>4/13/2023 4:50:10 PM</ReportChanged>
+  <ReportCreated>1/19/2023 3:43:28 PM</ReportCreated>
+  <ReportFile>C:\Users\Andrei\Desktop\исправлено\Проверка на массу и нумерацию.mrt</ReportFile>
+  <ReportGuid>1afb43c0ad644fc1b21848b2f2da7f97</ReportGuid>
+  <ReportName>Проверочный отчёт на нумерацию и массу в заказе</ReportName>
+  <ReportUnit>Millimeters</ReportUnit>
+  <ReportVersion>2023.2.2.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Проверочный_отчёт_на_нумерацию_и_массу_в_заказе : Stimulsoft.Report.StiReport
+    {
+        public Проверочный_отчёт_на_нумерацию_и_массу_в_заказе()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

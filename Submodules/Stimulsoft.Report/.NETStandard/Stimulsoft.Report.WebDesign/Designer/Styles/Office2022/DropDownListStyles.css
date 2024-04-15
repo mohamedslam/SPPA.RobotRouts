@@ -1,0 +1,78 @@
+
+.stiDesignerDropDownListImage {
+    height: 16px;
+    width: 32px;
+    margin: 0 3px 0 3px;
+}
+
+.stiDesignerDropDownListImageCell {
+    padding: 0px;
+    margin: 0px;
+    font-size: 0px;
+}
+
+.stiDesignerDropDownListImageCellDefault {
+    border: 1px solid @MobileDesignerControlsBorderColor;
+    background: @MobileDesignerControlsBackgroundColor;
+}
+
+.stiDesignerDropDownListImageCellOver {
+    border: 1px solid @MobileDesignerControlsOverBorderColor;
+    background: @MobileDesignerControlsBackgroundColor;
+}
+
+.stiDesignerDropDownListImageCellSelected {
+    border: 1px solid @MobileDesignerControlsSelectedBorderColor;
+    background: @MobileDesignerControlsBackgroundColor;
+}
+
+.stiDesignerDropDownListImageCellDisabled {
+    background: @MobileDesignerControlsBackgroundColor;
+    border: 1px solid @MobileDesignerControlsDisabledBorderColor;
+}
+
+.stiDesignerDropDownListButton {
+    border-radius: 0 3px 3px 0;
+    cursor: default;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+.stiDesignerDropDownListButton_Mouse {
+}
+
+.stiDesignerDropDownListButton_Touch {
+}
+
+.stiDesignerDropDownListButtonDefault {
+    color: @MobileDesignerFontColor;
+    background: @MobileDesignerControlsBackgroundColor;
+    border-bottom: 1px solid @MobileDesignerControlsBorderColor;
+    border-top: 1px solid @MobileDesignerControlsBorderColor;
+    border-right: 1px solid @MobileDesignerControlsBorderColor;
+}
+
+.stiDesignerDropDownListButtonOver {
+    color: @MobileDesignerFontColor;
+    background: @MobileDesignerButtonOverBackgroundColor;
+    border-bottom: 1px solid @MobileDesignerControlsOverBorderColor;
+    border-top: 1px solid @MobileDesignerControlsOverBorderColor;
+    border-right: 1px solid @MobileDesignerControlsOverBorderColor;
+}
+
+.stiDesignerDropDownListButtonSelected {
+    color: @MobileDesignerFontColor;
+    background: @MobileDesignerButtonSelectedBackgroundColor;
+    border-bottom: 1px solid @MobileDesignerControlsOverBorderColor;
+    border-top: 1px solid @MobileDesignerControlsOverBorderColor;
+    border-right: 1px solid @MobileDesignerControlsOverBorderColor;
+}
+
+.stiDesignerDropDownListButtonDisabled {
+    color: @MobileDesignerFontDisabledColor;
+    background: @MobileDesignerControlsDisabledBackgroundColor;
+    border-bottom: 1px solid @MobileDesignerControlsDisabledBorderColor;
+    border-top: 1px solid @MobileDesignerControlsDisabledBorderColor;
+    border-right: 1px solid @MobileDesignerControlsDisabledBorderColor;
+}

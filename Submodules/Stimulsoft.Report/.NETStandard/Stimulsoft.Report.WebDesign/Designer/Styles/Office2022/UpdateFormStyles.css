@@ -1,0 +1,54 @@
+
+.stiUpdateFormItem {
+    border-bottom: 1px dotted @MobileDesignerMainPanelsBorderColor;
+    font-family: Arial;
+    font-size: 12px;
+    color: @ClientNavigatorFontColor;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+.stiUpdateFormItemHeader {    
+    font-family: Arial;
+    font-size: 17px;
+    margin: 10px 0 0 13px;
+}
+
+.stiUpdateFormItemDate {    
+    font-family: Arial;
+    font-size: 11px;
+    margin: 15px 0 0 13px;
+}
+
+.stiUpdateFormItemDescription {    
+    font-family: Arial;
+    font-size: 12px;
+    margin: 15px 10px 0 13px;
+    line-height: 1.3;
+}
+
+.stiModificationsFormContainer {
+    border-top: 1px dotted @MobileDesignerMainPanelsBorderColor;
+}
+
+.stiModificationsFormContainerHeaderItem {
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 25px 0 5px 13px;
+}
+
+.stiModificationsFormContainerItem {
+    font-family: Arial;
+    font-size: 12px;
+    padding: 5px 0 5px 5px;
+    margin: 5px 0 5px 13px;
+}
+
+.stiUpdateFormEmptyItem {
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    color: #777777;
+}

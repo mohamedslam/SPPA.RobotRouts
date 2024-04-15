@@ -1,0 +1,151 @@
+
+.stiJsViewerParametersPanel {
+	cursor: default;
+	position: absolute;
+	z-index: 2;
+	color: #202020;
+}
+
+.stiJsViewerParametersPanelTop {
+	width: 100%;	
+}
+
+.stiJsViewerParametersPanelSeparatedTop {
+	border-bottom: 1px solid @JsViewerMainPanelsBorderColor;
+}
+
+.stiJsViewerParametersPanel td {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.stiJsViewerParametersPanel table {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.stiJsViewerInnerParametersPanelLeft {	
+	position: absolute;
+    top: 0px;    
+    bottom: 0px;
+    background: @JsViewerMainPanelsBackgroundDownColor;
+    overflow: auto;
+}
+
+.stiJsViewerInnerParametersPanelSimple {
+    border: 1px solid @JsViewerMainPanelsBorderColor;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.stiJsViewerInnerParametersPanelSeparatedLeft {
+	border-right: 1px solid @JsViewerMainPanelsBorderColor;
+}
+
+.stiJsViewerInnerContainerParametersPanel {	
+	font-size: 12px;
+	padding: 10px;
+    border-collapse: separate;
+	background: @JsViewerMainPanelsBackgroundDownColor;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    overflow: auto;
+}
+
+/* -------------------- Menu -----------------*/
+
+.stiJsViewerParametersMenuInnerTable {
+    border: 0px;
+    padding: 0px;
+    border-collapse: separate;
+	color: #202020;
+}
+
+.stiJsViewerParametersMenuInnerTable td {
+	padding: 0px;
+}
+
+.stiJsViewerParametersMenuSeparator {
+    height: 1px;
+    width: 100%;
+    background: @JsViewerMenuSeparatorUpColor;
+    border-bottom: 1px solid @JsViewerMenuSeparatorDownColor;
+}
+
+.stiJsViewerParametersMenuItem td,
+.stiJsViewerParametersMenuItemOver td,
+.stiJsViewerParametersMenuItem table,
+.stiJsViewerParametersMenuItemOver table,
+.stiJsViewerParametersMenuItemPressed table,
+.stiJsViewerParametersMenuItemPressed td{
+	border: 0px;
+	padding: 0px;
+}
+
+.stiJsViewerParametersMenuItem,
+.stiJsViewerParametersMenuItemOver,
+.stiJsViewerParametersMenuItemPressed {    
+    padding: 1px;
+}
+
+    .stiJsViewerParametersMenuItem .stiJsViewerParametersMenuItemInnerTable {
+        height: 100%;
+        width: 100%;
+        font-size: 12px;
+        white-space: nowrap;
+        overflow: hidden;
+        border: 1px solid @JsViewerMenuItemBorderColor;
+        border-collapse: separate;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        box-sizing: border-box;
+    }
+
+    .stiJsViewerParametersMenuItemOver .stiJsViewerParametersMenuItemInnerTable {
+        height: 100%;
+        width: 100%;
+        font-size: 12px;
+        border: 1px solid @JsViewerMenuItemOverBorderColor;
+        background: @JsViewerMenuItemOverBackgroundDownColor;
+        background: -moz-linear-gradient(top, @JsViewerMenuItemOverBackgroundUpColor 10%, @JsViewerMenuItemOverBackgroundDownColor 40%, @JsViewerMenuItemOverBackgroundDownColor 70%, @JsViewerMenuItemOverBackgroundUpColor); /* Firefox 3.6+ */
+        background: -webkit-gradient(linear, top, bottom, color-stop(10%,@JsViewerMenuItemOverBackgroundUpColor), color-stop(40%,@JsViewerMenuItemOverBackgroundDownColor), color-stop(70%,@JsViewerMenuItemOverBackgroundDownColor), color-stop(100%,@JsViewerMenuItemOverBackgroundUpColor)); /* Chrome 10+, Safari 5.1+ */
+        background: -webkit-linear-gradient(top, @JsViewerMenuItemOverBackgroundUpColor 10%, @JsViewerMenuItemOverBackgroundDownColor 40%, @JsViewerMenuItemOverBackgroundDownColor 70%, @JsViewerMenuItemOverBackgroundUpColor);
+        background: -o-linear-gradient(top, @JsViewerMenuItemOverBackgroundUpColor 10%, @JsViewerMenuItemOverBackgroundDownColor 40%, @JsViewerMenuItemOverBackgroundDownColor 70%, @JsViewerMenuItemOverBackgroundUpColor); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top, @JsViewerMenuItemOverBackgroundUpColor, @JsViewerMenuItemOverBackgroundDownColor 30%, @JsViewerMenuItemOverBackgroundDownColor 50%, @JsViewerMenuItemOverBackgroundUpColor); /* IE10 */
+        background: linear-gradient(top, @JsViewerMenuItemOverBackgroundUpColor 10%, @JsViewerMenuItemOverBackgroundDownColor 40%, @JsViewerMenuItemOverBackgroundDownColor 70%, @JsViewerMenuItemOverBackgroundUpColor); /* CSS3 */
+        white-space: nowrap;
+        overflow: hidden;
+        border-collapse: separate;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        box-sizing: border-box;
+    }
+
+    .stiJsViewerParametersMenuItemPressed .stiJsViewerParametersMenuItemInnerTable {
+        height: 100%;
+        width: 100%;
+        font-size: 12px;
+        border: 1px solid @JsViewerMenuItemSelectedBorderColor;
+        background: @JsViewerMenuItemSelectedBackgroundDownColor;
+        white-space: nowrap;
+        overflow: hidden;
+        border-collapse: separate;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        box-sizing: border-box;
+    }

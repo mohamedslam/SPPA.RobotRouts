@@ -1,0 +1,55 @@
+
+.stiMobileDesignerRadioButton {
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    font-size: 12px;
+    font-family: Arial;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+.stiMobileDesignerRadioButtonDefault {
+    color: @MobileDesignerFontColor;
+}
+
+.stiMobileDesignerRadioButtonDisabled {
+    color: @MobileDesignerFontDisabledColor;
+}
+
+.stiMobileDesignerRadioButtonOutCircle {
+    border: 1px solid @MobileDesignerControlsBorderColor;
+    background: @MobileDesignerControlsBackgroundColor;
+	border-radius: 10px;
+}
+
+.stiMobileDesignerRadioButtonOutCircleOver {
+    border: 1px solid @MobileDesignerControlsOverBorderColor;
+    background: @MobileDesignerControlsOverBackgroundColor;
+	border-radius: 10px;
+}
+
+.stiMobileDesignerRadioButtonOutCircleDisabled {
+    border: 1px solid @MobileDesignerControlsDisabledBorderColor;
+    background: @MobileDesignerControlsDisabledBackgroundColor;
+	border-radius: 10px;
+}
+
+.stiMobileDesignerRadioButtonInnerCircle {
+    border: 1px solid @MobileDesignerControlsBorderColor;
+    background: @MobileDesignerControlsBorderColor;
+    border-radius: 10px;
+}
+
+.stiMobileDesignerRadioButtonInnerCircle_Mouse {
+    margin: 3px;
+    width: 7px;
+    height: 7px;
+}
+
+.stiMobileDesignerRadioButtonInnerCircle_Touch {
+    margin: 4px;
+    width: 9px;
+    height: 9px;
+}

@@ -1,0 +1,52 @@
+
+.stiJsViewerNavigatePanel {	
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+    z-index: 1;
+	background: @JsViewerNavigatePanelBackgroundColor;
+	font-family: Arial;
+	font-size: 12px;
+	color: #ffffff;
+}
+
+.stiJsViewerNavigatePanelSeparator {
+	border-right: 1px solid @JsViewerNavigatePanelSeparatorColor;
+	width: 1px;
+	margin: 0 4px 0 3px; 
+}
+
+.stiJsViewerNavigatePanelDisabledPanel {
+	z-index: 101;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	position: absolute;
+	background: white;
+	filter: alpha(Opacity=10);
+    opacity: 0;
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+}
+
+.stiJsViewerNavigateButton {
+    cursor: default;
+    font-size: 12px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+.stiJsViewerNavigateButtonOver {
+    background: @JsViewerNavigateButtonOverBackgroundColor;
+}
+
+.stiJsViewerNavigateButtonSelected {
+    background: @JsViewerNavigateButtonSelectedBackgroundColor;
+}
+
+.stiJsViewerNavigateButtonDisabled {
+    color: @JsViewerControlsFontDisabledColor;
+}

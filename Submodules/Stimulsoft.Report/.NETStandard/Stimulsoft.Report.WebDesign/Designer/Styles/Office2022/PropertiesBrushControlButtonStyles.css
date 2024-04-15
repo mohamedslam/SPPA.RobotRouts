@@ -1,0 +1,42 @@
+
+.stiDesignerPropertiesBrushControlButton {
+    border-radius: 3px;
+    cursor: default;
+    font-family: Arial;
+    font-size: 12px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+.stiDesignerPropertiesBrushControlButton_Mouse {
+    height: 20px;
+}
+
+.stiDesignerPropertiesBrushControlButton_Touch {
+    height: 24px;
+}
+
+.stiDesignerPropertiesBrushControlButtonDefault {
+    border: 1px solid @MobileDesignerControlsBorderColor;
+    background: @MobileDesignerControlsBackgroundColor;
+    color: @MobileDesignerFontColor;
+}
+
+.stiDesignerPropertiesBrushControlButtonOver {
+    border: 1px solid @MobileDesignerControlsOverBorderColor;
+    color: @MobileDesignerFontColor;
+    background: @MobileDesignerButtonOverBackgroundColor;
+}
+
+.stiDesignerPropertiesBrushControlButtonSelected {
+    border: 1px solid @MobileDesignerControlsOverBorderColor;
+    color: @MobileDesignerFontColor;
+    background: @MobileDesignerButtonSelectedBackgroundColor;
+}
+
+.stiDesignerPropertiesBrushControlButtonDisabled {
+    border: 1px solid @MobileDesignerControlsDisabledBorderColor;
+    color: @MobileDesignerFontDisabledColor;
+    background: @MobileDesignerControlsBackgroundColor;
+}

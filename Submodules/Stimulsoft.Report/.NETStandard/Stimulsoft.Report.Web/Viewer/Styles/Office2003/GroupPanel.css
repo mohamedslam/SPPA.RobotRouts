@@ -1,0 +1,7 @@
+
+.stiJsViewerGroupPanelContainer {    
+    background: @JsViewerControlsBackgroundColor;
+    border-left: 1px solid @JsViewerControlsBorderColor;
+    border-right: 1px solid @JsViewerControlsBorderColor;
+    border-bottom: 1px solid @JsViewerControlsBorderColor;
+}

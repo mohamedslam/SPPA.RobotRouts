@@ -1,0 +1,89 @@
+
+.stiDesignerParentMenu {
+	z-index: 45;	
+	position: absolute;
+}
+
+.stiDesignerMenu {
+	position: absolute;
+	padding: 1px;
+    border-radius: 3px;
+	border:1px solid @MobileDesignerMenuBorderColor;	
+	background: @MobileDesignerMenuBackgroundColor;
+	color: @MobileDesignerFontColor;	
+	-moz-box-shadow: 0px 0px 7px rgba(0,0,0,0.6); 
+    -webkit-box-shadow: 0px 0px 7px rgba(0,0,0,0.6);
+    box-shadow: 0 0 7px rgba(0,0,0,0.3);
+    cursor: default;
+}
+
+.stiDesignerOpacityMenu {
+	overflow: visible;
+	padding: 1px;	
+}
+
+.stiDesignerInnerContainerOpacityMenu {
+	border:1px solid @MobileDesignerMenuBorderColor;	
+	background: @MobileDesignerMenuBackgroundColor;
+	color: @MobileDesignerFontColor;	
+	-moz-box-shadow: 0px 0px 7px rgba(0,0,0,0.6); 
+    -webkit-box-shadow: 0px 0px 7px rgba(0,0,0,0.6);
+    box-shadow: 0 0 7px rgba(0,0,0,0.3);
+    cursor: default;
+}
+
+.stiDesignerMenuHeader {	
+	white-space: nowrap;
+    background: @MobileDesignerContainersHeaderColor;
+    color: @MobileDesignerFontColor;
+    cursor: default;
+    font-family: Arial;
+    font-size: 12px;
+    padding: 3px;
+    text-align: center;
+}
+
+.stiDesignerVerticalMenuSeparator {
+	height: 1px;
+	background: @MobileDesignerMenuSeparatorColor;
+}
+
+/* Menu Standart Item*/
+
+.stiDesignerMenuStandartItem {
+    margin: 1px;
+    border-radius: 3px;
+    white-space: nowrap;
+    cursor: default;
+    font-family: Arial;
+    font-size: 12px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+.stiDesignerMenuStandartItem_Mouse {
+    height: 24px;
+}
+
+.stiDesignerMenuStandartItem_Touch {
+    height: 30px;
+}
+
+.stiDesignerMenuStandartItemDefault {
+    color: @MobileDesignerFontColor;
+}
+
+.stiDesignerMenuStandartItemOver {
+    background: @MobileDesignerButtonOverBackgroundColor;
+    color: @MobileDesignerFontColor;
+}
+
+.stiDesignerMenuStandartItemSelected {
+    background: @MobileDesignerButtonSelectedBackgroundColor;
+    color: @MobileDesignerFontColor;
+}
+
+.stiDesignerMenuStandartItemDisabled {
+    color: @MobileDesignerFontDisabledColor;
+}

@@ -1,0 +1,32 @@
+
+.stiJsViewerTextBoxEditButton {
+    border: 1px solid @JsViewerControlsBorderColor; 
+    background: @JsViewerControlsBackgroundColor;
+    border-left: 0px;
+}
+
+/* Mouse */
+.stiJsViewerTextBox {    
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px 0px 0px 4px;
+    -webkit-border-radius: 0px;
+    outline: none;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(hsla(0,0%,100%,0)), to(hsla(0,0%,100%,0)));
+    background-image: -webkit-linear-gradient(hsla(0,0%,100%,0), hsla(0,0%,100%,0));
+    background: @JsViewerControlsBackgroundColor;
+	color: #202020;
+}
+
+.stiJsViewerTextBoxDefault {
+    border: 1px solid @JsViewerControlsBorderColor;
+}
+
+.stiJsViewerTextBoxOver {
+    border: 1px solid @JsViewerControlsOverBorderColor;
+}
+
+.stiJsViewerTextBoxDisabled {
+    border: 1px solid @JsViewerControlsDisabledBorderColor;
+    background: @JsViewerControlsDisabledBackgroundColor;
+}

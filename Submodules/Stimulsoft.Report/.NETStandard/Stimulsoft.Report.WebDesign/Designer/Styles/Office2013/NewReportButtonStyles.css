@@ -1,0 +1,36 @@
+
+.stiDesignerNewReportButton {
+    height: 245px;
+    width: 175px;
+    cursor: default;
+    overflow: hidden;
+    font-family: Arial;
+    font-size: 12px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+.stiDesignerNewReportButton_Mouse {
+}
+
+.stiDesignerNewReportButton_Touch {
+}
+
+.stiDesignerNewReportButtonDefault {
+    color: @MobileDesignerFontColor;
+}
+
+.stiDesignerNewReportButtonOver {
+    background: @MobileDesignerButtonOverBackgroundColor;
+    color: @MobileDesignerFontColor;
+}
+
+.stiDesignerNewReportButtonSelected {
+    background: @MobileDesignerButtonSelectedBackgroundColor;
+    color: @MobileDesignerFontColor;
+}
+
+.stiDesignerNewReportButtonDisabled {
+    color: @MobileDesignerFontDisabledColor;
+}

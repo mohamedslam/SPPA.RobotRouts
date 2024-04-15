@@ -1,0 +1,39 @@
+
+.stiDesignerSmallButtonWithBorder {
+    cursor: default;
+    font-family: Arial;
+    font-size: 12px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+.stiDesignerSmallButtonWithBorder_Mouse {
+    height: 24px;
+}
+
+.stiDesignerSmallButtonWithBorder_Touch {
+    height: 28px;
+}
+
+.stiDesignerSmallButtonWithBorderDefault {
+    color: @MobileDesignerFontColor;
+    border: 1px solid @MobileDesignerControlsBorderColor;
+}
+
+.stiDesignerSmallButtonWithBorderOver {
+    color: @MobileDesignerFontColor;
+    background: @MobileDesignerButtonOverBackgroundColor;
+    border: 1px solid @MobileDesignerControlsBorderColor;
+}
+
+.stiDesignerSmallButtonWithBorderSelected {
+    color: @MobileDesignerFontColor;
+    background: @MobileDesignerButtonSelectedBackgroundColor;
+    border: 1px solid @MobileDesignerControlsBorderColor;
+}
+
+.stiDesignerSmallButtonWithBorderDisabled {
+    color: @MobileDesignerFontDisabledColor;
+    border: 1px solid @MobileDesignerControlsDisabledBorderColor;
+}

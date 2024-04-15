@@ -1,0 +1,65 @@
+[
+  {
+    "FileName": "Ведомость марок для EPC.mrt",
+    "Label": {
+      "en": "Mark List for EPC",
+      "ru": "Ведомость марок для EPC"
+    }
+  },
+  {
+    "FileName": "Ведомость материалов по очередям.mrt",
+    "Label": {
+      "en": "Material specification by queues in the order",
+      "ru": "Ведомость материалов по очередям в заказе"
+    }
+  },
+  {
+    "FileName": "Ведомость материалов.mrt",
+    "Label": {
+      "en": "Material specification",
+      "ru": "Ведомость материалов на заказ"
+    }
+  },
+  {
+    "FileName": "Ведомость отправочных марок по статусу.mrt",
+    "Label": {
+      "en": "Bill of materials by status",
+      "ru": "Ведомость отправочных марок по статусу"
+    }
+  },
+  {
+    "FileName": "Ведомость отправочных марок.mrt",
+    "Label": {
+      "en": "Bill of materials",
+      "ru": "Ведомость отправочных марок"
+    }
+  },
+  {
+    "FileName": "Отчёт по заказу.mrt",
+    "Label": {
+      "en": "Order overview",
+      "ru": "Отчёт по заказу"
+    }
+  },
+  {
+    "FileName": "Поэлементная ведомость отправочных элементов для EPC.mrt",
+    "Label": {
+      "en": "Mark List by elements for EPC",
+      "ru": "Поэлементная ведомость отправочных элементов для EPC"
+    }
+  },
+  {
+    "FileName": "Проверка на массу и нумерацию.mrt",
+    "Label": {
+      "en": "Verification for numbering and weight",
+      "ru": "Проверка на массу и нумерацию"
+    }
+  },
+  {
+    "FileName": "Упаковочные листы.mrt",
+    "Label": {
+      "en": "Packing lists",
+      "ru": "Упаковочные листы"
+    }
+  }
+]

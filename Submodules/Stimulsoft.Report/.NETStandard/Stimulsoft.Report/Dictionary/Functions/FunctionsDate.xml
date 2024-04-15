@@ -1,0 +1,385 @@
+<?xml version="1.0"?>
+<StiFunctions>
+  <Category Name="Date">
+    <Function>
+      <Name>DateDiff</Name>
+      <Description>Returns a number of time intervals between two specified dates.</Description>
+      <TypeOfFunction>Stimulsoft.Report.Dictionary.StiFunctionsDate</TypeOfFunction>
+      <ReturnType>System.TimeSpan</ReturnType>
+      <ReturnDescription>A TimeSpan value.</ReturnDescription>
+      <ArgumentType>System.DateTime</ArgumentType>
+      <ArgumentType>System.DateTime</ArgumentType>
+      <ArgumentName>date1</ArgumentName>
+      <ArgumentName>date2</ArgumentName>
+      <ArgumentDescription>date1 is the first DateTime value used in calculating the difference.</ArgumentDescription>
+      <ArgumentDescription>date2 is the first DateTime value used in calculating the difference.</ArgumentDescription>
+    </Function>
+    <Function>
+      <Name>Year</Name>
+      <Description>Returns a year from a date and returns it as a integer value.</Description>
+      <TypeOfFunction>Stimulsoft.Report.Dictionary.StiFunctionsDate</TypeOfFunction>
+      <ReturnType>System.Int64</ReturnType>
+      <ReturnDescription>An integer value.</ReturnDescription>
+      <ArgumentType>System.DateTime</ArgumentType>
+      <ArgumentName>date</ArgumentName>
+      <ArgumentDescription>date is a DateTime value.</ArgumentDescription>
+    </Function>
+    <Function>
+      <Name>Month</Name>
+      <Description>Returns a month from a date and returns it as an integer value.</Description>
+      <TypeOfFunction>Stimulsoft.Report.Dictionary.StiFunctionsDate</TypeOfFunction>
+      <ReturnType>System.Int64</ReturnType>
+      <ReturnDescription>An integer value.</ReturnDescription>
+      <ArgumentType>System.DateTime</ArgumentType>
+      <ArgumentName>date</ArgumentName>
+      <ArgumentDescription>date is a DateTime value.</ArgumentDescription>
+    </Function>
+	<Function>
+		<Name>MonthIdent</Name>
+		<Description>Returns a month identification from a date or a string and returns it as an enum value.</Description>
+		<TypeOfFunction>Stimulsoft.Report.Dictionary.StiFunctionsDate</TypeOfFunction>
+		<ReturnType>System.Object</ReturnType>
+		<ReturnDescription>A month identification value.</ReturnDescription>
+		<ArgumentType>System.Object</ArgumentType>
+		<ArgumentName>value</ArgumentName>
+		<ArgumentDescription>value is a DateTime value or a string value.</ArgumentDescription>
+	</Function>
+    <Function>
+      <Name>Day</Name>
+      <Description>Returns a day from a date and returns it as an integer value.</Description>
+      <TypeOfFunction>Stimulsoft.Report.Dictionary.StiFunctionsDate</TypeOfFunction>
+      <ReturnType>System.Int64</ReturnType>
+      <ReturnDescription>An integer value.</ReturnDescription>
+      <ArgumentType>System.DateTime</ArgumentType>
+      <ArgumentName>date</ArgumentName>
+      <ArgumentDescription>date is a DateTime value.</ArgumentDescription>
+    </Function>
+    <Function>
+      <Name>Hour</Name>
+      <Description>Returns an hour portion from a date and returns it as an integer value.</Description>
+      <TypeOfFunction>Stimulsoft.Report.Dictionary.StiFunctionsDate</TypeOfFunction>
+      <ReturnType>System.Int64</ReturnType>
+      <ReturnDescription>An integer value.</ReturnDescription>
+      <ArgumentType>System.DateTime</ArgumentType>
+      <ArgumentName>date</ArgumentName>
+      <ArgumentDescription>date is a DateTime value.</ArgumentDescription>
+    </Function>
+    <Function>
+      <Name>Minute</Name>
+      <Description>Returns the minutes portion from a date and returns it as an integer value.</Description>
+      <TypeOfFunction>Stimulsoft.Report.Dictionary.StiFunctionsDate</TypeOfFunction>
+      <ReturnType>System.Int64</ReturnType>
+      <ReturnDescription>An integer value.</ReturnDescription>
+      <ArgumentType>System.DateTime</ArgumentType>
+      <ArgumentName>date</ArgumentName>
+      <ArgumentDescription>date is a DateTime value.</ArgumentDescription>
+    </Function>
+    <Function>
+      <Name>Second</Name>
+      <Description>Returns a seconds portion from a date and returns it as an integer value.</Description>
+      <TypeOfFunction>Stimulsoft.Report.Dictionary.StiFunctionsDate</TypeOfFunction>
+      <ReturnType>System.Int64</ReturnType>
+      <ReturnDescription>A integer value.</ReturnDescription>
+      <ArgumentType>System.DateTime</ArgumentType>
+      <ArgumentName>date</ArgumentName>
+      <ArgumentDescription>date is a DateTime value.</ArgumentDescription>
+    </Function>    
+    <Function>
+      <Name>DayOfWeek</Name>
+      <Description>Returns a day of the week.</Description>
+      <TypeOfFunction>Stimulsoft.Report.Dictionary.StiFunctionsDate</TypeOfFunction>
+      <ReturnType>System.String</ReturnType>
+      <ReturnDescription>A day of the week.</ReturnDescription>
+      <ArgumentType>System.DateTime</ArgumentType>
+      <ArgumentName>date</ArgumentName>
+      <ArgumentDescription>date is a DateTime value.</ArgumentDescription>
+    </Function>
+    <Function>
+      <Name>DayOfWeek</Name>
+      <Description>Returns a day of the week.</Description>
+      <TypeOfFunction>Stimulsoft.Report.Dictionary.StiFunctionsDate</TypeOfFunction>
+      <ReturnType>System.String</ReturnType>
+      <ReturnDescription>A day of the week.</ReturnDescription>
+      <ArgumentType>System.DateTime</ArgumentType>
+      <ArgumentName>date</ArgumentName>
+      <ArgumentDescription>date is a DateTime value.</ArgumentDescription>
+      <ArgumentType>System.Boolean</ArgumentType>
+      <ArgumentName>localized</ArgumentName>
+      <ArgumentDescription>if true return localized name of day.</ArgumentDescription>
+    </Function>
+    <Function>
+      <Name>DayOfWeek</Name>
+      <Description>Returns a day of the week.</Description>
+      <TypeOfFunction>Stimulsoft.Report.Dictionary.StiFunctionsDate</TypeOfFunction>
+      <ReturnType>System.String</ReturnType>
+      <ReturnDescription>A day of the week.</ReturnDescription>
+      <ArgumentType>System.DateTime</ArgumentType>
+      <ArgumentName>date</ArgumentName>
+      <ArgumentDescription>date is a DateTime value.</ArgumentDescription>
+      <ArgumentType>System.String</ArgumentType>
+      <ArgumentName>culture</ArgumentName>
+      <ArgumentDescription>culture of the day name.</ArgumentDescription>
+    </Function>
+    <Function>
+      <Name>DayOfWeek</Name>
+      <Description>Returns a day of the week.</Description>
+      <TypeOfFunction>Stimulsoft.Report.Dictionary.StiFunctionsDate</TypeOfFunction>
+      <ReturnType>System.String</ReturnType>
+      <ReturnDescription>A day of the week.</ReturnDescription>
+      <ArgumentType>System.DateTime</ArgumentType>
+      <ArgumentName>date</ArgumentName>
+      <ArgumentDescription>date is a DateTime value.</ArgumentDescription>
+      <ArgumentType>System.String</ArgumentType>
+      <ArgumentName>culture</ArgumentName>
+      <ArgumentDescription>culture of the day name.</ArgumentDescription>
+      <ArgumentType>System.Boolean</ArgumentType>
+      <ArgumentName>upperCase</ArgumentName>
+      <ArgumentDescription>if true then return the name of the day with the first letter in uppercase.</ArgumentDescription>
+    </Function>
+    <Function>
+      <Name>MonthName</Name>
+      <Description>Returns the name of the month.</Description>
+      <TypeOfFunction>Stimulsoft.Report.Dictionary.StiFunctionsDate</TypeOfFunction>
+      <ReturnType>System.String</ReturnType>
+      <ReturnDescription>A name of the month.</ReturnDescription>
+      <ArgumentType>System.DateTime</ArgumentType>
+      <ArgumentName>date</ArgumentName>
+      <ArgumentDescription>date is a DateTime value.</ArgumentDescription>
+    </Function>
+    <Function>
+      <Name>MonthName</Name>
+      <Description>Returns the name of the month.</Description>
+      <TypeOfFunction>Stimulsoft.Report.Dictionary.StiFunctionsDate</TypeOfFunction>
+      <ReturnType>System.String</ReturnType>
+      <ReturnDescription>A name of the month.</ReturnDescription>
+      <ArgumentType>System.DateTime</ArgumentType>
+      <ArgumentName>date</ArgumentName>
+      <ArgumentDescription>date is a DateTime value.</ArgumentDescription>
+      <ArgumentType>System.Boolean</ArgumentType>
+      <ArgumentName>localized</ArgumentName>
+      <ArgumentDescription>if true return localized name of month.</ArgumentDescription>
+    </Function>
+    <Function>
+      <Name>MonthName</Name>
+      <Description>Returns the name of the month.</Description>
+      <TypeOfFunction>Stimulsoft.Report.Dictionary.StiFunctionsDate</TypeOfFunction>
+      <ReturnType>System.String</ReturnType>
+      <ReturnDescription>A name of the month.</ReturnDescription>
+      <ArgumentType>System.DateTime</ArgumentType>
+      <ArgumentName>date</ArgumentName>
+      <ArgumentDescription>date is a DateTime value.</ArgumentDescription>
+      <ArgumentType>System.String</ArgumentType>
+      <ArgumentName>culture</ArgumentName>
+      <ArgumentDescription>culture of the month name.</ArgumentDescription>
+    </Function>
+    <Function>
+      <Name>MonthName</Name>
+      <Description>Returns the name of the month.</Description>
+      <TypeOfFunction>Stimulsoft.Report.Dictionary.StiFunctionsDate</TypeOfFunction>
+      <ReturnType>System.String</ReturnType>
+      <ReturnDescription>A name of the month.</ReturnDescription>
+      <ArgumentType>System.DateTime</ArgumentType>
+      <ArgumentName>date</ArgumentName>
+      <ArgumentDescription>date is a DateTime value.</ArgumentDescription>
+      <ArgumentType>System.String</ArgumentType>
+      <ArgumentName>culture</ArgumentName>
+      <ArgumentDescription>culture of the month name.</ArgumentDescription>
+      <ArgumentType>System.Boolean</ArgumentType>
+      <ArgumentName>upperCase</ArgumentName>
+      <ArgumentDescription>if true then return the name of the month with the first letter in uppercase.</ArgumentDescription>
+    </Function>
+    <Function>
+      <Name>DayOfYear</Name>
+      <Description>Returns a day of the year.</Description>
+      <TypeOfFunction>Stimulsoft.Report.Dictionary.StiFunctionsDate</TypeOfFunction>
+      <ReturnType>System.Int64</ReturnType>
+      <ReturnDescription>A day of the year.</ReturnDescription>
+      <ArgumentType>System.DateTime</ArgumentType>
+      <ArgumentName>date</ArgumentName>
+      <ArgumentDescription>date is a DateTime value.</ArgumentDescription>
+    </Function>
+    <Function>
+      <Name>DaysInMonth</Name>
+      <Description>Returns the number of days in the specified month and year.</Description>
+      <TypeOfFunction>Stimulsoft.Report.Dictionary.StiFunctionsDate</TypeOfFunction>
+      <ReturnType>System.Int64</ReturnType>
+      <ReturnDescription>The number of days in the specified month and year.</ReturnDescription>
+      <ArgumentType>System.Int64</ArgumentType>
+      <ArgumentType>System.Int64</ArgumentType>
+      <ArgumentName>year</ArgumentName>
+      <ArgumentName>month</ArgumentName>
+      <ArgumentDescription>Year (1 through 9999).</ArgumentDescription>
+      <ArgumentDescription>Month (1 through 12).</ArgumentDescription>
+    </Function>
+    <Function>
+      <Name>DaysInMonth</Name>
+      <Description>Returns the number of days in the specified month and year.</Description>
+      <TypeOfFunction>Stimulsoft.Report.Dictionary.StiFunctionsDate</TypeOfFunction>
+      <ReturnType>System.Int64</ReturnType>
+      <ReturnDescription>The number of days in the specified month.</ReturnDescription>
+      <ArgumentType>System.DateTime</ArgumentType>
+      <ArgumentName>date</ArgumentName>
+      <ArgumentDescription>date is a DateTime value.</ArgumentDescription>
+    </Function>
+    <Function>
+      <Name>DaysInYear</Name>
+      <Description>Returns the number of days in the specified year.</Description>
+      <TypeOfFunction>Stimulsoft.Report.Dictionary.StiFunctionsDate</TypeOfFunction>
+      <ReturnType>System.Int64</ReturnType>
+      <ReturnDescription>The number of days in the specified year.</ReturnDescription>
+      <ArgumentType>System.Int64</ArgumentType>
+      <ArgumentName>year</ArgumentName>
+      <ArgumentDescription>Year (1 through 9999).</ArgumentDescription>
+    </Function>
+    <Function>
+      <Name>DaysInYear</Name>
+      <Description>Returns the number of days in the specified year.</Description>
+      <TypeOfFunction>Stimulsoft.Report.Dictionary.StiFunctionsDate</TypeOfFunction>
+      <ReturnType>System.Int64</ReturnType>
+      <ReturnDescription>The number of days in the specified year.</ReturnDescription>
+      <ArgumentType>System.DateTime</ArgumentType>
+      <ArgumentName>date</ArgumentName>
+      <ArgumentDescription>date is a DateTime value.</ArgumentDescription>
+    </Function>
+    <Function>
+      <Name>DateSerial</Name>
+      <Description>Returns the DateTime value for the specified year, month, and day.</Description>
+      <TypeOfFunction>Stimulsoft.Report.Dictionary.StiFunctionsDate</TypeOfFunction>
+      <ReturnType>System.DateTime</ReturnType>
+      <ReturnDescription>DateTime value.</ReturnDescription>
+      <ArgumentType>System.Int64</ArgumentType>
+      <ArgumentType>System.Int64</ArgumentType>
+      <ArgumentType>System.Int64</ArgumentType>
+      <ArgumentName>year</ArgumentName>
+      <ArgumentName>month</ArgumentName>
+      <ArgumentName>day</ArgumentName>
+      <ArgumentDescription>Year (1 through 9999).</ArgumentDescription>
+      <ArgumentDescription>Month (1 through 12).</ArgumentDescription>
+      <ArgumentDescription>Day (1 through the number of days in a month.</ArgumentDescription>
+    </Function>
+    <Function>
+      <Name>DateSerial</Name>
+      <Description>Returns the DateTime value for the specified number of ticks.</Description>
+      <TypeOfFunction>Stimulsoft.Report.Dictionary.StiFunctionsDate</TypeOfFunction>
+      <ReturnType>System.DateTime</ReturnType>
+      <ReturnDescription>DateTime value.</ReturnDescription>
+      <ArgumentType>System.Int64</ArgumentType>
+      <ArgumentName>ticks</ArgumentName>
+      <ArgumentDescription>A number of ticks that have elapsed since January 1, 0001.</ArgumentDescription>
+    </Function>
+    <Function>
+      <Name>FromOADate</Name>
+      <Description>Returns a DateTime equivalent to the specified OLE Automation Date.</Description>
+      <TypeOfFunction>Stimulsoft.Report.Dictionary.StiFunctionsDate</TypeOfFunction>
+      <ReturnType>System.DateTime</ReturnType>
+      <ReturnDescription>DateTime value.</ReturnDescription>
+      <ArgumentType>System.Double</ArgumentType>
+      <ArgumentName>value</ArgumentName>
+      <ArgumentDescription>OLE Automation Date value.</ArgumentDescription>
+    </Function>
+    <Function>
+      <Name>ToOADate</Name>
+      <Description>Returns the equivalent OLE Automation date of specified datetime.</Description>
+      <TypeOfFunction>Stimulsoft.Report.Dictionary.StiFunctionsDate</TypeOfFunction>
+      <ReturnType>System.Double</ReturnType>
+      <ReturnDescription>A double value that contains an OLE Automation date equivalent.</ReturnDescription>
+      <ArgumentType>System.DateTime</ArgumentType>
+      <ArgumentName>value</ArgumentName>
+      <ArgumentDescription>OLE Automation Date value.</ArgumentDescription>
+    </Function>
+    <Function>
+      <Name>TimeSerial</Name>
+      <Description>Returns the TimeValue value for a specified number of hours, minutes, and seconds.</Description>
+      <TypeOfFunction>Stimulsoft.Report.Dictionary.StiFunctionsDate</TypeOfFunction>
+      <ReturnType>System.TimeSpan</ReturnType>
+      <ReturnDescription>TimeSpan value.</ReturnDescription>
+      <ArgumentType>System.Int64</ArgumentType>
+      <ArgumentType>System.Int64</ArgumentType>
+      <ArgumentType>System.Int64</ArgumentType>
+      <ArgumentName>hours</ArgumentName>
+      <ArgumentName>minutes</ArgumentName>
+      <ArgumentName>seconds</ArgumentName>
+      <ArgumentDescription>Number of hours.</ArgumentDescription>
+      <ArgumentDescription>Number of minutes.</ArgumentDescription>
+      <ArgumentDescription>Number of seconds.</ArgumentDescription>
+    </Function>
+    <Function>
+      <Name>WeekOfYear</Name>
+      <Description>Returns the week of the year that includes the date in the specified DateTime value.</Description>
+      <TypeOfFunction>Stimulsoft.Report.Dictionary.StiFunctionsDate</TypeOfFunction>
+      <ReturnType>System.Int64</ReturnType>
+      <ReturnDescription>The week of the year.</ReturnDescription>
+      <ArgumentType>System.DateTime</ArgumentType>
+      <ArgumentName>date</ArgumentName>
+      <ArgumentDescription>date is a DateTime value.</ArgumentDescription>
+    </Function>
+    <Function>
+      <Name>WeekOfYear</Name>
+      <Description>Returns the week of the year that includes the date in the specified DateTime value.</Description>
+      <TypeOfFunction>Stimulsoft.Report.Dictionary.StiFunctionsDate</TypeOfFunction>
+      <ReturnType>System.Int64</ReturnType>
+      <ReturnDescription>The week of the year.</ReturnDescription>
+      <ArgumentType>System.DateTime</ArgumentType>
+      <ArgumentType>System.DayOfWeek</ArgumentType>
+      <ArgumentName>date</ArgumentName>
+      <ArgumentName>firstDayOfWeek</ArgumentName>
+      <ArgumentDescription>date is a DateTime value.</ArgumentDescription>
+      <ArgumentDescription>an enumeration value that represents the first day of the week.</ArgumentDescription>
+    </Function>
+    <Function>
+      <Name>WeekOfYear</Name>
+      <Description>Returns the week of the year that includes the date in the specified DateTime value.</Description>
+      <TypeOfFunction>Stimulsoft.Report.Dictionary.StiFunctionsDate</TypeOfFunction>
+      <ReturnType>System.Int64</ReturnType>
+      <ReturnDescription>The week of the year.</ReturnDescription>
+      <ArgumentType>System.DateTime</ArgumentType>
+      <ArgumentType>System.DayOfWeek</ArgumentType>
+      <ArgumentType>System.Globalization.CalendarWeekRule</ArgumentType>
+      <ArgumentName>date</ArgumentName>
+      <ArgumentName>firstDayOfWeek</ArgumentName>
+      <ArgumentName>calendarWeekRule</ArgumentName>
+      <ArgumentDescription>date is a DateTime value.</ArgumentDescription>
+      <ArgumentDescription>an enumeration value that represents the first day of the week.</ArgumentDescription>
+      <ArgumentDescription>an enumeration value that define the rules for determining the first week of the year.</ArgumentDescription>
+    </Function>
+    <Function>
+      <Name>WeekOfMonth</Name>
+      <Description>Returns the week of the month that includes the date in the specified DateTime value.</Description>
+      <TypeOfFunction>Stimulsoft.Report.Dictionary.StiFunctionsDate</TypeOfFunction>
+      <ReturnType>System.Int64</ReturnType>
+      <ReturnDescription>The week of the month.</ReturnDescription>
+      <ArgumentType>System.DateTime</ArgumentType>
+      <ArgumentName>date</ArgumentName>
+      <ArgumentDescription>date is a DateTime value.</ArgumentDescription>
+    </Function>
+    <Function>
+      <Name>WeekOfMonth</Name>
+      <Description>Returns the week of the month that includes the date in the specified DateTime value.</Description>
+      <TypeOfFunction>Stimulsoft.Report.Dictionary.StiFunctionsDate</TypeOfFunction>
+      <ReturnType>System.Int64</ReturnType>
+      <ReturnDescription>The week of the month.</ReturnDescription>
+      <ArgumentType>System.DateTime</ArgumentType>
+      <ArgumentType>System.DayOfWeek</ArgumentType>
+      <ArgumentName>date</ArgumentName>
+      <ArgumentName>firstDayOfWeek</ArgumentName>
+      <ArgumentDescription>date is a DateTime value.</ArgumentDescription>
+      <ArgumentDescription>an enumeration value that represents the first day of the week.</ArgumentDescription>
+    </Function>
+    <Function>
+      <Name>WeekOfMonth</Name>
+      <Description>Returns the week of the month that includes the date in the specified DateTime value.</Description>
+      <TypeOfFunction>Stimulsoft.Report.Dictionary.StiFunctionsDate</TypeOfFunction>
+      <ReturnType>System.Int64</ReturnType>
+      <ReturnDescription>The week of the month.</ReturnDescription>
+      <ArgumentType>System.DateTime</ArgumentType>
+      <ArgumentType>System.DayOfWeek</ArgumentType>
+      <ArgumentType>System.Globalization.CalendarWeekRule</ArgumentType>
+      <ArgumentName>date</ArgumentName>
+      <ArgumentName>firstDayOfWeek</ArgumentName>
+      <ArgumentName>calendarWeekRule</ArgumentName>
+      <ArgumentDescription>date is a DateTime value.</ArgumentDescription>
+      <ArgumentDescription>an enumeration value that represents the first day of the week.</ArgumentDescription>
+      <ArgumentDescription>an enumeration value that define the rules for determining the first week of the year.</ArgumentDescription>
+    </Function>
+  </Category>
+</StiFunctions>

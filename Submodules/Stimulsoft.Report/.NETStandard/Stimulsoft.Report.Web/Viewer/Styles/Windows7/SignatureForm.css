@@ -1,0 +1,30 @@
+
+.stiJsViewerSimpleContainerWithBorder {
+    border: 1px solid @JsViewerControlsBorderColor;
+    border-radius: 3px;
+}
+
+.stiJsViewerSignatureFormDrawContainer {
+    border: 1px solid @JsViewerControlsBorderColor;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    line-height: 1;
+}
+
+.stiJsViewerTextContainer {
+    display: inline-block;
+    white-space: normal;
+    border: 0px;
+    font-family: Arial;
+    font-size: 12px;
+    color: @JsViewerFormFontColor;
+}
+
+.stiJsViewerDragAndDropHintText {
+    color: @JsViewerFormFontColor;
+    text-align: center;
+}
